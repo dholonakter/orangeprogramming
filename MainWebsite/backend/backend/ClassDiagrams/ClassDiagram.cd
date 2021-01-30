@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="backend.Model.Users.User">
+    <Position X="4.25" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAECBAgAAgIAAAQCAQAEAAAAAAAAAACAAAAgg=</HashCode>
+      <FileName>Model\Users\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="backend.Model.Users.Admin">
+    <Position X="1.5" Y="6.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Users\Admin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="backend.Model.Users.Client">
+    <Position X="4.25" Y="6.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Users\Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="backend.Model.Users.Employee">
+    <Position X="6.75" Y="6.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Users\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="backend.Model.Projects.Project">
+    <Position X="10.25" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAggEAAIAAAAAAAAAAAAAAAAAAABAAAAgQ=</HashCode>
+      <FileName>Model\Projects\Project.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="backend.Model.WebsiteElements.ProcessPlan">
+    <Position X="13.75" Y="1.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAggAAAIAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Model\WebsiteElements\ProcessPlan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="backend.Model.WebsiteElements.Review">
+    <Position X="13.75" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAgCAAAAAAAAAAAQAAAAEAAAAAIAAAAiA=</HashCode>
+      <FileName>Model\WebsiteElements\Review.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="backend.Model.WebsiteElements.Technology">
+    <Position X="13.75" Y="7.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAQAAAAEAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Model\WebsiteElements\Technology.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
