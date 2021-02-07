@@ -1,27 +1,16 @@
 import React from "react";
-import { NavbarContainer, NavItemsContainer, NavLogo } from "./Navbar.style";
-import logo from "../../assets/images/logo.png";
-import { Container } from "../../utils/container";
-import { PrimaryButton } from "../../utils/buttons";
+import Hamburger from "./Hamburger.component";
+import logo from "../../assets/images/logo.png"
+import {Nav, NavLogo} from "./Navbar.style"
+
+
 
 const Navbar = () => {
   return (
-    <>
-      <Container>
-        <NavbarContainer>
-          <NavLogo src={logo} alt="" />
-
-          <NavItemsContainer>
-            <li>Home</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>About us</li>
-            <li>Gallery</li>
-           <PrimaryButton>Contact us</PrimaryButton>
-          </NavItemsContainer>
-        </NavbarContainer>
-      </Container>
-    </>
+    <Nav>
+      <NavLogo src={logo} alt=""/>
+      <Hamburger />
+    </Nav>
   );
 };
 

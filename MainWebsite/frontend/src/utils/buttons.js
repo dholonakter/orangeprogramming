@@ -4,7 +4,7 @@ background: #F0671F;
 color: #fff;
 border: none;
 outline: none;
-padding: 2% 5%;
+padding: 15px 5px;
 display:block;
 font-family: 'Montserrat', sans-serif;
 font-weight: bold;

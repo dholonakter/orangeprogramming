@@ -1,29 +1,27 @@
 import styled from "styled-components";
 
-export const NavbarContainer = styled.div`
-position:fixed;
-display:flex;
-align-items:center;
-justify-content:space-between;
-width:80vw;
-margin:0 auto;
-padding:0.5% 0;
+export const Nav = styled.div`
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 0;
 
-
-`
+  @media (max-width: 768px){
+    width:90vw;
+}
+`;
 
 export const NavLogo = styled.img`
-width:14%;
-`
+  width: 184px;
 
-export const NavItemsContainer = styled.div`
-color: #fff;
-list-style-type:none;
-display:flex;
-justify-content:space-between;
-align-items: center;
-width:60%;
-font-weight:bold;
-
-
-`
+  @media (max-width: 1200px){
+      width: 150px;
+  }
+`;
