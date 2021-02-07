@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "Pr/7iyMKfBPNu8gHjcTBrFXxhcL/l/QgAqm911HTNwtfB5ScU2foDr5cY2X2wgjg/MXDxbBmAh1mMzthWqLqIA==",
+  "success": true,
+  "projectFilePath": "D:\\Documents\\Personal\\Free Time\\CompanyWork\\GIT\\orangeprogramming\\MainWebsite\\backend\\backend\\backend.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\goedh\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\goedh\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\goedh\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\goedh\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\goedh\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\goedh\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
