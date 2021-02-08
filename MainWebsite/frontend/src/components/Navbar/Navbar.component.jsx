@@ -8,7 +8,7 @@ import {Nav, NavLogo} from "./Navbar.style"
 const Navbar = () => {
   return (
     <Nav>
-      <NavLogo src={logo} alt=""/>
+      <NavLogo src={logo} alt="orange-programming"/>
       <Hamburger />
     </Nav>
   );

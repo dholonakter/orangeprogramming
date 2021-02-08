@@ -13,15 +13,15 @@ export const Nav = styled.div`
   right: 0;
   padding: 15px 0;
 
-  @media (max-width: 768px){
-    width:90vw;
-}
+  @media (max-width: 1000px) {
+    width: 90vw;
+  }
 `;
 
 export const NavLogo = styled.img`
   width: 184px;
 
-  @media (max-width: 1200px){
-      width: 150px;
+  @media (max-width: 1200px) {
+    width: 150px;
   }
 `;
