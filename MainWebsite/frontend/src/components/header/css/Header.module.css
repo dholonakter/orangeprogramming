@@ -1,8 +1,8 @@
 /* working with main class component */
 .main{
-    background-color: #09013C;
+    background-color: transparent;
     position: fixed;
-
+    /* z-index: 99; */
     width: 100%;
     left: 0;
     top: 0;
@@ -10,7 +10,7 @@
 }
 
 .main_scrolled{
-    background-color: transparent;
+    background-color: rgb(4, 64, 109);
     position: fixed;
     color: black;
     width: 100%;
@@ -110,7 +110,7 @@ a:hover{
 
 }
 .navButton:hover .contact{
-    background-color: #09013C;
+    background-color: transparent;
     border: 1px solid white;
     
 }

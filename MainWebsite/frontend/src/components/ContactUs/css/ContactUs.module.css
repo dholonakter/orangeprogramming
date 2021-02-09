@@ -1,0 +1,199 @@
+/* working with banner part */
+
+.bannerBody{
+    width: 100%;
+    background-color: rgb(56, 170, 164);
+}
+
+
+
+
+
+
+/* woking with contactInfo fucntional component */
+
+.contactInfoBody{
+    display: flex;
+    flex-direction: row;
+}
+.contactInfoItem1{
+    flex: 60%;
+}
+.contactInfoItem2{
+    flex: 40%
+}
+.contactInfoMap{
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px gray;
+}
+.contactInfoItem2Body{
+    float: right;
+    padding-right: 10px;
+}
+.contactInfoItem2Body h2{
+    font-size: 25px;
+    margin-left: 0 ;
+}
+.contactInfoItem2Body p{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+/* working with Email form section  functional components*/
+
+
+.emailBody{
+    margin: auto;
+    background-color: rgba(18, 66, 104,0.8);
+    width: 700px;
+}
+.emailBody h2{
+    margin: 0;
+    text-align: center;
+    color: white;
+    
+}
+.emailBody form{
+    margin: auto;
+    padding: 50px 0 50px 0;
+}
+.emailBody form .input{
+    border: none;
+    border-bottom: 1px solid white;
+    display: block;
+    padding: 25px 10px 5px 10px;
+    width: 400px;
+    background-color: transparent;
+    margin: auto;
+    font-weight: bold;
+    font-size: 18px;
+    color: white
+}
+
+.textarea{
+    display: block;
+    padding: 25px 10px 5px 10px;
+    width: 400px;
+    height: 150px;
+    
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    background-color: transparent;
+    margin: auto;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.emailSubmit{
+    width: 425px;
+    margin: auto;
+}
+.submit{
+    width: 425px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 20px auto;
+    align-self: center;
+    color: white;
+
+}
+
+.submit:hover{
+    border: 1px dashed black;
+}
+
+
+
+
+
+
+/* working with social media link area of functional components */
+
+.socialLink{
+    padding: 25px 0;
+}
+.socialLink h2{
+    text-align: center;
+    margin-bottom: 85px ;
+   
+}
+.socialLinkFlexbox{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.socialLinkFlexItem{
+    flex: 10%;
+    margin: 5px;
+    display: block;
+    text-align: center;
+}
+
+.socialLinkFlexItem img{
+    max-width: 75px;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* working with main class part */
+
+.contactBody{
+    width: 100%;
+}
+
+
+
+/* banner section */
+
+
+.bannerParent{
+    width: 100%;
+    background-image: url("http://static.cloudpro.co.uk/sites/cloudprod7/files/hi%20tech%20background.jpg");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.bannerChild{
+    max-width: 800px;
+    margin: auto;
+    padding-top: 100px;
+}
+
+
+
+
+
+
+
+/* section class is used to take webpage in grid system */
+
+.section{
+    max-width: 1140px;
+    margin: 10px auto;
+    padding: 0 10px;
+    
+}

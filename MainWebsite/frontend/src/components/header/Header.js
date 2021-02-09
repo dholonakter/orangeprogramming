@@ -2,7 +2,7 @@
 import React, { Component } from 'react';  // importing react component to inherit our header class
 import styles from "./css/Header.module.css";  //importing css module 
 import {NavLink } from 'react-router-dom';   //importing react router to use navlink in navigation area
-
+// import ReactDOM  from 'react-dom';
 
 
 // navigation area for header section made with fucntional component //
@@ -38,6 +38,28 @@ function Navigation() {
 }
 
 // navigation area is finished//
+// var ck = 42;
+
+// function dm() {
+    
+//     var a =  window.scrollY;
+//     // document.getElementById("demo").innerHTML = a;
+//     var x = document.getElementById("demo");
+//     if(a <= 100){
+//          document.getElementById("demo").innerHTML = "flase";
+//         //  document.getElementById("demo").className
+//          ck = "woking";
+//     }
+//     else{
+//          document.getElementById("demo").innerHTML = "true";
+//          ck= "not";
+//     }
+// }
+
+
+
+
+
 
 
 
@@ -47,12 +69,31 @@ function Navigation() {
 
 class Header extends Component {
 
-   
+// this arrow function is responsible for changing the backgronud with scrolling
+     changingBackground = () => {
+    
+        var a =  window.scrollY;
+        if(a <= 100){
+             this.setState({scrolled:styles.main})
+            
+        }
+        else{
+            this.setState({scrolled:styles.main_scrolled})
+            
+        }
+    }
+
+
+  
+
+    
     constructor(){
 
         super()
         this.state={
-            scrolled: styles.main
+            scrolled: styles.main,
+            name: 5
+          
         }
 
       
@@ -61,9 +102,13 @@ class Header extends Component {
     
 
 
+
     render() {
+
+    document.addEventListener("scroll", this.changingBackground)
         return (
-            <div  className={ this.state.scrolled}>
+            <div id="m "  className={ this.state.scrolled}>
+
                 <div className={styles.container}>
                     <div className={styles.row}>
                         <div className={styles.logo}> 
@@ -72,6 +117,7 @@ class Header extends Component {
                         <div className={styles.nav}> {Navigation()}</div>
                        
                     </div>
+                    
                 </div>    
             </div>
         );
