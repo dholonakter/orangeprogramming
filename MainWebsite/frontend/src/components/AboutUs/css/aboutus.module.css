@@ -59,7 +59,7 @@
 .storyRow{
 
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     margin-top: 15px;
 }
 .storyPara{
@@ -100,15 +100,25 @@
 /* working with our team area */
 
 
-
+.teamMainBody{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.teamSubMainBody{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .TeamBody{
-    max-width: 250px;
-    max-height: 500px;
+    width: 50%;
+    /* max-height: 500px; */
     box-shadow: 0px 0px 10px gray;
     overflow: hidden;
+    margin: 5px 10px;
 }
 .TeamImage{
-    max-width: 250px;
+    max-width: 100%;
     height: 400px ;
 }
 .TeamText{
@@ -123,7 +133,43 @@
 
 
 
+@media only screen and (max-width: 767px){
+    .storyRow{
+        flex-direction: column-reverse;
+    }
+    .storyLogo{
+        max-width: 100%;
+        justify-content: center;
+    }
+    .storyLogo .img{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .img img{
+        height: 100px;
+        width: 150px;
+    }
+    .storyPara{
+        max-width: 100%;
+    }
+    .storyPara h3{
+        text-align: center;
+    }
 
+
+
+
+
+
+
+    /*  */
+    .teamMainBody{
+        display: block;
+    }
+
+
+}
 
 
 

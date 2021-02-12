@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from "./components/header/Header";
+import Header from "./components/Header/Header";
 import { BrowserRouter } from 'react-router-dom';
 import Footer from "./components/Footer/Footer";
-import AboutUs from "./components/AboutUs/AboutUs";
-import ContactUs from "./components/ContactUs/ContactUs";
+import Router from './components/Router';
+
 
 function App() {
   return (
@@ -12,8 +12,9 @@ function App() {
      
       <BrowserRouter>
         <Header/>
-        {/* <AboutUs/> */}
-        <ContactUs/>
+        
+        <Router/>
+
         <Footer/>
       </BrowserRouter>
       

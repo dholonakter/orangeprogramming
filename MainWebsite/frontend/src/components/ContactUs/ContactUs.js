@@ -2,25 +2,6 @@ import React, { Component } from 'react'; //importing react component to inherit
 import contactStyles from './css/ContactUs.module.css'; //importing css file as contactStyles
 import {Link } from 'react-router-dom';
 
-// demo 
-
-
-
-
-
-
-// function dm() {
-    
-//     var a =  window.scrollY;
-//     document.getElementById("demo").innerHTML = a;
-//     if(a >= 100){
-//          document.getElementById("demo").innerHTML = "true";
-//     }
-//     else{
-//          document.getElementById("demo").innerHTML = "flase";
-//     }
-// }
-
 
 
 
@@ -32,8 +13,6 @@ import {Link } from 'react-router-dom';
 function Banner() {
     return(
         <div className={contactStyles.bannerBody}>
-            {/* <img src="#"></img> */}
-            {/* <Email/> */}
 
             <div className={contactStyles.bannerParent}>
                         
@@ -110,13 +89,19 @@ function SocialMedia() {
         <div>
                         <div className={contactStyles.socialLink}>
                             <h2>Find us In Social Media</h2>
-                            <div className={contactStyles.socialLinkFlexbox}>
-                                <div className={contactStyles.socialLinkFlexItem} > <Link to="#"><img src="/AddedIcon/facebook.png"></img></Link>  </div> 
-                                <div className={contactStyles.socialLinkFlexItem} > <Link to="#"><img src="/AddedIcon/instagram.png"></img></Link>  </div>
-                                <div className={contactStyles.socialLinkFlexItem} > <Link to="#"><img src="/AddedIcon/linkedin.png"></img></Link>  </div>
-                                <div className={contactStyles.socialLinkFlexItem} > <Link to="#"><img src="/AddedIcon/pinterest.png"></img></Link>  </div>
-                                <div className={contactStyles.socialLinkFlexItem} > <Link to="#"><img src="/AddedIcon/telegram.png"></img></Link>  </div>
-                                <div className={contactStyles.socialLinkFlexItem} > <Link to="#"><img src="/AddedIcon/twitter(1).png"></img></Link>  </div>
+                            <div className={contactStyles.socialLinkMain}>
+                                <div className={contactStyles.socialLinkFlexbox}>
+                                    <div className={contactStyles.socialLinkFlexItem} > <Link to="#"><img src="/AddedIcon/facebook.png"></img></Link>  </div> 
+                                    <div className={contactStyles.socialLinkFlexItem} > <Link to="#"><img src="/AddedIcon/instagram.png"></img></Link>  </div>
+                                    <div className={contactStyles.socialLinkFlexItem} > <Link to="#"><img src="/AddedIcon/linkedin.png"></img></Link>  </div>
+                               
+                                </div>
+                                <div className={contactStyles.socialLinkFlexbox}>
+                                    <div className={contactStyles.socialLinkFlexItem} > <Link to="#"><img src="/AddedIcon/pinterest.png"></img></Link>  </div>
+                                    <div className={contactStyles.socialLinkFlexItem} > <Link to="#"><img src="/AddedIcon/telegram.png"></img></Link>  </div>
+                                    <div className={contactStyles.socialLinkFlexItem} > <Link to="#"><img src="/AddedIcon/twitter(1).png"></img></Link>  </div>
+                                
+                                </div>
                                 
                             </div>
                         </div>
@@ -133,10 +118,6 @@ class ContacUs extends Component {
                         <Banner/>
                         
                     </div>
-                    {/* <div id="demo">
-                        
-                       {document.addEventListener("scroll",dm)}
-                    </div> */}
                     <div className={contactStyles.section}>
                         <ContactInfo/>
                     </div>

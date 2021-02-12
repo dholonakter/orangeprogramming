@@ -48,19 +48,85 @@ function OurStory(){
 
 function Specialist(){
     return(
-        <div className={aboutusStyles.TeamBody}>
-            <div >
-                <div>
-                    <img src="https://cdn2.lamag.com/wp-content/uploads/sites/6/2019/11/palm-trees-lean-los-angeles-daniel-schludi-t6JpiIWLLp8-unsplash-1068x712.jpg" className={aboutusStyles.TeamImage}></img>
+        <div className={aboutusStyles.teamMainBody}>
+            <div className={aboutusStyles.teamSubMainBody}>
+            <div className={aboutusStyles.TeamBody}>
+                <div >
+                    <div>
+                        <img src="https://cdn2.lamag.com/wp-content/uploads/sites/6/2019/11/palm-trees-lean-los-angeles-daniel-schludi-t6JpiIWLLp8-unsplash-1068x712.jpg" className={aboutusStyles.TeamImage}></img>
+                    </div>
+                </div>
+
+                <div className={aboutusStyles.TeamText}>
+                    <p>
+                        some thing about this personsome thing about this personsome thing about this personsome thing about this person
+                    </p>
+                </div>
+            </div>
+            <div className={aboutusStyles.TeamBody}>
+                <div >
+                    <div>
+                        <img src="https://cdn2.lamag.com/wp-content/uploads/sites/6/2019/11/palm-trees-lean-los-angeles-daniel-schludi-t6JpiIWLLp8-unsplash-1068x712.jpg" className={aboutusStyles.TeamImage}></img>
+                    </div>
+                </div>
+
+                <div className={aboutusStyles.TeamText}>
+                    <p>
+                        some thing about this personsome thing about this personsome thing about this personsome thing about this person
+                    </p>
+                </div>
+            </div>
+            </div>
+
+
+
+
+            
+            <div className={aboutusStyles.teamSubMainBody}>
+            <div className={aboutusStyles.TeamBody}>
+                <div >
+                    <div>
+                        <img src="https://cdn2.lamag.com/wp-content/uploads/sites/6/2019/11/palm-trees-lean-los-angeles-daniel-schludi-t6JpiIWLLp8-unsplash-1068x712.jpg" className={aboutusStyles.TeamImage}></img>
+                    </div>
+                </div>
+
+                <div className={aboutusStyles.TeamText}>
+                    <p>
+                        some thing about this personsome thing about this personsome thing about this personsome thing about this person
+                    </p>
                 </div>
             </div>
 
-            <div className={aboutusStyles.TeamText}>
-                <p>
-                    some thing about this personsome thing about this personsome thing about this personsome thing about this person
-                </p>
+            <div className={aboutusStyles.TeamBody}>
+                <div >
+                    <div>
+                        <img src="https://cdn2.lamag.com/wp-content/uploads/sites/6/2019/11/palm-trees-lean-los-angeles-daniel-schludi-t6JpiIWLLp8-unsplash-1068x712.jpg" className={aboutusStyles.TeamImage}></img>
+                    </div>
+                </div>
+
+                <div className={aboutusStyles.TeamText}>
+                    <p>
+                        some thing about this personsome thing about this personsome thing about this personsome thing about this person
+                    </p>
+                </div>
             </div>
+
+            </div>
+            
+
+
+
+
+            
+
+
+
+
+
+
+
         </div>
+        
     );
 }
 

@@ -54,7 +54,7 @@
 .emailBody{
     margin: auto;
     background-color: rgba(18, 66, 104,0.8);
-    width: 700px;
+    max-width: 700px;
 }
 .emailBody h2{
     margin: 0;
@@ -113,7 +113,7 @@
 }
 
 .submit:hover{
-    border: 1px dashed black;
+    border: 1px dashed #fff;
 }
 
 
@@ -125,6 +125,15 @@
 
 .socialLink{
     padding: 25px 0;
+    
+}
+.socialLinkMain{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: hidden;
 }
 .socialLink h2{
     text-align: center;
@@ -133,8 +142,10 @@
 }
 .socialLinkFlexbox{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     overflow: hidden;
+    flex: 50%;
 }
 .socialLinkFlexItem{
     flex: 10%;
@@ -180,7 +191,7 @@
 .bannerChild{
     max-width: 800px;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 200px;
 }
 
 
@@ -196,4 +207,54 @@
     margin: 10px auto;
     padding: 0 10px;
     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tablet screen */
+
+@media only screen and (max-width: 767px){
+    .contactInfoBody{
+        display: block;
+    }
+    .contactInfoMap{
+        margin: auto;
+    }
+    .contactInfoItem2Body h2{
+        text-align: center;
+    }
+}
+
+
+/* mobile screen */
+
+@media only screen and (max-width: 599px){
+    .socialLinkMain{
+        display: block;
+        justify-content: center;
+    }
+    .emailBody form .input{
+        width: 250px;
+       
+    }
+    .textarea{
+        width: 250px;
+    }
+    .emailSubmit{
+        width: 250px;
+    }
+    .submit{
+        width: 250px;
+    }
 }
