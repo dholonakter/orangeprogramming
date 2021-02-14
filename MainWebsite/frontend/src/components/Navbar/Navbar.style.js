@@ -1,17 +1,29 @@
 import styled from "styled-components";
 
+export const NavWrap = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: ${({ navBar }) => (navBar ? "#173857" : "")};
+  box-shadow: ${({ navBar }) =>
+    navBar ? "0 1px 6px 0 rgb(32 33 36 / 28%)" : ""};
+  transition: all 0.5s;
+  margin: 35px auto;
+
+  @media (max-width: 768px) {
+    padding: 2px 0; 
+  }
+`;
+
 export const Nav = styled.div`
+  margin: 0 auto;
   width: 100%;
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
   width: 80vw;
-  margin: 0 auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 15px 0;
+  padding: ${({ navBar }) => (navBar ? "5px 0" : "15px 0")};
 
   @media (max-width: 1000px) {
     width: 90vw;
@@ -19,9 +31,22 @@ export const Nav = styled.div`
 `;
 
 export const NavLogo = styled.img`
-  width: 184px;
+  width: ${({ navBar }) => (navBar ? "130px" : "160px")};
+  transition: all 0.5s;
 
   @media (max-width: 1200px) {
-    width: 150px;
+    width: 140px;
+  }
+  @media (max-width: 768px) {
+    width: 120px;
+  }
+`;
+
+export const NavIconWrap = styled.span`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: inline;
+    padding-right: 3%;
   }
 `;

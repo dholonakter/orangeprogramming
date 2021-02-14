@@ -1,12 +1,18 @@
 import styled from "styled-components"
 export const PrimaryButton = styled.button`
-background: #F0671F;
+background: transparent;
+border:2px solid #F0671F;
+border-radius:3px;
 color: #fff;
-border: none;
 outline: none;
-padding: 15px 5px;
+padding: 13px 5px;
 display:block;
 font-family: 'Montserrat', sans-serif;
-font-weight: bold;
 font-size: 14px;
+transition: all 0.3s;
+&:hover{
+    background:#F0671F;
+    cursor: pointer;
+}
+
 `

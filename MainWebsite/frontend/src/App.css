@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     width: 100% ;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-.slick-prev, .slick-next{
-    display: none !important;
-  }
