@@ -45,8 +45,12 @@ const Footer = () => {
               <p>Linked</p>
             </FooterContentWrap>
           </FooterWrapContainer>
+          <br />
+          <br/>
+         <hr/>
+        <small>Copyright © Orange-Programming. All Rights Reserved</small> 
         </Container>
-        <small>Copyright © Orange-Programming. All Rights Reserved</small>
+        
       </FooterContainerWrap>
     </>
   );

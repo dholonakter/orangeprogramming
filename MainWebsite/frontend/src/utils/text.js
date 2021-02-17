@@ -10,6 +10,7 @@ export const TitleText = styled.div`
 font-size:16px;
 font-weight: 700;
 width: fit-content;
+color: ${({white}) => white ? "#fff" : "#173857"};
 `
 export const NormalText = styled.div`
 font-size:12px;

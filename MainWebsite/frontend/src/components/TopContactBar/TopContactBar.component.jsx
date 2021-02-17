@@ -27,7 +27,7 @@ const TopContactBar = () => {
             <span>info@orange-programming.com</span>{" "}
           </p>
           <p>
-            <FontAwesomeIcon icon={faPhoneSquare} /> <span>+33 XXXXXXXX</span>
+            <FontAwesomeIcon icon={faPhoneSquare} /> <span>+31 6 87258021</span>
           </p>
           <div>
             <FontAwesomeIcon icon={faFacebook} size="2x" />

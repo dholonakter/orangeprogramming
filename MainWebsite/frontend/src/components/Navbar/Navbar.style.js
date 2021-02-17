@@ -2,14 +2,16 @@ import styled from "styled-components";
 
 export const NavWrap = styled.div`
   position: fixed;
+  z-index:10;
   top: 0;
   left: 0;
   right: 0;
   background: ${({ navBar }) => (navBar ? "#173857" : "")};
   box-shadow: ${({ navBar }) =>
     navBar ? "0 1px 6px 0 rgb(32 33 36 / 28%)" : ""};
-  transition: all 0.5s;
-  margin: 35px auto;
+  transition: all 0.3s;
+  padding:5px 0;
+  margin: ${({ navBar }) => (navBar ? "0 auto" : "35px auto")};
 
   @media (max-width: 768px) {
     padding: 2px 0; 

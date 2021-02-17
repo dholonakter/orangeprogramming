@@ -1,4 +1,5 @@
 import {
+  faArrowRight,
   faBriefcase,
   faHome,
   faImage,
@@ -18,7 +19,7 @@ const NavItems = styled.ul`
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
-  width: 60%;
+  width: 65%;
 
   @media (max-width: 1200px) {
     width: 70%;
@@ -103,7 +104,7 @@ const RightNav = ({ open }) => {
         </NavIconWrap>{" "}
         GALLERY
       </li>
-      <PrimaryButton>CONTACT US</PrimaryButton>
+      <PrimaryButton>CONTACT US &nbsp;  <FontAwesomeIcon icon={faArrowRight} /></PrimaryButton>
     </NavItems>
   );
 };
