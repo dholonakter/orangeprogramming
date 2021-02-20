@@ -1,6 +1,7 @@
 import React, { Component } from 'react'; //importing react component to inherit ContactUs class
 import contactStyles from './css/ContactUs.module.css'; //importing css file as contactStyles
 import {Link } from 'react-router-dom';
+import map from './map.jpeg'
 
 
 
@@ -34,7 +35,7 @@ function ContactInfo() {
             <div className={contactStyles.contactInfoItem1}>
                 <div className={contactStyles.contactInfoMap}>
 
-                 map area
+                    <img src={map}></img>
 
                 </div>
             </div>
