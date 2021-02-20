@@ -1,268 +1,168 @@
-/* working with banner part */
-
-.bannerBody{
-    width: 100%;
-    background-color: rgb(56, 170, 164);
-}
 
 
 
-
-
-
-/* woking with contactInfo fucntional component */
-
-.contactInfoBody{
-    display: flex;
-    flex-direction: row;
-}
-.contactInfoItem1{
-    flex: 60%;
-    overflow: hidden;
-    padding: 0 5px;
-}
-.contactInfoItem2{
-    flex: 40%;
-    padding: 0 5px;
-}
-.contactInfoMap{
-    height: 425px;
-    width: 425px;
-    border-radius: 100%;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px gray;
-
-}
-.contactInfoItem2Body{
-    float: right;
-    padding-right: 10px;
-}
-.contactInfoItem2Body h2{
-    font-size: 25px;
-    margin-left: 0 ;
-}
-.contactInfoItem2Body p{
-    font-size: 20px;
-}
-
-
-
-
-
-
-
-
-/* working with Email form section  functional components*/
-
-
-.emailBody{
-    margin: auto;
-    background-color: rgba(18, 66, 104,0.8);
-    max-width: 700px;
-}
-.emailBody h2{
-    margin: 0;
-    text-align: center;
-    color: white;
-    
-}
-.emailBody form{
-    margin: auto;
-    padding: 50px 0 50px 0;
-}
-.emailBody form .input{
-    border: none;
-    border-bottom: 1px solid white;
-    display: block;
-    padding: 25px 10px 5px 10px;
-    width: 400px;
-    background-color: transparent;
-    margin: auto;
-    font-weight: bold;
-    font-size: 18px;
-    color: white
-}
-
-.textarea{
-    display: block;
-    padding: 25px 10px 5px 10px;
-    width: 400px;
-    height: 150px;
-    
-    border: none;
-    border-bottom: 1px solid white;
-    color: white;
-    background-color: transparent;
-    margin: auto;
-    margin-top: 20px;
-    font-weight: bold;
-    font-size: 15px;
-}
-.emailSubmit{
-    width: 425px;
-    margin: auto;
-}
-.submit{
-    width: 425px;
-    height: 40px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 5px;
-    margin: 20px auto;
-    align-self: center;
-    color: white;
-
-}
-
-.submit:hover{
-    border: 1px dashed #fff;
-}
-
-
-
-
-
-
-/* working with social media link area of functional components */
-
-.socialLink{
-    padding: 25px 0;
-    
-}
-.socialLinkMain{
-    display: flex;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    overflow: hidden;
-}
-.socialLink h2{
-    text-align: center;
-    margin-bottom: 85px ;
-   
-}
-.socialLinkFlexbox{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    overflow: hidden;
-    flex: 50%;
-}
-.socialLinkFlexItem{
-    flex: 10%;
-    margin: 5px;
-    display: block;
-    text-align: center;
-}
-
-.socialLinkFlexItem img{
-    max-width: 75px;
-    margin: auto;
-    text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-/* working with main class part */
-
-.contactBody{
-    width: 100%;
-}
-
-
-
-/* banner section */
-
-
-.bannerParent{
-    width: 100%;
-    background-image: url("http://static.cloudpro.co.uk/sites/cloudprod7/files/hi%20tech%20background.jpg");
-    background-position: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-}
-.bannerChild{
-    max-width: 800px;
-    margin: auto;
-    padding-top: 200px;
-}
-
-
-.bannerBody img{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-}
-
-
-
-
-/* section class is used to take webpage in grid system */
-
+/* section is a common class for every div which should follow grid system */
 .section{
     max-width: 1140px;
-    margin: 10px auto;
-    padding: 0 10px;
+    margin: 10px auto auto auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* working with our story part */
+
+
+
+.stroyContainer{
+    max-width: 1140px;
+    margin: auto;
+    padding: 0px 10px;
+    overflow: hidden;
+    display: block;
+    padding-top: 200px;
+
+}
+
+.storyRow{
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.storyPara{
+    flex: 0 0 75%;
+    max-width: 75%;
+    float: left;
+}
+.storyPara p{
+    text-align:justify;
+}
+.storyLogo{
+    flex: 0 0 25%;
+    max-width: 25%;
+ 
     
 }
+.img{
+    padding: 25px 0 0 15px;
+    margin: auto;
+    float: right;
+    overflow: hidden;
+}
+
+
+.img img{
+    width: 100%;
+    margin: 50px 0 0 0;
+}
+
+
+
+/* working with our group photo area */
+
+
+ .groupPhoto{
+    max-width: 1140px;
+    padding: 0px 10px;
+
+  
+
+}
+
+
+
+/* working with our team area */
+
+
+.teamMainBody{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.teamSubMainBody{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.TeamBody{
+    width: 50%;
+    /* max-height: 500px; */
+    box-shadow: 0px 0px 10px gray;
+    overflow: hidden;
+    margin: 5px 10px;
+}
+.TeamImage{
+    max-width: 100%;
+    height: 400px ;
+}
+.TeamText{
+    padding: 5px;
+    text-align: justify;
+    font-size: 13px;
+}
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-/* tablet screen */
 
 @media only screen and (max-width: 767px){
-    .contactInfoBody{
-        display: block;
+    .stroyContainer{
+        padding-top: 50px;
     }
-    .contactInfoMap{
-        margin: auto;
+    .storyRow{
+        flex-direction: column-reverse;
     }
-    .contactInfoItem2Body h2{
-        text-align: center;
-    }
-}
-
-
-/* mobile screen */
-
-@media only screen and (max-width: 599px){
-    .socialLinkMain{
-        display: block;
+    .storyLogo{
+        max-width: 100%;
         justify-content: center;
     }
-    .emailBody form .input{
-        width: 250px;
-       
+    .storyLogo .img{
+        float: none;
+        display: block;
+        text-align: center;
     }
-    .textarea{
-        width: 250px;
+    .img{
+        
+        padding-left: 0px;
     }
-    .emailSubmit{
-        width: 250px;
+    .storyPara{
+        max-width: 100%;
     }
-    .submit{
-        width: 250px;
+    .storyPara h3{
+        text-align: center;
     }
+
+
+
+
+
+    /*  */
+    .teamMainBody{
+        display: block;
+    }
+
+
 }
+
+
+
+
+
+
+
+
