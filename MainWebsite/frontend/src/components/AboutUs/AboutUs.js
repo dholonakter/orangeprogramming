@@ -2,23 +2,6 @@ import React, { Component } from 'react';  //importing react component to inheri
 import aboutusStyles from "./css/aboutus.module.css";  // imporitn css file as aboutusStyles
 
 
-
-
-// this function is responsible for banner area //
-
-function Banner() {
-    return(
-        <div className={aboutusStyles.bannerBody} >
-                <h1 className={aboutusStyles.bannerAlerm}>this area is under development</h1>
-                <img src="#"></img>
-        </div>
-    );
-}
-
-
-
-
-
 // this function is for our story section
 function OurStory(){
     return(
@@ -33,7 +16,7 @@ function OurStory(){
                     </div>
                     <div className={aboutusStyles.storyLogo}>
                         <div className={aboutusStyles.img}>
-                            <img src="/logo192.png" alt="logo"></img>
+                            <img src="/logo.jpeg" alt="logo"></img>
                         </div>
                     </div>
                 </div>
@@ -112,19 +95,6 @@ function Specialist(){
             </div>
 
             </div>
-            
-
-
-
-
-            
-
-
-
-
-
-
-
         </div>
         
     );
@@ -143,7 +113,6 @@ class AboutUs extends Component {
         return (
             <div>
                 <div className={aboutusStyles.aboutUs_body}>
-                    <div>{Banner()}</div>
                     <div className={aboutusStyles.section}>{OurStory()}</div>
                     <div className={aboutusStyles.section}>
                         <img className={aboutusStyles.groupPhoto} src="https://greatpeopleinside.com/wp-content/uploads/2019/11/team-building.jpg" alt="our team"></img>
