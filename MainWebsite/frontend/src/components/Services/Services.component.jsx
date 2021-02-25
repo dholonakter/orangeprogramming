@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "../../utils/container";
-import { HeaderText, NormalText, TitleText } from "../../utils/text";
+import { HeaderText, small, h5 } from "../../utils/text";
 import { ServiceCard, ServicesCardConatiner } from "./Services.style";
 import webIcon from "../../assets/images/icons/web-app-icon.png";
 import mobAppIcon from "../../assets/images/icons/android-ios-icon.png";
@@ -17,34 +17,39 @@ const Services = () => {
         <HeaderText>Services that we provide</HeaderText>
         <SmallBorderBottom />
         <ServicesCardConatiner>
+
           <ServiceCard>
             <img src={webIcon} alt="" />
-            <TitleText>Web Application</TitleText>
-            <NormalText>
+            <h5>Web Application</h5>
+            <small>
               Stay ahead of the game with tailor-made mobile and web apps
-            </NormalText>
+            </small>
           </ServiceCard>
+
           <ServiceCard>
             <img src={mobAppIcon} alt="" />
-            <TitleText>Android/IOS Application</TitleText>
-            <NormalText>
+            <h5>Android/IOS Application</h5>
+            <small>
               Stay ahead of the game with tailor-made mobile and web apps
-            </NormalText>
+            </small>
           </ServiceCard>
+
           <ServiceCard>
             <img src={aiIcon} alt="" />
-            <TitleText>Artificial Intelligence</TitleText>
-            <NormalText>
+            <h5>Artificial Intelligence</h5>
+            <small>
               Stay ahead of the game with tailor-made mobile and web apps
-            </NormalText>
+            </small>
           </ServiceCard>
+
           <ServiceCard>
             <img src={cloudStoreIcon} alt="" />
-            <TitleText>Cloud Service</TitleText>
-            <NormalText>
+            <h5>Cloud Service</h5>
+            <small>
               Stay ahead of the game with tailor-made mobile and web apps
-            </NormalText>
+            </small>
           </ServiceCard>
+          
         </ServicesCardConatiner>
       </Container>
     </>

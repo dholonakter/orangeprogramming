@@ -2,7 +2,6 @@ import {
   faArrowRight,
   faBriefcase,
   faHome,
-  faImage,
   faImages,
   faInfoCircle,
   faLaptopCode,
@@ -11,7 +10,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styled from "styled-components";
 import { PrimaryButton } from "../../utils/buttons";
-import { NavIconWrap } from "./Navbar.style";
 
 const NavItems = styled.ul`
   list-style: none;
@@ -33,7 +31,6 @@ const NavItems = styled.ul`
     cursor: pointer;
     font-size: 14px;
     font-weight: 300;
-    text-align: center;
     &::after {
       content: "";
       display: block;
@@ -45,9 +42,25 @@ const NavItems = styled.ul`
     }
 
     &:hover::after {
-      width: 70%;
+      width: 100%;
+    }
+
+    .d-none {
+      @media (min-width: 768px) {
+        display: none;
+      }
     }
   }
+
+  button {
+    @media (max-width: 1450px) {
+      font-size: 11px;
+    }
+    @media (max-width: 1180px) {
+      font-size: 10px;
+    }
+  }
+
   @media (max-width: 768px) {
     justify-content: center;
     flex-flow: column nowrap;
@@ -58,7 +71,6 @@ const NavItems = styled.ul`
     top: 0;
     right: 0;
     height: 100vh;
-    padding: 10%;
     width: 300px;
 
     li {
@@ -75,36 +87,25 @@ const RightNav = ({ open }) => {
   return (
     <NavItems open={open}>
       <li>
-        <NavIconWrap>
-          <FontAwesomeIcon icon={faHome} />{" "}
-        </NavIconWrap>
-        HOME
+        <FontAwesomeIcon icon={faHome} className="d-none" /> &nbsp;HOME
       </li>
       <li>
-        <NavIconWrap>
-          <FontAwesomeIcon icon={faBriefcase} />{" "}
-        </NavIconWrap>{" "}
-        SERVICES
+        <FontAwesomeIcon icon={faBriefcase} className="d-none" /> &nbsp;SERVICES
       </li>
       <li>
-        <NavIconWrap>
-          <FontAwesomeIcon icon={faLaptopCode} />{" "}
-        </NavIconWrap>{" "}
-        PROJECTS
+        <FontAwesomeIcon icon={faLaptopCode} className="d-none" />{" "}
+        &nbsp;PROJECTS
       </li>
       <li>
-        <NavIconWrap>
-          <FontAwesomeIcon icon={faInfoCircle} />{" "}
-        </NavIconWrap>{" "}
-        ABOUT US
+        <FontAwesomeIcon icon={faInfoCircle} className="d-none" /> &nbsp;ABOUT
+        US
       </li>
       <li>
-        <NavIconWrap>
-          <FontAwesomeIcon icon={faImages} />{" "}
-        </NavIconWrap>{" "}
-        GALLERY
+        <FontAwesomeIcon icon={faImages} className="d-none" /> &nbsp;GALLERY
       </li>
-      <PrimaryButton>CONTACT US &nbsp;  <FontAwesomeIcon icon={faArrowRight} /></PrimaryButton>
+      <PrimaryButton>
+        CONTACT US &nbsp; <FontAwesomeIcon icon={faArrowRight} />
+      </PrimaryButton>
     </NavItems>
   );
 };

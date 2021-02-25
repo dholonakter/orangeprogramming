@@ -24,11 +24,11 @@ const ContactSection = () => {
           <SmallBorderBottom />
           <ContactSectionContainer>
             <div className="left">
-              <HeaderText white>
+              <h1>
                 Send us details about <br /> your project !
-              </HeaderText>
+              </h1>
               <br />
-              <TitleText white>We’d Love To Hear From You</TitleText>
+              <h4 white>We’d Love To Hear From You</h4>
               <br />
               <p>
                 Get Custom Solutions, Recommendations, Resumes, or, Estimates.
@@ -54,7 +54,7 @@ const ContactSection = () => {
                 <br />
                 <input placeholder="Company *" type="text" />
                 <br />
-                <input placeholder="Email *" type="password" />
+                <input placeholder="Email *" type="email" />
                 <br />
                 <textarea placeholder="Description *" rows="3" />
                 <br />

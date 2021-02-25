@@ -12,20 +12,19 @@ export const BannerContainer = styled.div`
     url(${img});
   background-size: cover;
   background-position: center;
-  
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   text-align: center;
-  color:#fff;
+  color: #fff;
 
- h1{
-     font-weight:100;
-     font-size: 4.3vw;
+  h1 {
+    font-weight: 100;
+    font-size: 4.3vw;
+    margin: 0 auto;
 
-     span{
-         font-weight:900;
-         
-     }
- }
+    span {
+      font-weight: 900;
+    }
+  }
 `;

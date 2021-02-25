@@ -15,22 +15,58 @@ export const ContactSectionContainer = styled.div`
   display: flex;
   justify-content: space-between;
   border: 1px solid lightgray;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
   .left {
     width: 50%;
     background: #173857;
-    padding: 8% 5%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5%;
+
+    @media (max-width: 768px) {
+    padding: 5%;
+      width: 100%;
+    }
 
     hr {
       display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid grey;
-    margin: 5% 0;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid grey;
+      margin: 5% 0;
+    }
+
+    h1 {
+      font-size: 30px;
+      @media (max-width: 1100px) {
+        font-size: 25px;
+      }
+      @media (max-width: 950px) {
+        font-size: 20px;
+      }
+    }
+    h4 {
+      font-size: 20px;
+      @media (max-width: 1100px) {
+        font-size: 16px;
+      }
+      @media (max-width: 950px) {
+        font-size: 14px;
+      }
     }
 
     p {
-      color: #fff;
       font-weight: 300;
+      font-size: 14px;
+      @media (max-width: 950px) {
+        font-size: 12px;
+      }
     }
   }
 
@@ -39,7 +75,10 @@ export const ContactSectionContainer = styled.div`
     height: 100%;
     overflow: hidden;
     padding: 5% 0;
-
+    @media (max-width: 768px) {
+      width: 100%;
+      
+    }
     form {
       text-align: center;
       width: 80%;

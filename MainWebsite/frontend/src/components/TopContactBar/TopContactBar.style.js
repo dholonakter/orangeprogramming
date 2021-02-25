@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const TopContactBarContainerWrap = styled.div`
   background: #f0671f;
-  position: fixed;
   border-bottom: 1px solid #fff;
 `;
 
@@ -19,6 +18,7 @@ export const TopContactBarContainer = styled.div`
     flex-direction: column;
     justify-content: space-around;
     padding: 1% 0;
+    align-items: flex-start;
   }
 
   p {
@@ -35,6 +35,9 @@ export const TopContactBarContainer = styled.div`
 
     @media (max-width: 560px) {
       font-size: 10px;
+    }
+    @media (max-width: 400px) {
+      font-size: 8px;
     }
 
     span {
@@ -54,9 +57,9 @@ export const TopContactBarContainer = styled.div`
     font-size: 10px;
     color: #fff;
 
-    @media (max-width: 1000px) {
+    /* @media (max-width: 1000px) {
       width: 55%;
-    }
+    } */
 
     @media (max-width: 768px) {
       font-size: 10px;

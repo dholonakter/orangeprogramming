@@ -22,7 +22,7 @@ const Navbar = () => {
       <NavWrap navBar={navBar}>
         <Nav className="active" navBar={navBar}>
           <NavLogo src={logo} alt="orange-programming" navBar={navBar}/>
-          <Hamburger />
+          <Hamburger navBar={navBar}/>
         </Nav>
       </NavWrap>
     </>

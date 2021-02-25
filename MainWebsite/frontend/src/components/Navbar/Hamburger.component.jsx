@@ -5,12 +5,13 @@ import RightNav from "./RightNav.component";
 const StyledHamburger = styled.div`
   width: 2rem;
   height: 2rem;
-  position: fixed;
-  top: 55px;
-  right: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
   z-index: 20;
   display: none;
-  
+
   @media (max-width: 768px) {
     display: flex;
     justify-content: space-around;
@@ -36,9 +37,9 @@ const StyledHamburger = styled.div`
   }
 `;
 
-const Hamburger = () => {
+const Hamburger = ({ navBar }) => {
   const [open, setOpen] = useState(false);
-
+  console.log(navBar);
   return (
     <>
       <StyledHamburger open={open} onClick={() => setOpen(!open)}>

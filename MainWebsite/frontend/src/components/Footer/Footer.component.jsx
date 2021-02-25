@@ -1,11 +1,24 @@
 import React from "react";
 import { Container } from "../../utils/container";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   FooterContainerWrap,
   FooterContentWrap,
+  FooterIconContainer,
+  FooterIconWrap,
   FooterWrapContainer,
+  Newslatter,
 } from "./Footer.style";
 import logo from "../../assets/images/logo.png";
+import {
+  faFacebook,
+  faInstagram,
+  faTwitter,
+  faYoutube,
+  faLinkedin,
+  faFacebookF,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -13,9 +26,7 @@ const Footer = () => {
       <FooterContainerWrap>
         <Container>
           <FooterWrapContainer>
-            <FooterContentWrap>
-              <img src={logo} alt="" />
-            </FooterContentWrap>
+            <img src={logo} alt="" />
             <FooterContentWrap>
               <h4>Service</h4>
               <p>Web Application</p>
@@ -37,20 +48,37 @@ const Footer = () => {
               <p>ISO</p>
               <p>Web</p>
             </FooterContentWrap>
-            <FooterContentWrap>
-              <h4>Contact</h4>
-              <p>Facebook</p>
-              <p>Twitter</p>
-              <p>Instagram</p>
-              <p>Linked</p>
-            </FooterContentWrap>
+            <Newslatter>
+              <form action="">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our newsletter to get instant news.</p>
+                <input type="text" placeholder="email" />
+                <button>Signup</button>
+              </form>
+              <FooterIconContainer>
+                <FooterIconWrap>
+                  <FontAwesomeIcon icon={faFacebookF} size="2x" />
+                </FooterIconWrap>
+                <FooterIconWrap>
+                  <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
+                </FooterIconWrap>
+                <FooterIconWrap>
+                  <FontAwesomeIcon icon={faInstagram} size="2x" />
+                </FooterIconWrap>
+                <FooterIconWrap>
+                  <FontAwesomeIcon icon={faTwitter} size="2x" />
+                </FooterIconWrap>
+                <FooterIconWrap>
+                  <FontAwesomeIcon icon={faYoutube} size="2x" />
+                </FooterIconWrap>
+              </FooterIconContainer>
+            </Newslatter>
           </FooterWrapContainer>
           <br />
-          <br/>
-         <hr/>
-        <small>Copyright © Orange-Programming. All Rights Reserved</small> 
+          <br />
+          <hr />
+          <small>Copyright © Orange-Programming. All Rights Reserved</small>
         </Container>
-        
       </FooterContainerWrap>
     </>
   );

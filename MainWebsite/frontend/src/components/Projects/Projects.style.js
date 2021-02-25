@@ -4,40 +4,51 @@ export const ProjectContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+
 `;
 
 export const ProjectCard = styled.div`
   position: relative;
-cursor: pointer;
+  cursor: pointer;
   width: 32%;
-  height:auto;
+  height: auto;
+  background-color:red;
+
+  @media (max-width: 768px) {
+    width: 49%;
+  }
+
+  @media (max-width: 560px) {
+    width: 100%;
+  }
 
   img {
     width: 100%;
-    height:100% ;
-
-    
+    height: 100%;
+    display:flex;
   }
-.img__title{
+  .img__title {
     position: absolute;
     top: 0;
     left: 0;
-    z-index:1; 
+    z-index: 1;
     padding: 5%;
     color: #fff;
 
-    small{
-        position:absolute;
-        top: 25px;
-        right:20px;
-        font-weight:600;
-        width:100%;
-        text-align:right;
-        color: #F0671F;
-    }
+h2{
+  font-size:22px;
 }
+
+    small {
+      font-weight: 600;
+      width: 100%;
+      text-align: right;
+      color: #f0671f;
+    }
+  }
   .img__overlay {
-  padding: 13% 5% 5% 5%;
+    padding: 18% 5% 5% 5%;
     position: absolute;
     top: 0;
     left: 0;
@@ -52,25 +63,26 @@ cursor: pointer;
       opacity: 1;
     }
 
-    h2{
-        font-weight: 600;
+    h2 {
+      font-weight: 600;
     }
 
-    p{
-        font-weight: 300
+    p {
+      font-weight: 300;
+      font-size: 12px;
     }
 
     hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid grey;
-    margin: 1em 0;
-    padding: 0;
-  }
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid grey;
+      margin: 1em 0;
+      padding: 0;
+    }
 
-    button{
-        width: 50%;
+    button {
+      width: 50%;
     }
   }
 

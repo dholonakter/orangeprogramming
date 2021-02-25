@@ -24,6 +24,7 @@ export const Nav = styled.div`
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
+  position:relative;
   width: 80vw;
   padding: ${({ navBar }) => (navBar ? "5px 0" : "15px 0")};
 
@@ -44,11 +45,5 @@ export const NavLogo = styled.img`
   }
 `;
 
-export const NavIconWrap = styled.span`
-  display: none;
 
-  @media (max-width: 768px) {
-    display: inline;
-    padding-right: 3%;
-  }
-`;
+
