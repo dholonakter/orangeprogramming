@@ -30,7 +30,7 @@ export const ContactSectionContainer = styled.div`
     padding: 0 5%;
 
     @media (max-width: 768px) {
-    padding: 5%;
+      padding: 5%;
       width: 100%;
     }
 
@@ -77,7 +77,6 @@ export const ContactSectionContainer = styled.div`
     padding: 5% 0;
     @media (max-width: 768px) {
       width: 100%;
-      
     }
     form {
       text-align: center;
@@ -102,6 +101,9 @@ export const ContactSectionContainer = styled.div`
           outline: none;
         }
       }
+    }
+    button {
+      width: 100%;
     }
   }
 `;

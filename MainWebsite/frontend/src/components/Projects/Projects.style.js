@@ -5,7 +5,6 @@ export const ProjectContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-
 `;
 
 export const ProjectCard = styled.div`
@@ -13,10 +12,11 @@ export const ProjectCard = styled.div`
   cursor: pointer;
   width: 32%;
   height: auto;
-  background-color:red;
+  background-color: red;
 
   @media (max-width: 768px) {
     width: 49%;
+    margin-bottom: 2%;
   }
 
   @media (max-width: 560px) {
@@ -26,7 +26,7 @@ export const ProjectCard = styled.div`
   img {
     width: 100%;
     height: 100%;
-    display:flex;
+    display: flex;
   }
   .img__title {
     position: absolute;
@@ -36,9 +36,9 @@ export const ProjectCard = styled.div`
     padding: 5%;
     color: #fff;
 
-h2{
-  font-size:22px;
-}
+    h2 {
+      font-size: 22px;
+    }
 
     small {
       font-weight: 600;

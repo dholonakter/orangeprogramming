@@ -21,8 +21,8 @@ const Navbar = () => {
       <TopContactBar />
       <NavWrap navBar={navBar}>
         <Nav className="active" navBar={navBar}>
-          <NavLogo src={logo} alt="orange-programming" navBar={navBar}/>
-          <Hamburger navBar={navBar}/>
+          <NavLogo src={logo} alt="orange-programming" navBar={navBar} />
+          <Hamburger navBar={navBar} />
         </Nav>
       </NavWrap>
     </>

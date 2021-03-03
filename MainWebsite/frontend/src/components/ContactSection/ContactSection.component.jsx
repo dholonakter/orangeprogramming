@@ -59,8 +59,10 @@ const ContactSection = () => {
                 <textarea placeholder="Description *" rows="3" />
                 <br />
                 <br />
-                <br/>
-                <PrimaryButton type="submit"><FontAwesomeIcon icon={faPaperPlane} /> SEND</PrimaryButton>
+                <br />
+                <PrimaryButton type="submit">
+                  <FontAwesomeIcon icon={faPaperPlane} /> SEND
+                </PrimaryButton>
               </form>{" "}
             </div>
           </ContactSectionContainer>

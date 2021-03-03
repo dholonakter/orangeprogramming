@@ -7,6 +7,7 @@ import {
   faLaptopCode,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 import { PrimaryButton } from "../../utils/buttons";
@@ -75,10 +76,6 @@ const NavItems = styled.ul`
 
     li {
       padding: 8% 0;
-      &:hover {
-        transition: 0.3s;
-        padding-left: 2.5vh;
-      }
     }
   }
 `;
@@ -86,23 +83,53 @@ const NavItems = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <NavItems open={open}>
-      <li>
+      <motion.li
+        whileHover={{
+          scale: 1.2,
+          color: "#f0671f",
+          fontWeight: 500,
+        }}
+      >
         <FontAwesomeIcon icon={faHome} className="d-none" /> &nbsp;HOME
-      </li>
-      <li>
+      </motion.li>
+      <motion.li
+        whileHover={{
+          scale: 1,
+          color: "#f0671f",
+          fontWeight: 500,
+        }}
+      >
         <FontAwesomeIcon icon={faBriefcase} className="d-none" /> &nbsp;SERVICES
-      </li>
-      <li>
+      </motion.li>
+      <motion.li
+        whileHover={{
+          scale: 1,
+          color: "#f0671f",
+          fontWeight: 500,
+        }}
+      >
         <FontAwesomeIcon icon={faLaptopCode} className="d-none" />{" "}
         &nbsp;PROJECTS
-      </li>
-      <li>
+      </motion.li>
+      <motion.li
+        whileHover={{
+          scale: 1,
+          color: "#f0671f",
+          fontWeight: 500,
+        }}
+      >
         <FontAwesomeIcon icon={faInfoCircle} className="d-none" /> &nbsp;ABOUT
         US
-      </li>
-      <li>
+      </motion.li>
+      <motion.li
+        whileHover={{
+          scale: 1,
+          color: "#f0671f",
+          fontWeight: 500,
+        }}
+      >
         <FontAwesomeIcon icon={faImages} className="d-none" /> &nbsp;GALLERY
-      </li>
+      </motion.li>
       <PrimaryButton>
         CONTACT US &nbsp; <FontAwesomeIcon icon={faArrowRight} />
       </PrimaryButton>
