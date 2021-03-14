@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import {
   ProcessPlanContainerWrap,
   ProcessPlanContent,
@@ -28,6 +28,12 @@ import Slider from "react-slick";
 import { motion, useAnimation } from "framer-motion";
 
 const ProcessPlan = () => {
+  const sliderRef = useRef();
+
+  const handleOnClick = (index) => {
+    sliderRef.current.slickGoTo(index);
+  };
+
   const settings = {
     dots: false,
     infinite: true,
@@ -36,6 +42,28 @@ const ProcessPlan = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
+    appendDots: (dots) => (
+      <div
+        style={{
+          backgroundColor: "#ddd",
+          borderRadius: "10px",
+          padding: "10px",
+        }}
+      >
+        <ul style={{ margin: "0px" }}> {console.log(dots)} </ul>
+      </div>
+    ),
+    customPaging: (i) => (
+      <div
+        style={{
+          width: "30px",
+          color: "blue",
+          border: "1px blue solid",
+        }}
+      >
+        {i + 1}
+      </div>
+    ),
   };
 
   const controls = useAnimation();
@@ -69,22 +97,22 @@ const ProcessPlan = () => {
           }}
         >
           <div>
-            <p>
+            <p onClick={() => handleOnClick(0)}>
               <FontAwesomeIcon icon={faLightbulb} /> &nbsp;Discovery Workshop
             </p>
-            <p>
+            <p onClick={() => handleOnClick(1)}>
               <FontAwesomeIcon icon={faTasks} /> Planning
             </p>
-            <p>
+            <p onClick={() => handleOnClick(2)}>
               <FontAwesomeIcon icon={faSwatchbook} /> Design
             </p>
-            <p>
+            <p onClick={() => handleOnClick(3)}>
               <FontAwesomeIcon icon={faLaptopCode} /> Developement
             </p>
-            <p>
+            <p onClick={() => handleOnClick(4)}>
               <FontAwesomeIcon icon={faVials} /> Testing
             </p>
-            <p>
+            <p onClick={() => handleOnClick(5)}>
               <FontAwesomeIcon icon={faCogs} /> Maintence
             </p>
           </div>
@@ -100,7 +128,7 @@ const ProcessPlan = () => {
             hidden: { y: -100 },
           }}
         >
-          <Slider {...settings}>
+          <Slider {...settings} ref={sliderRef}>
             <ProcessPlanDetails>
               <ProcessPlanContent>
                 <img src={img} alt="" />

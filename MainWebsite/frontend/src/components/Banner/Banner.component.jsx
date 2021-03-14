@@ -1,5 +1,6 @@
 import React from "react";
 import { BannerContainer, BannerImg, BannerOverlay } from "./Banner.style";
+import Container from "@material-ui/core/Container";
 import img1 from "../../assets/images/banner-imgs/banner-img-1.jpg";
 import img2 from "../../assets/images/banner-imgs/banner-img-2.jpg";
 import img3 from "../../assets/images/banner-imgs/banner-img-3.jpg";

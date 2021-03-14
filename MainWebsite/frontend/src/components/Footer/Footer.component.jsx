@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "../../utils/container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   FooterContainerWrap,
@@ -19,6 +18,7 @@ import {
   faFacebookF,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
+import { Container } from "../../utils/container";
 
 const Footer = () => {
   return (

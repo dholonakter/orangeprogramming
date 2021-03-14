@@ -2,9 +2,9 @@ import React from "react";
 import { SmallBorderBottom } from "../../utils/constant";
 import { Container } from "../../utils/container";
 import { HeaderText } from "../../utils/text";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { ProjectCard, ProjectContainer} from "./Projects.style";
+import { ProjectCard, ProjectContainer } from "./Projects.style";
 import img1 from "../../assets/images/projects-img/project-1.jpg";
 import img2 from "../../assets/images/projects-img/project-2.jpg";
 import img3 from "../../assets/images/projects-img/project-3.jpg";
@@ -12,8 +12,6 @@ import { PrimaryButton } from "../../utils/buttons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const Projects = () => {
-
-
   const settings = {
     focusOnSelect: false,
     dots: false,
@@ -48,14 +46,12 @@ const Projects = () => {
     ],
   };
 
-
   return (
     <>
-     
       <Container>
         <br />
         <br />
-        <HeaderText>Our projects</HeaderText>  
+        <HeaderText>Our projects</HeaderText>
         <SmallBorderBottom />
         <ProjectContainer>
           <ProjectCard>
@@ -119,8 +115,6 @@ const Projects = () => {
               </PrimaryButton>
             </div>
           </ProjectCard>
-
-        
         </ProjectContainer>
         <br />
         <br />

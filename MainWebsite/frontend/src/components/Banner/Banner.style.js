@@ -3,7 +3,7 @@ import img from "../../assets/images/banner-imgs/banner-img-1.jpg";
 
 export const BannerContainer = styled.div`
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   position: relative;
 
   &:focus {

@@ -42,11 +42,13 @@ const Services = () => {
                 hidden: { opacity: 0, scale: 0 },
               }}
             >
-              <img src={webIcon} alt="" />
-              <h5>Web Application</h5>
-              <small>
-                Stay ahead of the game with tailor-made mobile and web apps
-              </small>
+              <div>
+                <img src={webIcon} alt="" />
+                <h5>Web Application</h5>
+                <small>
+                  Stay ahead of the game with tailor-made mobile and web apps
+                </small>
+              </div>
             </ServiceCard>
 
             <ServiceCard
@@ -59,11 +61,13 @@ const Services = () => {
                 hidden: { opacity: 0, scale: 0 },
               }}
             >
-              <img src={mobAppIcon} alt="" />
-              <h5>Android/IOS Application</h5>
-              <small>
-                Stay ahead of the game with tailor-made mobile and web apps
-              </small>
+              <div>
+                <img src={mobAppIcon} alt="" />
+                <h5>Android/IOS Application</h5>
+                <small>
+                  Stay ahead of the game with tailor-made mobile and web apps
+                </small>
+              </div>
             </ServiceCard>
 
             <ServiceCard
@@ -76,11 +80,13 @@ const Services = () => {
                 hidden: { opacity: 0, scale: 0 },
               }}
             >
-              <img src={aiIcon} alt="" />
-              <h5>Artificial Intelligence</h5>
-              <small>
-                Stay ahead of the game with tailor-made mobile and web apps
-              </small>
+              <div>
+                <img src={aiIcon} alt="" />
+                <h5>Artificial Intelligence</h5>
+                <small>
+                  Stay ahead of the game with tailor-made mobile and web apps
+                </small>
+              </div>
             </ServiceCard>
 
             <ServiceCard
@@ -93,11 +99,14 @@ const Services = () => {
                 hidden: { opacity: 0, scale: 0 },
               }}
             >
-              <img src={cloudStoreIcon} alt="" />
-              <h5>Cloud Service</h5>
-              <small>
-                Stay ahead of the game with tailor-made mobile and web apps
-              </small>
+              {" "}
+              <div>
+                <img src={cloudStoreIcon} alt="" />
+                <h5>Cloud Service</h5>
+                <small>
+                  Stay ahead of the game with tailor-made mobile and web apps
+                </small>
+              </div>
             </ServiceCard>
           </ServicesCardConatiner>
         </Container>

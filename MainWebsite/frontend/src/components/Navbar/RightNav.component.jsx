@@ -85,7 +85,7 @@ const RightNav = ({ open }) => {
     <NavItems open={open}>
       <motion.li
         whileHover={{
-          scale: 1.2,
+          scale: 1,
           color: "#f0671f",
           fontWeight: 500,
         }}

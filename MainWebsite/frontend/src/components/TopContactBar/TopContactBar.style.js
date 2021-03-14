@@ -2,12 +2,11 @@ import styled from "styled-components";
 
 export const TopContactBarContainerWrap = styled.div`
   background: #f0671f;
-  border-bottom: 1px solid #fff;
 `;
 
 export const TopContactBarContainer = styled.div`
   display: flex;
-  height: 35px;
+  height: 38px;
   align-items: center;
   justify-content: space-between;
   position: relative;
@@ -51,7 +50,7 @@ export const TopContactBarContainer = styled.div`
   }
 
   div {
-    width: 40%;
+    width: 200px;
     display: flex;
     justify-content: space-between;
     font-size: 10px;

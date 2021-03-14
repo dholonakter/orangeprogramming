@@ -31,9 +31,9 @@ export const FooterWrapContainer = styled.div`
     width: 12%;
     height: 12%;
 
-    @media(max-width: 560px){
-width:100%;
-padding: 5% 25%;
+    @media (max-width: 560px) {
+      width: 100%;
+      padding: 5% 25%;
     }
   }
 `;
@@ -62,15 +62,13 @@ export const FooterContentWrap = styled.div`
       font-size: 10px;
     }
   }
-
- 
 `;
 
 export const Newslatter = styled.div`
   color: #fff;
   @media (max-width: 680px) {
     width: 100%;
-    margin-top:10%;
+    margin-top: 10%;
   }
   h4 {
     font-weight: 600;
