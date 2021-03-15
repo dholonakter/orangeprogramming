@@ -9,6 +9,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import React from "react";
+import { useHistory } from "react-router";
 import styled from "styled-components";
 import { PrimaryButton } from "../../utils/buttons";
 
@@ -81,31 +82,27 @@ const NavItems = styled.ul`
 `;
 
 const RightNav = ({ open }) => {
+  const history = useHistory();
   return (
     <NavItems open={open}>
       <motion.li
         whileHover={{
-          scale: 1,
           color: "#f0671f",
-          fontWeight: 500,
         }}
+        onClick={() => history.push(`/`)}
       >
         <FontAwesomeIcon icon={faHome} className="d-none" /> &nbsp;HOME
       </motion.li>
       <motion.li
         whileHover={{
-          scale: 1,
           color: "#f0671f",
-          fontWeight: 500,
         }}
       >
         <FontAwesomeIcon icon={faBriefcase} className="d-none" /> &nbsp;SERVICES
       </motion.li>
       <motion.li
         whileHover={{
-          scale: 1,
           color: "#f0671f",
-          fontWeight: 500,
         }}
       >
         <FontAwesomeIcon icon={faLaptopCode} className="d-none" />{" "}
@@ -113,24 +110,21 @@ const RightNav = ({ open }) => {
       </motion.li>
       <motion.li
         whileHover={{
-          scale: 1,
           color: "#f0671f",
-          fontWeight: 500,
         }}
+        onClick={() => history.push(`/aboutus`)}
       >
         <FontAwesomeIcon icon={faInfoCircle} className="d-none" /> &nbsp;ABOUT
         US
       </motion.li>
       <motion.li
         whileHover={{
-          scale: 1,
           color: "#f0671f",
-          fontWeight: 500,
         }}
       >
         <FontAwesomeIcon icon={faImages} className="d-none" /> &nbsp;GALLERY
       </motion.li>
-      <PrimaryButton>
+      <PrimaryButton onClick={() => history.push(`/contactus`)}>
         CONTACT US &nbsp; <FontAwesomeIcon icon={faArrowRight} />
       </PrimaryButton>
     </NavItems>
