@@ -11,8 +11,9 @@ import { motion } from "framer-motion";
 const Banner = () => {
   const settings = {
     dots: false,
+    fade: true,
     infinite: true,
-    autoPlaySpeed: 3000,
+    autoPlaySpeed: 3500,
     speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -42,7 +43,7 @@ const Banner = () => {
           <BannerOverlay>
             <div>
               <motion.h1 initial={{ y: -50 }} animate={{ y: 0 }}>
-                YOU SHARE YOU <span> IDEA.</span>WE GET IT <span>DONE.</span>{" "}
+                GET YOUR <span>BUSINESS</span> <span>ONLINE.</span>{" "}
               </motion.h1>
               <div className="hr" />
             </div>
@@ -53,7 +54,7 @@ const Banner = () => {
           <BannerOverlay>
             <div>
               <motion.h1 initial={{ y: -50 }} animate={{ y: 0 }}>
-                YOU SHARE YOU <span> IDEA.</span>WE GET IT <span>DONE.</span>{" "}
+                WEB <span> SOLUTION</span> FOR YOUR <span>BUSINESS.</span>
               </motion.h1>
               <div className="hr" />
             </div>

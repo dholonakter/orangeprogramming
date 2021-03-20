@@ -6,21 +6,23 @@ import Aboutus from "./pages/Aboutus/Aboutus.page";
 import Contactus from "./pages/Contactus/Contactus.page";
 import Navbar from "./components/Navbar/Navbar.component";
 import Footer from "./components/Footer/Footer.component";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
-        <Switch>
-          <Route path="/home" component={Home} />
-          <Route exact path="/aboutus" component={Aboutus} />
-          <Route exact path="/contactus" component={Contactus} />
-          <Route exact path="/" component={Home} />
-          {/* Page Not Found Here */}
-          <Route exact path="*" component={" "} />
-        </Switch>
-        <Footer />
+        <ScrollToTop>
+          <Switch>
+            <Route path="/home" component={Home} />
+            <Route exact path="/about-us" component={Aboutus} />
+            <Route exact path="/contact-us" component={Contactus} />
+            <Route exact path="/" component={Home} />
+            {/* Page Not Found Here */}
+            <Route exact path="*" component={" "} />
+          </Switch>
+          <Footer />
+        </ScrollToTop>
       </Router>
     </div>
   );

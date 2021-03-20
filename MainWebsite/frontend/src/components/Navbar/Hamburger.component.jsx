@@ -37,9 +37,8 @@ const StyledHamburger = styled.div`
   }
 `;
 
-const Hamburger = ({ navBar }) => {
+const Hamburger = ({ navBar, noBg }) => {
   const [open, setOpen] = useState(false);
-  console.log(navBar);
   return (
     <>
       <StyledHamburger open={open} onClick={() => setOpen(!open)}>
@@ -47,7 +46,7 @@ const Hamburger = ({ navBar }) => {
         <div />
         <div />
       </StyledHamburger>
-      <RightNav open={open} />
+      <RightNav open={open} noBg={noBg} />
     </>
   );
 };

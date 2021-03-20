@@ -29,10 +29,10 @@ const NavItems = styled.ul`
   }
 
   li {
-    color: #fff;
+    color: ${({ noBg, open }) => (open ? "#fff" : noBg ? "#173857" : "#fff")};
     cursor: pointer;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 500;
     &::after {
       content: "";
       display: block;
@@ -46,7 +46,9 @@ const NavItems = styled.ul`
     &:hover::after {
       width: 100%;
     }
-
+    @media (max-width: 768px) {
+      color: #fff;
+    }
     .d-none {
       @media (min-width: 768px) {
         display: none;
@@ -55,6 +57,16 @@ const NavItems = styled.ul`
   }
 
   button {
+    ${({ noBg }) =>
+      noBg &&
+      `background: #f0671f;
+    color: #fff;
+    &:hover {
+      background: transparent;
+      cursor: pointer;
+      color: #f0671f;
+      border: 2px solid #f0671f;
+    }`}
     @media (max-width: 1450px) {
       font-size: 11px;
     }
@@ -81,10 +93,10 @@ const NavItems = styled.ul`
   }
 `;
 
-const RightNav = ({ open }) => {
+const RightNav = ({ open, noBg }) => {
   const history = useHistory();
   return (
-    <NavItems open={open}>
+    <NavItems open={open} noBg={noBg}>
       <motion.li
         whileHover={{
           color: "#f0671f",
@@ -112,7 +124,7 @@ const RightNav = ({ open }) => {
         whileHover={{
           color: "#f0671f",
         }}
-        onClick={() => history.push(`/aboutus`)}
+        onClick={() => history.push(`/about-us`)}
       >
         <FontAwesomeIcon icon={faInfoCircle} className="d-none" /> &nbsp;ABOUT
         US
@@ -124,7 +136,7 @@ const RightNav = ({ open }) => {
       >
         <FontAwesomeIcon icon={faImages} className="d-none" /> &nbsp;GALLERY
       </motion.li>
-      <PrimaryButton onClick={() => history.push(`/contactus`)}>
+      <PrimaryButton onClick={() => history.push(`/contact-us`)}>
         CONTACT US &nbsp; <FontAwesomeIcon icon={faArrowRight} />
       </PrimaryButton>
     </NavItems>

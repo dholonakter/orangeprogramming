@@ -12,6 +12,7 @@ import Technologies from "../../components/Technologies/Technologies.component";
 const Home = () => {
   return (
     <>
+      <Navbar />
       {/* <SocialMediaSidebar /> */}
       <Banner />
       <Services />
