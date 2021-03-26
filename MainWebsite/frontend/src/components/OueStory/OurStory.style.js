@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const OurstoryContainer = styled.div`
   /* display: flex;
   justify-content: space-between; */
+  padding: 0 0 5% 0;
   p {
     text-align: justify;
     font-weight: 300;

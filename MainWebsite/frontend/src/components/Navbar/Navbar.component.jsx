@@ -8,7 +8,7 @@ import TopContactBar from "../TopContactBar/TopContactBar.component";
 const Navbar = ({ noBg }) => {
   const [navBar, setNavBar] = useState(false);
   const changeBackground = () => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 50) {
       setNavBar(true);
     } else {
       setNavBar(false);

@@ -44,8 +44,18 @@ export const TeamMember = styled.div`
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
-    color: #f0671f;
+    color: #173857;
     cursor: pointer;
+
+    & > * {
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      transition: all 0.3s;
+      &:hover {
+        color: #f0671f;
+      }
+    }
     @media (max-width: 768px) {
       font-size: 16px;
       width: 70px;

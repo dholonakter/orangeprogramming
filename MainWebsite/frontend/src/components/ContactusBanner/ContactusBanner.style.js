@@ -4,8 +4,8 @@ export const ContactusBannerContainer = styled.div`
   position: relative;
   background: linear-gradient(
       0deg,
-      rgba(3, 25, 31, 0.61),
-      rgba(3, 25, 31, 0.61)
+      rgba(23, 56, 87, 0.8),
+      rgba(23, 56, 87, 0.8)
     ),
     url(${bgImg});
   background-size: cover;

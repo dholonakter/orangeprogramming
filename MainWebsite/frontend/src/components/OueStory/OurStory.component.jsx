@@ -30,7 +30,6 @@ const OurStory = () => {
           </p>
           {/* <img src={logoImg} alt="" /> */}
         </OurstoryContainer>
-        <TeamPhoto src={teamImg} />
       </Container>
     </>
   );

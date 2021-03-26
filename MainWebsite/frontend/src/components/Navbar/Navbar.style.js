@@ -35,12 +35,15 @@ export const Nav = styled.div`
 
 export const NavLogo = styled.img`
   width: ${({ navBar }) => (navBar ? "130px" : "160px")};
+  height: ${({ navBar }) => (navBar ? "55px" : "70px")};
   transition: all 0.5s;
 
   @media (max-width: 1200px) {
     width: 140px;
+    height: 60px;
   }
   @media (max-width: 768px) {
     width: 120px;
+    height: 50px;
   }
 `;
