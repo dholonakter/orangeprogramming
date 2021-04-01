@@ -12,7 +12,6 @@ export const ProjectCard = styled.div`
   cursor: pointer;
   width: 32%;
   height: auto;
-  background-color: red;
 
   @media (max-width: 800px) {
     width: 49%;
