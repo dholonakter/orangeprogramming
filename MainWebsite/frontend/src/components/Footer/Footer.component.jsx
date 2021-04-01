@@ -10,18 +10,18 @@ import {
 } from "./Footer.style";
 import logo from "../../assets/images/logo.png";
 import {
-  faFacebook,
   faInstagram,
   faTwitter,
   faYoutube,
-  faLinkedin,
   faFacebookF,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import { Container } from "../../utils/container";
+import { useLocation } from "react-router";
 
 const Footer = () => {
-  return (
+  const { pathname } = useLocation();
+  return pathname === "/under-construction" ? null : (
     <>
       <FooterContainerWrap>
         <Container>

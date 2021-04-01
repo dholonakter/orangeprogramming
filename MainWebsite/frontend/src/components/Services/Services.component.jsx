@@ -33,14 +33,14 @@ const Services = () => {
           <br />
           <ServicesCardConatiner>
             <ServiceCard
-              ref={ref}
-              animate={controls}
-              initial="hidden"
-              transition={{ duration: 0.5, type: "spring", stiffness: 120 }}
-              variants={{
-                visible: { opacity: 1, scale: 1 },
-                hidden: { opacity: 0, scale: 0 },
-              }}
+            // ref={ref}
+            // animate={controls}
+            // initial="hidden"
+            // transition={{ duration: 0.5, type: "spring", stiffness: 120 }}
+            // variants={{
+            //   visible: { opacity: 1, scale: 1 },
+            //   hidden: { opacity: 0, scale: 0 },
+            // }}
             >
               <div>
                 <img src={webIcon} alt="" />
@@ -52,14 +52,14 @@ const Services = () => {
             </ServiceCard>
 
             <ServiceCard
-              ref={ref}
-              animate={controls}
-              initial="hidden"
-              transition={{ duration: 0.7 }}
-              variants={{
-                visible: { opacity: 1, scale: 1 },
-                hidden: { opacity: 0, scale: 0 },
-              }}
+            // ref={ref}
+            // animate={controls}
+            // initial="hidden"
+            // transition={{ duration: 0.7 }}
+            // variants={{
+            //   visible: { opacity: 1, scale: 1 },
+            //   hidden: { opacity: 0, scale: 0 },
+            // }}
             >
               <div>
                 <img src={mobAppIcon} alt="" />
@@ -71,14 +71,14 @@ const Services = () => {
             </ServiceCard>
 
             <ServiceCard
-              ref={ref}
-              animate={controls}
-              initial="hidden"
-              transition={{ duration: 0.9 }}
-              variants={{
-                visible: { opacity: 1, scale: 1 },
-                hidden: { opacity: 0, scale: 0 },
-              }}
+            // ref={ref}
+            // animate={controls}
+            // initial="hidden"
+            // transition={{ duration: 0.9 }}
+            // variants={{
+            //   visible: { opacity: 1, scale: 1 },
+            //   hidden: { opacity: 0, scale: 0 },
+            // }}
             >
               <div>
                 <img src={aiIcon} alt="" />
@@ -90,16 +90,15 @@ const Services = () => {
             </ServiceCard>
 
             <ServiceCard
-              ref={ref}
-              animate={controls}
-              initial="hidden"
-              transition={{ duration: 1 }}
-              variants={{
-                visible: { opacity: 1, scale: 1 },
-                hidden: { opacity: 0, scale: 0 },
-              }}
+            // ref={ref}
+            // animate={controls}
+            // initial="hidden"
+            // transition={{ duration: 1 }}
+            // variants={{
+            //   visible: { opacity: 1, scale: 1 },
+            //   hidden: { opacity: 0, scale: 0 },
+            // }}
             >
-              {" "}
               <div>
                 <img src={cloudStoreIcon} alt="" />
                 <h5>Cloud Service</h5>

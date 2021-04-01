@@ -7,17 +7,24 @@ import Contactus from "./pages/Contactus/Contactus.page";
 import Navbar from "./components/Navbar/Navbar.component";
 import Footer from "./components/Footer/Footer.component";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import UnderConstruction from "./components/UnderConstruction/UnderConstruction.component";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <ScrollToTop>
+          <Navbar />
           <Switch>
-            <Route path="/home" component={Home} />
+            <Route exact path="/home" component={Home} />
             <Route exact path="/about-us" component={Aboutus} />
             <Route exact path="/contact-us" component={Contactus} />
             <Route exact path="/" component={Home} />
+            <Route
+              exact
+              path="/under-construction"
+              component={UnderConstruction}
+            />
             {/* Page Not Found Here */}
             <Route exact path="*" component={" "} />
           </Switch>

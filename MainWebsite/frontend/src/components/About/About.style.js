@@ -3,8 +3,8 @@ import bgImg from "../../assets/images/about-us-banner.png";
 export const AboutComponentContainer = styled.div`
   background: linear-gradient(
       0deg,
-      rgba(23, 56, 87, 0.93),
-      rgba(23, 56, 87, 0.93)
+      rgba(23, 56, 87, 0.9),
+      rgba(23, 56, 87, 0.9)
     ),
     url(${bgImg});
   display: grid;
@@ -52,16 +52,17 @@ export const AboutContent = styled.div`
       }
     }
 
-    p {
+    /* p {
       font-weight: 200;
       font-size: 1.1vw;
       text-align: justify;
-
+      color: #f0671f;
+      background-color: #fff;
       @media (max-width: 1000px) {
         font-size: 12px;
         margin-bottom: 25px;
       }
-    }
+    } */
 
     img {
       width: 80%;
@@ -73,5 +74,30 @@ export const AboutContent = styled.div`
   .img-container {
     display: grid;
     place-items: center;
+  }
+`;
+export const CheckBoxItems = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+  img {
+    width: 32px !important;
+    height: 32px;
+    margin-right: 25px;
+    /* height: 40px; */
+  }
+  p {
+    font-weight: 200;
+    font-size: 15px;
+
+    @media (max-width: 1200px) {
+      font-size: 12px;
+    }
+    @media (max-width: 900px) {
+      font-size: 10px;
+    }
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
   }
 `;

@@ -14,7 +14,7 @@ export const ProjectCard = styled.div`
   height: auto;
   background-color: red;
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     width: 49%;
     margin-bottom: 2%;
   }
@@ -38,6 +38,16 @@ export const ProjectCard = styled.div`
 
     h2 {
       font-size: 22px;
+
+      @media (max-width: 1400px) {
+        font-size: 18px;
+      }
+      @media (max-width: 1100px) {
+        font-size: 16px;
+      }
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
     }
 
     small {
@@ -45,10 +55,16 @@ export const ProjectCard = styled.div`
       width: 100%;
       text-align: right;
       color: #f0671f;
+
+      @media (max-width: 1100px) {
+        font-size: 10px;
+      }
+      @media (max-width: 768px) {
+      }
     }
   }
   .img__overlay {
-    padding: 18% 5% 5% 5%;
+    padding: 16% 5% 0% 5%;
     position: absolute;
     top: 0;
     left: 0;
@@ -63,13 +79,22 @@ export const ProjectCard = styled.div`
       opacity: 1;
     }
 
-    h2 {
-      font-weight: 600;
+    @media (max-width: 1000px) {
+      padding: 18% 5% 0% 5%;
     }
 
     p {
       font-weight: 300;
       font-size: 12px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      @media (max-width: 1490px) {
+        font-size: 10px;
+      }
+      @media (max-width: 768px) {
+        font-size: 8px;
+      }
     }
 
     hr {
@@ -82,12 +107,34 @@ export const ProjectCard = styled.div`
     }
 
     button {
-      width: 50%;
+      width: 45%;
+      margin-top: 10%;
+      background-color: #f0671f;
+      color: #fff;
+
+      &:hover {
+        background-color: transparent;
+        color: #f0671f;
+      }
+
+      @media (max-width: 1300px) {
+        padding: 10px 0;
+        width: 40%;
+        font-size: 12px;
+        margin-top: 10px;
+      }
+
+      @media (max-width: 1100px) {
+        padding: 8px 0;
+        width: 40%;
+        font-size: 10px;
+        margin-top: 8px;
+      }
     }
   }
 
   .img__overlay > * {
-    transform: translateY(20px);
+    transform: translateY(10px);
     transition: transform 0.25s;
   }
 

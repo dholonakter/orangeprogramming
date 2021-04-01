@@ -46,7 +46,7 @@ const Hamburger = ({ navBar, noBg }) => {
         <div />
         <div />
       </StyledHamburger>
-      <RightNav open={open} noBg={noBg} />
+      <RightNav navBarState={[open, setOpen]} noBg={noBg} />
     </>
   );
 };

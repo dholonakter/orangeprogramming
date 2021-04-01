@@ -5,9 +5,9 @@ import { HeaderText } from "../../utils/text";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ProjectCard, ProjectContainer } from "./Projects.style";
-import img1 from "../../assets/images/projects-img/project-1.jpg";
-import img2 from "../../assets/images/projects-img/project-2.jpg";
-import img3 from "../../assets/images/projects-img/project-3.jpg";
+import img1 from "../../assets/images/projects-img/Project-1.jpg";
+import img2 from "../../assets/images/projects-img/Project-2.jpg";
+import img3 from "../../assets/images/projects-img/Project-3.jpg";
 import { PrimaryButton } from "../../utils/buttons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -57,18 +57,16 @@ const Projects = () => {
           <ProjectCard>
             <img src={img1} alt="" />
             <div className="img__title">
-              <h2>Social Blogs</h2>
-              <small>Blog Site</small>
+              <h2>Doctors Portal</h2>
+              <small>Appointment Management</small>
             </div>
 
             <div className="img__overlay">
               <hr />
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
-                architecto quod in consequuntur.
-              </p>
-              <br />
-              <PrimaryButton>
+              <p>Doctor appointment management web application.</p>
+              <PrimaryButton
+                onClick={() => window.open("https://doctors-portall.web.app/")}
+              >
                 View &nbsp; <FontAwesomeIcon icon={faArrowRight} />
               </PrimaryButton>
             </div>
@@ -77,19 +75,16 @@ const Projects = () => {
           <ProjectCard>
             <img src={img2} alt="" />
             <div className="img__title">
-              {" "}
-              <h2>OP Shopping</h2>
-              <small>Ecomerce Site</small>
+              <h2>Red Onion</h2>
+              <small>Restaurent Site</small>
             </div>
 
             <div className="img__overlay">
               <hr />
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
-                architecto quod in consequuntur.
-              </p>
-              <br />
-              <PrimaryButton>
+              <p>A single page restaurent web applictaion.</p>
+              <PrimaryButton
+                onClick={() => window.open("https://red-onion-bd.web.app/")}
+              >
                 View &nbsp; <FontAwesomeIcon icon={faArrowRight} />
               </PrimaryButton>
             </div>
@@ -98,19 +93,18 @@ const Projects = () => {
           <ProjectCard>
             <img src={img3} alt="" />
             <div className="img__title">
-              {" "}
-              <h2>Dutch Restaurent </h2>
-              <small>Restaurent Site</small>
+              <h2>Volunteer Network</h2>
+              <small>Social Work Site</small>
             </div>
 
             <div className="img__overlay">
               <hr />
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
-                architecto quod in consequuntur.
-              </p>
-              <br />
-              <PrimaryButton>
+              <p>Social work management web application.</p>
+              <PrimaryButton
+                onClick={() =>
+                  window.open("https://volunteer-network-bd.web.app/")
+                }
+              >
                 View &nbsp; <FontAwesomeIcon icon={faArrowRight} />
               </PrimaryButton>
             </div>

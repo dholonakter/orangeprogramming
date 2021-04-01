@@ -4,11 +4,12 @@ import logo from "../../assets/images/logo.png";
 import logoClr from "../../assets/images/logo-color.png";
 import { Nav, NavLogo, NavWrap } from "./Navbar.style";
 import TopContactBar from "../TopContactBar/TopContactBar.component";
+import { useLocation } from "react-router";
 
 const Navbar = ({ noBg }) => {
   const [navBar, setNavBar] = useState(false);
   const changeBackground = () => {
-    if (window.scrollY >= 50) {
+    if (window.scrollY >= 20) {
       setNavBar(true);
     } else {
       setNavBar(false);
@@ -16,7 +17,8 @@ const Navbar = ({ noBg }) => {
   };
   window.addEventListener("scroll", changeBackground);
   console.log(noBg);
-  return (
+  const { pathname } = useLocation();
+  return pathname === "/under-construction" ? null : (
     <>
       <TopContactBar />
       <NavWrap navBar={navBar}>
