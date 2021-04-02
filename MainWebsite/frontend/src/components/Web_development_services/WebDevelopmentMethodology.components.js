@@ -1,5 +1,5 @@
 import { Box, Grid, makeStyles, Typography, Container } from '@material-ui/core';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import BorderAllIcon from '@material-ui/icons/BorderAll';
 import BuildIcon from '@material-ui/icons/Build';
 import CropOriginalIcon from '@material-ui/icons/CropOriginal';
@@ -79,6 +79,8 @@ const WebDevelopmentMethodology = () => {
     ]);
 
     function makingActive(id){
+        // var mainId = id -1;
+        // setDetailsData({name:methodData[mainId]["name"],text:methodData[mainId]["text"], photo:methodData[mainId]["photo"]});
         var i = 1;
         var j = 6;
         for( i = 1; i <= j; i++){
@@ -111,138 +113,60 @@ const WebDevelopmentMethodology = () => {
     }
   
 
-    const doThis = (getName,getText,getPhoto,id) => {
-        setDetailsData({name:getName,text:getText, photo:getPhoto});
+    const doThis = (id) => {
+        var mainId = id -1;
+        setDetailsData({name:methodData[mainId]["name"],text:methodData[mainId]["text"], photo:methodData[mainId]["photo"]});
         makingActive(id); 
-        var ab = document.getElementById(id).innerHTML;
-
-         alert(ab)
-        // console.log(ab);
-
-
-        // var i = 1;
-        // for (let i = 1; i < 7; i++) {
-        //     // const element = array[i];
-        //     if(i == id){
-        //         var cont = document.getElementById(id);
-        //         ReactDom.findDOMNode(cont).style.background = "red";
-        //     }else{
-        //         var cont = document.getElementById(i);
-        //         ReactDom.findDOMNode(cont).style.background = "#fff"
-        //     }
-            
-        // }
-      
     }
 
   
-    // var slideIndex = 0;
-    // const anotherDothis = () => {
-    //     slideIndex++;
- 
-    //     if(slideIndex > 6){
-    //         slideIndex = 0
-    //     }
-
-    //     for (let i = 1; i < 7; i++) {
-    //         // const element = array[i];
-    //         if(i == slideIndex){
-    //             var cont = document.getElementById(slideIndex);
-    //             // ReactDom.findDOMNode(cont).style.background = "red";
-    //         }else{
-    //             var cont = document.getElementById(i);
-    //             // ReactDom.findDOMNode(cont).style.background = "#fff"
-    //         }
-            
-    //     }
-    //     // setTimeout(anotherDothis, 2000)
-
-
-    // }
-
-
-    // anotherDothis();
-
-    // function task(i) {
-    //     setTimeout(function() {
-    //         console.log(i);
-    //     }, 2000 * i);
-    //   }
-
-
-    
-
-// var slideIndex = 0;
-
-// function od(){
-//     var i;
-  
-//     var dots = document.getElementsByClassName('gridItem');
- 
-//     // slideIndex++;
- 
-//     if(slideIndex >= dots.length){slideIndex = 0}
-
-
-
-
-//     // var container = document.getElementById(slideIndex);
-//     // ReactDOM.findDOMNode(container).style.background="red";
-
-//     // reactDom.findDOMNode(container).style.background = 'red';
-    
+function makingActiveLoop(){
+    setTimeout(makingActiveLoop, 4000)
+    var box = document.getElementsByClassName("gridItem")
+    for(let i = 0; i<box.length; i++){
+        if(methodData[i]['isActive']){
+            slideIndex = methodData[i]['id']
+        }
+    }
+    slideIndex++;
+        
+    if(slideIndex>6){slideIndex = 1}
    
+    makingActive(slideIndex);
 
-//     // for (i = 1; i < 7; i++) {
-        
-//         // if(i != slideIndex){
-//             // var container = document.getElementById(i);
-//             // ReactDOM.findDOMNode(container).style.background="#fff";
-
-
-
-
-//         // }
-        
-//         // setDetailsData({
-//         //     name:methodData[slideIndex]['name'],
-//         //     text:methodData[slideIndex]['text'], 
-//         //     photo:methodData[slideIndex]['photo']
-//         // });
 
         
-//     //   }
-    
-     
-   
-//     setTimeout(od, 2000)
+}
 
-// }
+function fetchData(key){
+    for(let i = 0; i<6; i++){
+        if(methodData[i]['isActive']){
+            return methodData[i][key]
+        
+        }
+    }
+}
 
-
-// function dog(){
-//     alert(document.getElementById(3))
-//     // if()
-// }
+var slideIndex = 0;
 
     const [detailsData, setDetailsData] = useState({
         name: methodData[0]["name"],
         text: methodData[0]["text"],
         photo: methodData[0]["photo"],
     });
-    // od();
+ 
     return (
         
-        <div >
+        <div onLoad={makingActiveLoop}>
             <Root>
                 <Container maxWidth='lg'>
                     <Typography align="center" display="block" variant="h3"> web development methodology </Typography>
                       <Grid className='gridContainer' id='myId' container>
-                      
+                    
                             {methodData.map(item=>(
                                 <Grid key={item.id} className='gridItem' item sm={2}>
                                     
-                                    <IconBox  id={item.id}   style={{background: item.isActive?'rgb(191, 191, 255)':'#fff'}} key={item.id} onClick={() => doThis(item.name, item.text, item.photo, item.id)}> 
+                                    <IconBox  id={item.id}   style={{background: item.isActive?'rgb(191, 191, 255)':'#fff'}} key={item.id} onClick={() => doThis(item.id)}> 
                                         <div className='logoHolder'>
                                             {item.logo} 
                                            
@@ -264,8 +188,8 @@ const WebDevelopmentMethodology = () => {
                 <Container >
                     <Grid container>
                         <Grid item sm={6}>
-                            <Typography   align="left" variant="h4"> {detailsData.name} </Typography>
-                            <Typography  align="justify" variant="body2">  {detailsData.text}  </Typography>
+                            <Typography   align="left" variant="h4"> {fetchData('name')} </Typography>
+                            <Typography  align="justify" variant="body2">  {fetchData('text')}  </Typography>
                         </Grid>
                         <Grid className='right' item sm={6}>
                             <div className='computerBody'>

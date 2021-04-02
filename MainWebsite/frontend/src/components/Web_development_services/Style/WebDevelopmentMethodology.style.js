@@ -46,14 +46,16 @@ export const IconBox = styled.div`
 
 export const RootO = styled.div`
 padding: 50px 7px 60px 7px;
-background-color: rgb(8, 83, 115);
+// background-color: rgb(8, 83, 115);
+background-color: rgb(240, 103, 31);
 h4{
     padding: 10px 7px;
     color: #fff;
 }
 p{
     padding: 10px 7px;
-    color: rgb(229, 229, 229);
+    // color: rgb(229, 229, 229);
+    color: #fff;
     font-size: 16px;
 
 
