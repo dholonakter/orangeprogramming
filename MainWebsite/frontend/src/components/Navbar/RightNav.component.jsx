@@ -120,7 +120,7 @@ const RightNav = ({ open, noBg }) => {
         whileHover={{
           color: "#f0671f",
         }}
-        onClick={() => history.push(`/demo`)}
+        onClick={() => history.push(`/projects`)}
       >
         <FontAwesomeIcon icon={faLaptopCode} className="d-none" />{" "}
         &nbsp;PROJECTS
@@ -138,6 +138,7 @@ const RightNav = ({ open, noBg }) => {
         whileHover={{
           color: "#f0671f",
         }}
+        onClick={() => history.push(`/gallery`)}
       >
         <FontAwesomeIcon icon={faImages} className="d-none" /> &nbsp;GALLERY
       </motion.li>

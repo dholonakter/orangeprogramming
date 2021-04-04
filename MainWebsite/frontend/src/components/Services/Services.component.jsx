@@ -10,7 +10,7 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import webIcon from "../../assets/images/icons/web-app-icon.png";
 import mobAppIcon from "../../assets/images/icons/android-ios-icon.png";
-import cloudStoreIcon from "../../assets/images/icons/cloud-storage-icon.png";
+import blockchainIcon from "../../assets/images/icons/blockchain-icon.jpg";
 import aiIcon from "../../assets/images/icons/ai-icon.png";
 import { SmallBorderBottom } from "../../utils/constant";
 
@@ -101,8 +101,8 @@ const Services = () => {
             >
               {" "}
               <div>
-                <img src={cloudStoreIcon} alt="" />
-                <h5>Cloud Service</h5>
+                <img src={blockchainIcon} alt="" />
+                <h5>Blockchain</h5>
                 <small>
                   Stay ahead of the game with tailor-made mobile and web apps
                 </small>

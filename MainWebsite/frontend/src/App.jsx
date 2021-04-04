@@ -8,7 +8,7 @@ import Navbar from "./components/Navbar/Navbar.component";
 import Footer from "./components/Footer/Footer.component";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Web from './pages/WebDevelopmentServices/WebDevelopment.page'
-import Demo from "./pages/demo";
+import UnderConstruction from "./components/UnderConstruction/UnderConstruction.component";
 
 function App() {
   return (
@@ -22,7 +22,13 @@ function App() {
             
             <Route exact path="/web-deveopment" component={Web} />
             <Route exact path="/" component={Home} />
-            <Route exact path="/demo" component={Demo} />
+            {/* under construction page routing */}
+            <Route exact path="/projects" component={UnderConstruction} />
+            <Route exact path="/gallery" component={UnderConstruction} />
+            <Route exact path="/android" component={UnderConstruction} />
+            <Route exact path="/ai" component={UnderConstruction} />
+            <Route exact path="/ios" component={UnderConstruction} />
+            <Route exact path="/blockchain" component={UnderConstruction} />
             {/* Page Not Found Here */}
             <Route exact path="*" component={" "} />
           </Switch>

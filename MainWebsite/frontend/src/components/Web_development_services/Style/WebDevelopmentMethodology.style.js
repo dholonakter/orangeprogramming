@@ -23,8 +23,8 @@ export const Root = styled.div`
 `
 
 export const IconBox = styled.div`
-    height: 75px;
-        width: 75px;
+        height: 75px;
+        width: 75px !important;
         box-shadow: 0 3px 6px gray;
         margin: auto;
         border-radius: 20px;
@@ -46,86 +46,114 @@ export const IconBox = styled.div`
 
 export const RootO = styled.div`
 padding: 50px 7px 60px 7px;
-// background-color: rgb(8, 83, 115);
-background-color: rgb(240, 103, 31);
+background-color: rgb(8, 83, 115);
 h4{
     padding: 10px 7px;
     color: #fff;
 }
 p{
     padding: 10px 7px;
-    // color: rgb(229, 229, 229);
-    color: #fff;
+    color: rgb(229, 229, 229);
     font-size: 16px;
-
-
 }
 .left{
     width: 100%;
 }
 .right{
-    // background: red;
-    width: 100%
-}
-.computerBody{
-    height: 150px;
-    width: 250px;
-    margin: 50px auto auto auto;
-    @media(max-width: 700px){
-        height: 130px;
-        width: 200px;
-
-    }
-}
-.computerScreen{
-    height: 150px;
-    widht: 250px;
-    border: 3px solid rgb(229, 230, 232);
-    background-color: gray;
-    border-radius: 7px;
-    @media(max-width: 700px){
-        height: 130px;
-        width: 200px;
-        
-    }
-
-}
-.computerPlayer{
-    height: 130px;
-    width: 230px;
-    margin: 8px auto;
-    background-color: #fff;
-    @media(max-width: 700px){
-        height: 110px;
-        width: 180px;
-        
-    }
-}
-.computerPlayerContent{
-    height: 100%;
     width: 100%;
-    margin: auto;
-    backgroundColor: #fff;
+    overflow: hidden;
+    justify-content: right;
 }
-.computerKey{
-    height: 50px;
-    width: 300px;
-    background-color: rgb(228, 228, 228);
-    border-radius: 50px 50px 5px 5px;
-    box-shadow: 0 3px 5px gray;
-    transform: rotateX(100deg);
-    border: 10px solid rgb(229, 230, 232);
-    position: relative;
-    top: -15%;
-    left: -26px;
-    @media(max-width: 700px){
-        
-        width: 250px;
+
+`
+
+export const MainComputer = styled.div`
+    float: right;
+    padding: 50px 0px;
+    @media(max-width: 960px){
+        float: none;
+    }
+`
+export const Monitor = styled.div`
+    margin: auto;
+    // padding: 0 1vw 0 1vw;
+    // padding: 10px 0px 10px 0px;
+    padding-top: 1vw;
+    justify-content: center;
+    height: 20vw;
+    width: 37vw;
+    border: 3px solid rgb(229, 230, 232);
+    background-color: rgb(240, 103, 31);
+    border-radius: 7px;
+    overflow: hidden;
+    @media(max-width: 959px){
+        height: 27vw;
+        width: 48vw;
+        // padding: 10px;
+    }
+    @media(max-width: 750px){
+        padding: 7px;
+    }
+    @media(max-width: 650px){
+        width: 49vw;
+    }
+    @media(max-width: 600px){
+        width: 70vw;
+        height: 40vw;
+    }
+    @media(max-width: 350px){
+        width: 71vw;
+    }
+    @media(max-width: 300px){
+        width: 72vw;
+    }
+`
+export const Player = styled.div`
+    height: 20vw;
+    width: 35vw;
+    background: orange;
+    margin: auto auto auto auto;
+    overflow: hidden;
+    // border-right: 3px solid red;
+    @media(max-width: 959px){
+        height: 27vw;
+        width: 45vw;
+    }
+    @media(max-width: 600px){
+        height: 40vw;
+        width: 65vw;
+    }
+    @media(max-width: 1000px){
         
     }
-
-}
-
+    @media(max-width: 1000px){
+        
+    }
+    @media(max-width: 1000px){
+        
+    }
+    .computerPlayerContent{
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        backgroundColor: rgb(229, 229, 229);
+    }
+`
+export const Keyboard = styled.div`
+    height: 50px;
+    width: 42vw;
+    background-color: rgb(240, 103, 31);
+    margin:-17px auto;
+    border-radius: 50px 50px 5px 5px ;
+    transform: rotateX(110deg);
+    border: 10px solid rgb(229, 230, 232);
+    @media(max-width: 959px){
+        width: 55vw;
+        height: 40px;
+    }
+    @media(max-width: 600px){
+        width: 80vw;
+    }
 `
 
 

@@ -19,34 +19,44 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import { Container } from "../../utils/container";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+  var style={
+    textDecoration: 'none',
+    color: '#fff'
+  }
   return (
     <>
       <FooterContainerWrap>
         <Container>
           <FooterWrapContainer>
-            <img src={logo} alt="" />
+            {/* <Link style={{float:'left'}} to="/"> */}
+              <img  src={logo} alt="logo" />
+            {/* </Link> */}
+           
+            
             <FooterContentWrap>
               <h4>Service</h4>
-              <p>Web Application</p>
-              <p>Android / IOS</p>
-              <p>Artificial Intelligence</p>
-              <p>Cloud Service</p>
+              <p><Link style={style} to='/web-deveopment'>Web Application</Link></p>
+              <p><Link style={style} to='/android'>Android</Link></p>
+              <p><Link style={style} to='/ios'>iOS</Link></p>
+              <p><Link style={style} to='/ai'>Artificial Intelligence</Link></p>
+              <p><Link style={style} to='/blockchain'>Blockchain</Link></p>
             </FooterContentWrap>
             <FooterContentWrap>
               <h4>Technology</h4>
-              <p>React Js</p>
-              <p>Node Js</p>
-              <p>PHP</p>
-              <p>Laravel</p>
-              <p>Dot net</p>
+              <p><a style={style} target="_blank" href="https://reactjs.org" >React Js</a></p>
+              <p><a style={style} target="_blank" href="https://nodejs.org">Node Js</a></p>
+              <p><a style={style} target="_blank" href="https://php.net" >PHP</a></p>
+              <p><a style={style} target="_blank" href="https://laravel.com" >Laravel</a></p>
+              <p><a style={style} target="_blank" href="https://dotnet.microsoft.com" >Dot net</a></p>
             </FooterContentWrap>
             <FooterContentWrap>
               <h4>Platforms</h4>
-              <p>Android</p>
-              <p>ISO</p>
-              <p>Web</p>
+              <p><Link style={style} to='/android'>Android</Link></p>
+              <p><Link style={style} to='/ios'>iOS</Link></p>
+              <p><Link style={style} to='/web-deveopment'>Web</Link></p>
             </FooterContentWrap>
             <Newslatter>
               <form action="">
@@ -57,19 +67,27 @@ const Footer = () => {
               </form>
               <FooterIconContainer>
                 <FooterIconWrap>
-                  <FontAwesomeIcon icon={faFacebookF} size="2x" />
+                <a style={style} target="_blank" href="https://facebook.com"><FontAwesomeIcon icon={faFacebookF} size="2x" /></a>
+                  
+                </FooterIconWrap>
+
+                <FooterIconWrap>
+                <a style={style} target="_blank" href="https://linkedin.com"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
+                 
+                </FooterIconWrap>
+
+                <FooterIconWrap>
+                <a style={style} target="_blank" href="https://instagram.com"><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
+                
+                </FooterIconWrap>
+
+                <FooterIconWrap>
+                <a style={style} target="_blank" href="https://twitter.com"><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
+                  
                 </FooterIconWrap>
                 <FooterIconWrap>
-                  <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
-                </FooterIconWrap>
-                <FooterIconWrap>
-                  <FontAwesomeIcon icon={faInstagram} size="2x" />
-                </FooterIconWrap>
-                <FooterIconWrap>
-                  <FontAwesomeIcon icon={faTwitter} size="2x" />
-                </FooterIconWrap>
-                <FooterIconWrap>
-                  <FontAwesomeIcon icon={faYoutube} size="2x" />
+                <a style={style} target="_blank" href="https://youtube.com"><FontAwesomeIcon icon={faYoutube} size="2x" /></a>
+
                 </FooterIconWrap>
               </FooterIconContainer>
             </Newslatter>
