@@ -31,9 +31,14 @@ export const ProcessPlanContainerWrap = styled(motion.div)`
     }
     p {
       font-size: 1vw;
-      font-weight: 200;
+      font-weight: 300;
       padding: 0 0 1.5% 2%;
       cursor: pointer;
+
+      &:hover {
+        font-weight: 500;
+        color: #173857;
+      }
 
       @media (max-width: 1360px) {
         font-size: 18px;
@@ -43,7 +48,11 @@ export const ProcessPlanContainerWrap = styled(motion.div)`
       }
 
       @media (max-width: 768px) {
+        padding: 0 0 2% 2.5%;
         font-size: 14px;
+      }
+      @media (max-width: 560px) {
+        padding: 10px;
       }
     }
   }

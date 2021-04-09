@@ -98,22 +98,29 @@ const ProcessPlan = () => {
         >
           <div>
             <p onClick={() => handleOnClick(0)}>
-              <FontAwesomeIcon icon={faLightbulb} /> &nbsp;Discovery Workshop
+              &nbsp;
+              <FontAwesomeIcon icon={faLightbulb} />
+              &nbsp;&nbsp;&nbsp;Discovery Workshop
             </p>
             <p onClick={() => handleOnClick(1)}>
-              <FontAwesomeIcon icon={faTasks} /> Planning
+              <FontAwesomeIcon icon={faTasks} />
+              &nbsp;&nbsp; Planning
             </p>
             <p onClick={() => handleOnClick(2)}>
-              <FontAwesomeIcon icon={faSwatchbook} /> Design
+              <FontAwesomeIcon icon={faSwatchbook} />
+              &nbsp;&nbsp; Design
             </p>
             <p onClick={() => handleOnClick(3)}>
-              <FontAwesomeIcon icon={faLaptopCode} /> Developement
+              <FontAwesomeIcon icon={faLaptopCode} />
+              &nbsp; Developement
             </p>
             <p onClick={() => handleOnClick(4)}>
-              <FontAwesomeIcon icon={faVials} /> Testing
+              <FontAwesomeIcon icon={faVials} />
+              &nbsp; Testing
             </p>
             <p onClick={() => handleOnClick(5)}>
-              <FontAwesomeIcon icon={faCogs} /> Maintence
+              <FontAwesomeIcon icon={faCogs} />
+              &nbsp; Maintence
             </p>
           </div>
         </motion.div>

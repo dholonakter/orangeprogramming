@@ -31,6 +31,10 @@ export const ContactInfoContainer = styled.div`
     }
   }
   .info {
+    p {
+      margin-top: 15px;
+    }
+
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -48,11 +52,15 @@ export const SocialMediaContainer = styled.div`
     margin: 5% 0;
     display: flex;
     justify-content: space-between;
-
+    @media (max-width: 400px) {
+      margin: 25px 0;
+    }
     img {
       width: 50px;
+      height: 50px;
       @media (max-width: 768px) {
         width: 30px;
+        height: 30px;
       }
     }
   }

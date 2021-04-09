@@ -8,10 +8,10 @@ import {
 } from "./Services.style";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
-import webIcon from "../../assets/images/icons/web-app-icon.png";
-import mobAppIcon from "../../assets/images/icons/android-ios-icon.png";
-import cloudStoreIcon from "../../assets/images/icons/cloud-storage-icon.png";
-import aiIcon from "../../assets/images/icons/ai-icon.png";
+import webIcon from "../../assets/images/services-icons/web-dev.png";
+import mobAppIcon from "../../assets/images/services-icons/mobile-dev.png";
+import blockchainIcon from "../../assets/images/services-icons/blockchain.png";
+import aiIcon from "../../assets/images/services-icons/ai.png";
 import { SmallBorderBottom } from "../../utils/constant";
 
 const Services = () => {
@@ -42,13 +42,12 @@ const Services = () => {
             //   hidden: { opacity: 0, scale: 0 },
             // }}
             >
-              <div>
-                <img src={webIcon} alt="" />
-                <h5>Web Application</h5>
-                <small>
-                  Stay ahead of the game with tailor-made mobile and web apps
-                </small>
-              </div>
+              <img src={webIcon} alt="" className="wev__dev" />
+              <h5>Web Application</h5>
+              <small>
+                We create custom web systems with awesome frontend experience
+                and reliable, scalable backend architecture.
+              </small>
             </ServiceCard>
 
             <ServiceCard
@@ -61,13 +60,12 @@ const Services = () => {
             //   hidden: { opacity: 0, scale: 0 },
             // }}
             >
-              <div>
-                <img src={mobAppIcon} alt="" />
-                <h5>Android/IOS Application</h5>
-                <small>
-                  Stay ahead of the game with tailor-made mobile and web apps
-                </small>
-              </div>
+              <img src={mobAppIcon} alt="" />
+              <h5>Android/IOS Application</h5>
+              <small>
+                We bring to life, high performance Mobile Apps which are
+                functionally excellent and carry immersive user experience.
+              </small>
             </ServiceCard>
 
             <ServiceCard
@@ -80,13 +78,13 @@ const Services = () => {
             //   hidden: { opacity: 0, scale: 0 },
             // }}
             >
-              <div>
-                <img src={aiIcon} alt="" />
-                <h5>Artificial Intelligence</h5>
-                <small>
-                  Stay ahead of the game with tailor-made mobile and web apps
-                </small>
-              </div>
+              <img src={aiIcon} alt="" />
+              <h5>Artificial Intelligence</h5>
+              <small>
+                Answer your business challenges and enhance your digital
+                products with our Artificial Intelligence solutions. Automate
+                your processes and get data-driven business insights.
+              </small>
             </ServiceCard>
 
             <ServiceCard
@@ -99,13 +97,13 @@ const Services = () => {
             //   hidden: { opacity: 0, scale: 0 },
             // }}
             >
-              <div>
-                <img src={cloudStoreIcon} alt="" />
-                <h5>Cloud Service</h5>
-                <small>
-                  Stay ahead of the game with tailor-made mobile and web apps
-                </small>
-              </div>
+              <img src={blockchainIcon} alt="" />
+              <h5>Blockchain</h5>
+              <small>
+                If you’re looking for someone to help you launch your DApp,
+                Exchange or Wallet or to provide Smart Contract development, R&D
+                or consultancy - look no further. This is our domain.
+              </small>
             </ServiceCard>
           </ServicesCardConatiner>
         </Container>
