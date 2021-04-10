@@ -87,14 +87,14 @@ const ProcessPlan = () => {
       <ProcessPlanContainerWrap>
         <motion.div
           className="left"
-          ref={ref}
-          animate={controls}
-          initial="hidden"
-          transition={{ duration: 0.5, type: "spring", stiffness: 120 }}
-          variants={{
-            visible: { x: 0 },
-            hidden: { x: -100 },
-          }}
+          // ref={ref}
+          // animate={controls}
+          // initial="hidden"
+          // transition={{ duration: 0.5, type: "spring", stiffness: 120 }}
+          // variants={{
+          //   visible: { x: 0 },
+          //   hidden: { x: -100 },
+          // }}
         >
           <div>
             <p onClick={() => handleOnClick(0)}>
@@ -119,14 +119,14 @@ const ProcessPlan = () => {
         </motion.div>
         <motion.div
           className="right"
-          ref={ref}
-          animate={controls}
-          initial="hidden"
-          transition={{ duration: 0.8, type: "spring", stiffness: 120 }}
-          variants={{
-            visible: { y: 0 },
-            hidden: { y: -100 },
-          }}
+          // ref={ref}
+          // animate={controls}
+          // initial="hidden"
+          // transition={{ duration: 0.8, type: "spring", stiffness: 120 }}
+          // variants={{
+          //   visible: { y: 0 },
+          //   hidden: { y: -100 },
+          // }}
         >
           <Slider {...settings} ref={sliderRef}>
             <ProcessPlanDetails>

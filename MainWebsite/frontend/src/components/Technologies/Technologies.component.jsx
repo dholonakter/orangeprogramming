@@ -49,6 +49,9 @@ const Technologies = () => {
       },
     ],
   };
+  const clickHandle = (target) =>{
+    window.open(target)
+  }
   return (
     <>
       <TechnologiesContainer>
@@ -57,22 +60,22 @@ const Technologies = () => {
           <SmallBorderBottom />
           <Slider {...settings}>
             <TechnologyWrap>
-              <img src={reactIcon} alt="" />
+              <img onClick={()=>clickHandle("https://reactjs.org")} src={reactIcon} alt="" />
             </TechnologyWrap>
             <TechnologyWrap>
-              <img src={nodeIcon} alt="" />
+              <img onClick={()=>clickHandle("https://nodejs.org")} src={nodeIcon} alt="" />
             </TechnologyWrap>
             <TechnologyWrap>
-              <img src={aspIcon} alt="" />
+              <img onClick={()=>clickHandle("https://dotnet.microsoft.com/apps/aspnet")} src={aspIcon} alt="" />
             </TechnologyWrap>
             <TechnologyWrap>
-              <img src={laravelIcon} alt="" />
+              <img onClick={()=>clickHandle("https://laravel.com")} src={laravelIcon} alt="" />
             </TechnologyWrap>
             <TechnologyWrap>
-              <img src={javaIcon} alt="" />
+              <img onClick={()=>clickHandle("https://www.oracle.com/java/")} src={javaIcon} alt="" />
             </TechnologyWrap>
             <TechnologyWrap>
-              <img src={djangoIcon} alt="" />
+              <img onClick={()=>clickHandle("https://www.djangoproject.com/")} src={djangoIcon} alt="" />
             </TechnologyWrap>
           </Slider>
         </Container>

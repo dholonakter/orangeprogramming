@@ -11,33 +11,34 @@ import React from "react";
 import { SocialMediaSidebarContainer } from "./SocialMediaSidebar.style";
 
 const SocialMediaSidebar = () => {
+  
   return (
     <>
       <SocialMediaSidebarContainer>
         <ul class="social">
           <li class="fb">
-            <a href="#">
-              <FontAwesomeIcon icon={faFacebookF} />
+            <a href="https://facebook.com">
+              <FontAwesomeIcon  icon={faFacebookF} />
             </a>
           </li>
           <li class="linkedin">
-            <a href="#">
+            <a href="https://linkedin.com">
               <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
           </li>
           <li class="insta">
-            <a href="#">
-              <FontAwesomeIcon icon={faInstagram} />
+            <a href="https://instagram.com">
+              <FontAwesomeIcon  icon={faInstagram} />
             </a>
           </li>
           <li class="twitter">
-            <a href="#">
-              <FontAwesomeIcon icon={faTwitter} />
+            <a href="https://twitter.com">
+            <FontAwesomeIcon  icon={faTwitter} />
             </a>
           </li>
           <li class="youtube">
-            <a href="#">
-              <FontAwesomeIcon icon={faYoutube} />
+            <a href="https://youtube.com">
+              <FontAwesomeIcon  icon={faYoutube} />
             </a>
           </li>
         </ul>

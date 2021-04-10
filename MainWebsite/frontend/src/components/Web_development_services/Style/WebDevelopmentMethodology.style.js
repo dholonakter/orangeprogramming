@@ -77,15 +77,24 @@ export const MainComputer = styled.div`
 export const Monitor = styled.div`
     margin: auto;
     // padding: 0 1vw 0 1vw;
-    // padding: 10px 0px 10px 0px;
-    padding-top: 1vw;
+    padding-top: 7px;
+    // padding-top: 1vw;
     justify-content: center;
-    height: 20vw;
-    width: 37vw;
+    // height: 20vw;
+    // width: 37vw;
+    height: 325px;
+    width: 550px;
+
     border: 3px solid rgb(229, 230, 232);
     background-color: rgb(240, 103, 31);
     border-radius: 7px;
     overflow: hidden;
+    @media(max-width: 1650px){
+        height: 20vw;
+        width:33vw;
+        padding-top: 10px;
+        
+    }
     @media(max-width: 959px){
         height: 27vw;
         width: 48vw;
@@ -109,12 +118,19 @@ export const Monitor = styled.div`
     }
 `
 export const Player = styled.div`
-    height: 20vw;
-    width: 35vw;
+    // height: 20vw;
+    height: 325px;
+
+    // width: 35vw;
+    width: 530px;
     background: orange;
     margin: auto auto auto auto;
     overflow: hidden;
     // border-right: 3px solid red;
+    @media(max-width: 1650px){
+        height: 19vw;
+        width:31vw;
+    }
     @media(max-width: 959px){
         height: 27vw;
         width: 45vw;
@@ -140,13 +156,18 @@ export const Player = styled.div`
     }
 `
 export const Keyboard = styled.div`
-    height: 50px;
-    width: 42vw;
+    height: 40px;
+    // width: 42vw;
+    width: 650px;
     background-color: rgb(240, 103, 31);
     margin:-17px auto;
     border-radius: 50px 50px 5px 5px ;
     transform: rotateX(110deg);
     border: 10px solid rgb(229, 230, 232);
+    @media(max-width: 1650px){
+        // height: 20vw;
+        width:38vw;
+    }
     @media(max-width: 959px){
         width: 55vw;
         height: 40px;

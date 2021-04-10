@@ -18,6 +18,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const TopContactBar = () => {
+  var style={
+    textDecoration: 'none',
+    color: '#fff'
+  }
   return (
     <>
       <TopContactBarContainerWrap>
@@ -30,11 +34,11 @@ const TopContactBar = () => {
             <FontAwesomeIcon icon={faPhoneSquare} /> <span>+31 6 87258021</span>
           </p>
           <div>
-            <FontAwesomeIcon icon={faFacebook} size="2x" />
-            <FontAwesomeIcon icon={faLinkedin} size="2x" />
-            <FontAwesomeIcon icon={faInstagram} size="2x" />
-            <FontAwesomeIcon icon={faTwitter} size="2x" />
-            <FontAwesomeIcon icon={faYoutube} size="2x" />
+            <a style={style} target="_blank" href="https://facebook.com"><FontAwesomeIcon icon={faFacebook} size="2x" /></a>
+            <a style={style} target="_blank" href="https://linkedin.com"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
+            <a style={style} target="_blank" href="https://instagram.com"><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
+            <a style={style} target="_blank" href="https://twitter.com"><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
+            <a style={style} target="_blank" href="https://youtube.com"><FontAwesomeIcon icon={faYoutube} size="2x" /></a>
           </div>
         </TopContactBarContainer>
       </TopContactBarContainerWrap>

@@ -25,7 +25,7 @@ export const BannerOverlay = styled.div`
   background: linear-gradient(
     0deg,
     rgba(23, 56, 87, 0.84),
-    rgba(23, 56, 87, 0.84)
+    rgba(23, 56, 87, 0.7)
   );
   position: absolute;
   width: inherit;

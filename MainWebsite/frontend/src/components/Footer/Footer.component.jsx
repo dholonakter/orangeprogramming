@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import {
   FooterContainerWrap,
   FooterContentWrap,
@@ -10,54 +11,61 @@ import {
 } from "./Footer.style";
 import logo from "../../assets/images/logo.png";
 import {
-  faFacebook,
   faInstagram,
   faTwitter,
   faYoutube,
-  faLinkedin,
   faFacebookF,
-  faLinkedinIn,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { Container } from "../../utils/container";
-import { Link } from "react-router-dom";
+import { useLocation } from "react-router";
+
+
+
+
+
+
 
 const Footer = () => {
+  const { pathname } = useLocation();
   var style={
     textDecoration: 'none',
     color: '#fff'
   }
-  return (
+  return pathname === "/under-construction" ? null : (
     <>
       <FooterContainerWrap>
         <Container>
           <FooterWrapContainer>
-            {/* <Link style={{float:'left'}} to="/"> */}
-              <img  src={logo} alt="logo" />
-            {/* </Link> */}
-           
-            
+            <img onClick={()=>window.location.href = "/"} src={logo} alt="logo" />
+
             <FooterContentWrap>
               <h4>Service</h4>
-              <p><Link style={style} to='/web-deveopment'>Web Application</Link></p>
+              <p><Link style={style} to='/web-development'>Web Application</Link></p>
               <p><Link style={style} to='/android'>Android</Link></p>
-              <p><Link style={style} to='/ios'>iOS</Link></p>
+              <p><Link style={style} to='/iOS'>iOS</Link></p>
               <p><Link style={style} to='/ai'>Artificial Intelligence</Link></p>
               <p><Link style={style} to='/blockchain'>Blockchain</Link></p>
             </FooterContentWrap>
+
             <FooterContentWrap>
               <h4>Technology</h4>
               <p><a style={style} target="_blank" href="https://reactjs.org" >React Js</a></p>
               <p><a style={style} target="_blank" href="https://nodejs.org">Node Js</a></p>
               <p><a style={style} target="_blank" href="https://php.net" >PHP</a></p>
               <p><a style={style} target="_blank" href="https://laravel.com" >Laravel</a></p>
-              <p><a style={style} target="_blank" href="https://dotnet.microsoft.com" >Dot net</a></p>
+              <p><a style={style} target="_blank" href="https://dotnet.microsoft.com" >Dot Net</a></p>
             </FooterContentWrap>
+            
+
             <FooterContentWrap>
               <h4>Platforms</h4>
               <p><Link style={style} to='/android'>Android</Link></p>
               <p><Link style={style} to='/ios'>iOS</Link></p>
-              <p><Link style={style} to='/web-deveopment'>Web</Link></p>
+              <p><Link style={style} to='/web-development'>Web</Link></p>
             </FooterContentWrap>
+
+
             <Newslatter>
               <form action="">
                 <h4>Newsletter</h4>
@@ -65,6 +73,11 @@ const Footer = () => {
                 <input type="text" placeholder="email" />
                 <button>Signup</button>
               </form>
+
+
+
+
+
               <FooterIconContainer>
                 <FooterIconWrap>
                 <a style={style} target="_blank" href="https://facebook.com"><FontAwesomeIcon icon={faFacebookF} size="2x" /></a>
@@ -89,9 +102,20 @@ const Footer = () => {
                 <a style={style} target="_blank" href="https://youtube.com"><FontAwesomeIcon icon={faYoutube} size="2x" /></a>
 
                 </FooterIconWrap>
-              </FooterIconContainer>
+
+                </FooterIconContainer>
+
+
+
+
+
             </Newslatter>
           </FooterWrapContainer>
+
+
+
+
+
           <br />
           <br />
           <hr />
@@ -103,3 +127,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

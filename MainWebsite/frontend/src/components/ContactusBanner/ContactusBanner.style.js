@@ -4,12 +4,13 @@ export const ContactusBannerContainer = styled.div`
   position: relative;
   background: linear-gradient(
       0deg,
-      rgba(23, 56, 87, 0.8),
-      rgba(23, 56, 87, 0.8)
+      rgba(23, 56, 87, 0.6),
+      rgba(23, 56, 87, 0.6)
     ),
     url(${bgImg});
   background-size: cover;
   margin-bottom: 5%;
+  background-position: top;
 `;
 
 export const ContactusBannerOverlay = styled.div`
@@ -38,16 +39,16 @@ export const ContactusBannerOverlay = styled.div`
     height: fit-content;
     /* background: linear-gradient(
       0deg,
-      rgba(23, 56, 87, 0.1),
-      rgba(23, 56, 87, 0.1)
+      rgba(23, 56, 87, 0.2),
+      rgba(23, 56, 87, 0.2)
     ); */
     /* background: linear-gradient(
         0deg,
         rgba(222, 255, 255, 0.2),
         rgba(255, 255, 255, 0.2)
       ); */
-    border: 1px solid #f0671f;
-
+    /* border: 1px solid #f0671f; */
+    background-color: #fff;
     @media (max-width: 768px) {
       width: 100%;
       margin-top: 5%;
@@ -79,6 +80,13 @@ export const ContactusBannerOverlay = styled.div`
 
       button {
         width: 100%;
+        background-color: #f0671f;
+        color: #fff;
+
+        &:hover {
+          color: #f0671f;
+          background: #fff;
+        }
       }
     }
   }

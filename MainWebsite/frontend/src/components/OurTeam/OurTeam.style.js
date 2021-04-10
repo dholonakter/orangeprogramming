@@ -8,9 +8,7 @@ export const TeamMemberConatiner = styled.div`
 `;
 
 export const TeamMember = styled.div`
-  /* height: 500px; */
   width: 22%;
-  text-align: center;
   @media (max-width: 560px) {
     width: 47%;
   }
@@ -20,45 +18,50 @@ export const TeamMember = styled.div`
     max-height: 100%;
   }
 
-  p {
-    margin-bottom: 5px;
-    font-size: 20px;
-
-    @media (max-width: 768px) {
-      font-size: 14px;
-    }
-  }
-  h6 {
-    margin-bottom: 12px;
-    font-size: 12px;
-
-    @media (max-width: 768px) {
-      font-size: 10px;
-    }
-  }
-
-  div {
-    width: 100px;
-    margin: 0 auto;
-    font-size: 22px;
+  .memeber__info {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
-    color: #173857;
-    cursor: pointer;
+    align-items: center;
 
-    & > * {
-      text-align: center;
-      display: block;
-      margin: 0 auto;
+    .info {
+      p {
+        margin-bottom: 5px;
+        font-size: 18px;
+
+        @media (max-width: 1100px) {
+          font-size: 16px;
+        }
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
+      }
+      h6 {
+        margin-bottom: 12px;
+        font-size: 12px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #f0671f;
+
+        @media (max-width: 768px) {
+          font-size: 9px;
+        }
+      }
+    }
+
+    .social__icon {
+      font-size: 25px;
+      cursor: pointer;
+      color: #173857;
       transition: all 0.3s;
       &:hover {
         color: #f0671f;
       }
     }
-    @media (max-width: 768px) {
-      font-size: 16px;
-      width: 70px;
-    }
   }
 `;
+
+// & > * {
+//
+// }
+// @media (max-width: 768px) {
+//   font-size: 16px;
+// }

@@ -19,19 +19,59 @@ import linkedin from "../../assets/images/icons/linkedin.webp";
 import youtube from "../../assets/images/icons/youtube.png";
 import mail from "../../assets/images/icons/mail.png";
 import snapChat from "../../assets/images/icons/snap-chat.png";
+import Iframe from 'react-iframe';
+import { useLocation } from "react-router";
+
+
+
+
+
+
 const ContactInfo = () => {
+
+
+
+  const { pathName } = useLocation();
+
+
+const myFun = () => {
+    var a = '/home#tarek';
+    
+    
+      if(a == pathName){
+        console.log("matched")
+      }
+      else{
+        console.log("not matched")
+      }
+      // var elmnt = document.getElementById("tarek");
+      // elmnt.scrollIntoView();
+    
+    
+    
+    }
+
+
+
+  const goTo = (l) =>{
+    window.open(l)
+  }
+  // myFun()
   return (
     <>
       <Container>
         <ContactInfoContainer>
           <div className="img">
             <img src={mapImg} alt="" />
+
+
+
           </div>
           <div className="info">
             <HeaderText>Contact info</HeaderText>
             <SmallBorderBottom />
             <p>
-              <FontAwesomeIcon icon={faMapMarkerAlt} /> &nbsp;&nbsp; Elgarstraat
+              <FontAwesomeIcon  icon={faMapMarkerAlt} /> &nbsp;&nbsp; Elgarstraat
               22 5653AH Eindhoven, Netherlands.
             </p>
             <p>
@@ -47,12 +87,12 @@ const ContactInfo = () => {
         <SocialMediaContainer>
           <h2>Find us on socila media</h2>
           <div>
-            <img src={fb} alt="" />
-            <img src={tweeter} alt="" />
-            <img src={linkedin} alt="" />
-            <img src={youtube} alt="" />
-            <img src={mail} alt="" />
-            <img src={snapChat} alt="" />
+            <img onClick={()=>goTo("https://facebook.com")} src={fb} alt="" />
+            <img  onClick={()=>goTo("https://twitter.com")} src={tweeter} alt="" />
+            <img  onClick={()=>goTo("https://linkedin.com")} src={linkedin} alt="" />
+            <img  onClick={()=>goTo("https://youtube.com")} src={youtube} alt="" />
+            <img  onClick={()=>goTo("https://email.com")} src={mail} alt="" />
+            <img  onClick={()=>goTo("https://snapchat.com")} src={snapChat} alt="" />
           </div>
         </SocialMediaContainer>
       </Container>

@@ -21,7 +21,7 @@ export const ServiceCard = styled(motion.div)`
   position: relative;
   align-items: center;
   border-radius: 5px;
-  border-bottom: 4px solid #2e326b;
+  border-bottom: 3px solid #173857;
   cursor: pointer;
   transition: box-shadow 0.2s ease-in-out, transform 0.35s ease-in-out;
   &:hover {

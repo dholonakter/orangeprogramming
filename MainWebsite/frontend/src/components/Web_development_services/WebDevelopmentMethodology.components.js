@@ -165,11 +165,11 @@ class WebDevelopmentMethodology extends Component {
             {this.methodData.map(item=>(
                 <div>
                     <Grid  container>
-                         <Grid item md='5'>
+                         <Grid item md='6'>
                             <Typography   align="left" variant="h4"> {item.name} </Typography>
                              <Typography  align="justify" variant="body2">  {item.text}  </Typography>
                          </Grid>
-                        <Grid className='right' item md='7'>
+                        <Grid className='right' item md='6'>
                           <MainComputer>
                             <Monitor>
                               <Player>

@@ -46,9 +46,32 @@ const Projects = () => {
     ],
   };
 
+
+
+
+  // const f = () =>{
+  //   // var abc = window.screenTop;
+  //   // var elmnt = document.getElementById('tarek');
+  //   // var y = elmnt.screenTop;
+  //   // console.log(y);
+  //   var elmnt = document.getElementById('tarek');
+  //   // var abc = window.scrollY;
+  //   var abc = elmnt.getBoundingClientRect().top;
+   
+  //   console.log(abc)
+  // }
+  
+  // window.addEventListener('scroll', f);
+
+
+
+
+
+
+
   return (
-    <>
-      <Container>
+    <div id='tarek'>
+      <Container >
         <br />
         <br />
         <HeaderText>Our projects</HeaderText>
@@ -57,18 +80,16 @@ const Projects = () => {
           <ProjectCard>
             <img src={img1} alt="" />
             <div className="img__title">
-              <h2>Social Blogs</h2>
-              <small>Blog Site</small>
+              <h2>Doctors Portal</h2>
+              <small>Appointment Management</small>
             </div>
 
             <div className="img__overlay">
               <hr />
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
-                architecto quod in consequuntur.
-              </p>
-              <br />
-              <PrimaryButton>
+              <p>Doctor appointment management web application.</p>
+              <PrimaryButton
+                onClick={() => window.open("https://doctors-portall.web.app/")}
+              >
                 View &nbsp; <FontAwesomeIcon icon={faArrowRight} />
               </PrimaryButton>
             </div>
@@ -77,19 +98,16 @@ const Projects = () => {
           <ProjectCard>
             <img src={img2} alt="" />
             <div className="img__title">
-              {" "}
-              <h2>OP Shopping</h2>
-              <small>Ecomerce Site</small>
+              <h2>Red Onion</h2>
+              <small>Restaurent Site</small>
             </div>
 
             <div className="img__overlay">
               <hr />
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
-                architecto quod in consequuntur.
-              </p>
-              <br />
-              <PrimaryButton>
+              <p>A single page restaurent web applictaion.</p>
+              <PrimaryButton
+                onClick={() => window.open("https://red-onion-bd.web.app/")}
+              >
                 View &nbsp; <FontAwesomeIcon icon={faArrowRight} />
               </PrimaryButton>
             </div>
@@ -98,19 +116,18 @@ const Projects = () => {
           <ProjectCard>
             <img src={img3} alt="" />
             <div className="img__title">
-              {" "}
-              <h2>Dutch Restaurent </h2>
-              <small>Restaurent Site</small>
+              <h2>Volunteer Network</h2>
+              <small>Social Work Site</small>
             </div>
 
             <div className="img__overlay">
               <hr />
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
-                architecto quod in consequuntur.
-              </p>
-              <br />
-              <PrimaryButton>
+              <p>Social work management web application.</p>
+              <PrimaryButton
+                onClick={() =>
+                  window.open("https://volunteer-network-bd.web.app/")
+                }
+              >
                 View &nbsp; <FontAwesomeIcon icon={faArrowRight} />
               </PrimaryButton>
             </div>
@@ -121,7 +138,7 @@ const Projects = () => {
         <br />
         <br />
       </Container>
-    </>
+    </div>
   );
 };
 

@@ -6,6 +6,7 @@ import Banner768px from "./Images/banner768px.png";
 import {Container} from '../../utils/container';
 import { Grid } from '@material-ui/core';
 import Table from './Images/table.png';
+import { useLocation } from 'react-router';
 
 
 
@@ -35,7 +36,7 @@ export default function WebDevelopment (){
         }
     }
 
-    
+    console.log(useLocation())
     return(
         
         <div >

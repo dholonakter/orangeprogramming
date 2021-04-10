@@ -51,6 +51,9 @@ export const SocialMediaContainer = styled.div`
 
     img {
       width: 50px;
+      :hover{
+        cursor: pointer;
+      }
       @media (max-width: 768px) {
         width: 30px;
       }
