@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import img from "../../assets/images/banner-imgs/banner-img-1.jpg";
 
 export const BannerContainer = styled.div`
   width: 100vw;
@@ -9,6 +8,10 @@ export const BannerContainer = styled.div`
   &:focus {
     border: none;
     outline: none;
+  }
+
+  @media (max-width: 768px) {
+    height: 60vh;
   }
 `;
 

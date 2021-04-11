@@ -206,7 +206,7 @@ export const DropDownContainer = styled.div`
   top: 190%;
   left: -10%;
   background-color: #173857;
-  width: 180px;
+  width: 200px;
   /* padding: 8px 15px 0 15px; */
   height: ${({ openDropDown }) => (openDropDown ? "auto" : 0)};
   overflow: hidden;
@@ -220,11 +220,14 @@ export const DropDownContainer = styled.div`
 
   p {
     pointer-events: auto;
+    transition: all 0.5s;
     @media (min-width: 768px) {
       margin: 10px 15px 10px 10px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.25);
       padding: 0 0px 5px 0;
-
+      &:hover {
+        border-bottom: 1px solid #f0671f;
+      }
       /* &::after {
         content: "";
         display: block;

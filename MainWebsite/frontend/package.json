@@ -14,6 +14,7 @@
     "@testing-library/user-event": "^12.8.3",
     "emailjs-com": "^2.6.4",
     "framer-motion": "^3.7.0",
+    "material-ui-icons": "*",
     "react": "^17.0.1",
     "react-alert": "^7.0.2",
     "react-alert-template-basic": "^1.0.0",

@@ -12,10 +12,6 @@ import { PrimaryButton } from "../../utils/buttons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-
-
-
-
 const Projects = () => {
   const settings = {
     focusOnSelect: false,
@@ -51,11 +47,9 @@ const Projects = () => {
     ],
   };
 
-
-
   return (
-    <div id='tarek'>
-      <Container >
+    <div id="projects">
+      <Container>
         <br />
         <br />
         <HeaderText>Our projects</HeaderText>

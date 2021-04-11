@@ -33,7 +33,7 @@ export const ServiceCard = styled(motion.div)`
     padding-top: 48%;
     margin-bottom: 3%;
   }
-  @media (max-width: 560px) {
+  @media (max-width: 500px) {
     width: 100%;
     padding-top: 100%;
   }
@@ -64,6 +64,9 @@ export const ServiceCard = styled(motion.div)`
       @media (max-width: 1000px) {
         font-size: 10px;
       }
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
     }
   }
 
@@ -71,8 +74,8 @@ export const ServiceCard = styled(motion.div)`
     text-align: justify;
     font-size: 0.8vw;
 
-    @media (max-width: 900px) {
-      font-size: 8px;
+    @media (max-width: 768px) {
+      font-size: 10px;
     }
   }
 `;
