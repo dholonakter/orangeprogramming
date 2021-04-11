@@ -32,7 +32,7 @@ const Services = () => {
 
   return (
     <>
-      <ServicesContainerWrap>
+      <ServicesContainerWrap >
         <Container>
           <HeaderText>Services that we provide</HeaderText>
           <SmallBorderBottom />
@@ -70,10 +70,10 @@ const Services = () => {
             //   hidden: { opacity: 0, scale: 0 },
             // }}
             >
-              <Link style={stl} to='/android'>
+              <Link style={stl} to='/mobile-developments'>
                 <div>
                   <img src={mobAppIcon} alt="" />
-                  <h5>Android/IOS Application</h5>
+                  <h5>Mobile Developments</h5>
                   <small>
                     Stay ahead of the game with tailor-made mobile and web apps
                   </small>
@@ -95,7 +95,7 @@ const Services = () => {
               <Link style={stl} to='/ai'>
                 <div>
                   <img src={aiIcon} alt="" />
-                  <h5>Artificial Intelligence</h5>
+                  <h5> Predictable Artificial Intelligence</h5>
                   <small>
                     Stay ahead of the game with tailor-made mobile and web apps
                   </small>
@@ -114,10 +114,10 @@ const Services = () => {
             //   hidden: { opacity: 0, scale: 0 },
             // }}
             >
-              <Link style={stl} to='/cloud'>
+              <Link style={stl} to='/windows-application'>
                 <div>
                   <img src={cloudStoreIcon} alt="" />
-                  <h5>Cloud Service</h5>
+                  <h5>Windows Application</h5>
                   <small>
                     Stay ahead of the game with tailor-made mobile and web apps
                   </small>

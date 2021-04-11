@@ -11,6 +11,11 @@ import img3 from "../../assets/images/projects-img/project-3.jpg";
 import { PrimaryButton } from "../../utils/buttons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
+
+
+
+
 const Projects = () => {
   const settings = {
     focusOnSelect: false,
@@ -45,27 +50,6 @@ const Projects = () => {
       },
     ],
   };
-
-
-
-
-  // const f = () =>{
-  //   // var abc = window.screenTop;
-  //   // var elmnt = document.getElementById('tarek');
-  //   // var y = elmnt.screenTop;
-  //   // console.log(y);
-  //   var elmnt = document.getElementById('tarek');
-  //   // var abc = window.scrollY;
-  //   var abc = elmnt.getBoundingClientRect().top;
-   
-  //   console.log(abc)
-  // }
-  
-  // window.addEventListener('scroll', f);
-
-
-
-
 
 
 

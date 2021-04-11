@@ -44,9 +44,9 @@ class WebDevelopmentMethodology extends Component {
                             
                         },
                         {
-                            name: 'Design',
+                            name: 'Visual Design',
                             logo:  <CropOriginalIcon/>,
-                            text: "Hi i am design, and i am good with this,   Defininging site goatlsof Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words et",
+                            text: "Design determines the visual aesthetic of a website and creates the first impression on people. Our adept web designing team will work closely to convert your ideas and concepts of the business into reality. What we promise is a complete gamut of web services that help you create a better brand impression and user-friendly interface, thereby creating better traffic through your website. Visual appeal + user-friendly design = the difference between an average, lackluster website and one that makes a memorable impression.  ",
                             photo: img3,
                             id:'3',
                             isActive: false
@@ -54,24 +54,24 @@ class WebDevelopmentMethodology extends Component {
                         {
                             name: 'Development',
                             logo: <CodeIcon/>,
-                            text: "it  is perfect time to do code....Defininging site goatlsof Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words et",
+                            text: "The stage where a website is crafted with utmost essential and fine elements. We cater to strong web development that is rooted in creativity and founded in technical expertise, in order to bolster the created layout and have error-free page loading, as well as a user-friendly web structure. Whether you need just a revamping of your prevailing website or a full-scale flash application development, our passion is to make the best out of everything. ",
                             photo: img4,
                             id:'4',
                             isActive: false
                         },
                         {
-                            name: 'Quality',
+                            name: 'Quality Testing',
                             logo: <LockIcon/>,
-                            text: "we make sure u quality Defininging site goatlsof Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words et",
+                            text: "The time to check and review the quality and credibility of the website. We strictly perform an extensive quality assurance process to check every form, every script, every link, every functionality and compatibility issues to ensure that your website is flawless and is completely prepared for launch. Taking into consideration hundreds of checkpoints, we make the reassurance that we haven’t missed anything visually, and everything – from the home page to the confirmation or contact page – is working perfectly. ",
                             photo: img5,
                             id:'5',
                             isActive: false
                             
                         },
                         {
-                            name: 'Delivery',
+                            name: 'Service After Delivering',
                             logo: <MergeTypeIcon/>,
-                            text: "tomorrowDefininging site goatlsof Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words et",
+                            text: "Our service is not for one time, we will provide every types of technical support as long as your website will be active. With the updating of any security problem, we will update your website as well.",
                             photo: img6,
                             id:'6',
                             isActive: false

@@ -14,17 +14,17 @@ const DropDown = ({ dropDownState }) => {
         <NavItems to="/web-development" className="dropdown__item">
           <p>Web Application</p>
         </NavItems>
-        <NavItems to="/iOS" className="dropdown__item">
-          <p>iOS</p>
+        <NavItems to="/mobile-developments" className="dropdown__item">
+          <p>Mobile Developments</p>
         </NavItems>
-        <NavItems to="/android" className="dropdown__item">
+        {/* <NavItems to="/android" className="dropdown__item">
           <p>Android</p>
-        </NavItems>
+        </NavItems> */}
         <NavItems to="/ai" className="dropdown__item">
-          <p>Artificial Intelligence</p>
+          <p> Predictable Artificial Intelligence  </p>
         </NavItems>
-        <NavItems to="/blockchain" className="dropdown__item">
-          <p>Blockchain</p>
+        <NavItems to="/windows-application" className="dropdown__item">
+          <p>Windows Application</p>
         </NavItems>
       </DropDownContainer>
     </>

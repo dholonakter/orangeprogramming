@@ -13,21 +13,7 @@ const OurStory = () => {
         <SmallBorderBottom />
         <OurstoryContainer>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-            facere similique praesentium quod accusamus quae nam! Reprehenderit
-            dolor a quas, deserunt eum culpa porro nemo officia temporibus at
-            dolorem! Sunt eum quos qui dolorum illum blanditiis excepturi unde
-            atque? A aliquid necessitatibus provident ex repellat. Ducimus unde
-            repellendus aliquid a consectetur! Eius fuga doloribus quo
-            consectetur, a assumenda odit numquam maiores debitis, incidunt,
-            delectus porro amet voluptatum dolorum alias ipsam tempore impedit
-            consequatur ducimus ex maxime quasi facere similique? Facere
-            reprehenderit natus optio tenetur est, velit cumque repellendus
-            architecto cupiditate aliquid? Est consequuntur accusamus expedita!
-            Veniam modi consequatur obcaecati eum veritatis deleniti vitae eius
-            nam, deserunt amet placeat autem praesentium dolorem earum sunt
-            doloribus exercitationem quis dolorum?
-          </p>
+          Orange Programming is a mobile and web development company creating solutions for mobile and web applications. It was established in December 2020 in the Netherlands with young professional software engineers. We help our clients rapidly implement digital transformation strategies that achieve optimal results with less risk through deep technical and business expertise with custom methodology processes.           </p>
           {/* <img src={logoImg} alt="" /> */}
         </OurstoryContainer>
       </Container>

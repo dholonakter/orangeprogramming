@@ -34,29 +34,11 @@ const ContactInfo = () => {
   const { pathName } = useLocation();
 
 
-const myFun = () => {
-    var a = '/home#tarek';
-    
-    
-      if(a == pathName){
-        console.log("matched")
-      }
-      else{
-        console.log("not matched")
-      }
-      // var elmnt = document.getElementById("tarek");
-      // elmnt.scrollIntoView();
-    
-    
-    
-    }
 
+  // const goTo = (l) =>{
+  //   window.open(l)
+  // }
 
-
-  const goTo = (l) =>{
-    window.open(l)
-  }
-  // myFun()
   return (
     <>
       <Container>
@@ -84,7 +66,7 @@ const myFun = () => {
             </p>
           </div>
         </ContactInfoContainer>
-        <SocialMediaContainer>
+        {/* <SocialMediaContainer>
           <h2>Find us on socila media</h2>
           <div>
             <img onClick={()=>goTo("https://facebook.com")} src={fb} alt="" />
@@ -94,7 +76,7 @@ const myFun = () => {
             <img  onClick={()=>goTo("https://email.com")} src={mail} alt="" />
             <img  onClick={()=>goTo("https://snapchat.com")} src={snapChat} alt="" />
           </div>
-        </SocialMediaContainer>
+        </SocialMediaContainer> */}
       </Container>
     </>
   );

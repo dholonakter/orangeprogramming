@@ -9,14 +9,22 @@ import Footer from "./components/Footer/Footer.component";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import UnderConstruction from "./components/UnderConstruction/UnderConstruction.component";
 import WebServices from './pages/WebDevelopmentServices/WebDevelopment.page';
-import Blog from "./pages/Blog/Blog.page";
+
+
 
 function App() {
+
+
+
+
   return (
     <div className="App">
       <Router>
-        <ScrollToTop>
-          <Navbar />
+        <ScrollToTop >
+          
+            <Navbar name={document.getElementById("tarek")}/>
+        
+          
           <Switch>
             <Route exact path="/home" component={Home} />
             <Route exact path="/about-us" component={Aboutus} />
@@ -36,13 +44,13 @@ function App() {
             <Route exact path="/gallery" component={UnderConstruction} />
             <Route exact path="/android" component={UnderConstruction} />
             <Route exact path="/ai" component={UnderConstruction} />
-            <Route exact path="/iOS" component={UnderConstruction} />
+            <Route exact path="/mobile-developments" component={UnderConstruction} />
             <Route exact path="/blockchain" component={UnderConstruction} />
-            <Route exact path="/cloud" component={UnderConstruction} />
+            <Route exact path="/windows-application" component={UnderConstruction} />
 
 
             <Route exact strict path="/home/#tarek" component={Home} />
-            <Route exact path="/blog" component={Blog} />
+            <Route exact path="/blog" component={UnderConstruction} />
 
 
             {/* Page Not Found Here */}

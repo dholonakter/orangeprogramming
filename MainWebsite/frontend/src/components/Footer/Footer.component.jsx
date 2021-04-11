@@ -42,10 +42,9 @@ const Footer = () => {
             <FooterContentWrap>
               <h4>Service</h4>
               <p><Link style={style} to='/web-development'>Web Application</Link></p>
-              <p><Link style={style} to='/android'>Android</Link></p>
-              <p><Link style={style} to='/iOS'>iOS</Link></p>
-              <p><Link style={style} to='/ai'>Artificial Intelligence</Link></p>
-              <p><Link style={style} to='/blockchain'>Blockchain</Link></p>
+              <p><Link style={style} to='/mobile-developments'>Mobile Developments</Link></p>
+              <p><Link style={style} to='/ai'>Predictable Artificial Intelligence</Link></p>
+              <p><Link style={style} to='/windows-application'>Windows Application</Link></p>
             </FooterContentWrap>
 
             <FooterContentWrap>
@@ -63,6 +62,7 @@ const Footer = () => {
               <p><Link style={style} to='/android'>Android</Link></p>
               <p><Link style={style} to='/ios'>iOS</Link></p>
               <p><Link style={style} to='/web-development'>Web</Link></p>
+              <p><Link style={style} to='/windows'>Windows</Link></p>
             </FooterContentWrap>
 
 
