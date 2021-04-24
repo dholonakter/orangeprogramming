@@ -27,20 +27,25 @@ import { useLocation } from "react-router";
 
 
 const Footer = () => {
+  const goTo = (link) =>{
+    window.open(link);
+  }
+  
   const { pathname } = useLocation();
   var style={
     textDecoration: 'none',
-    color: '#fff'
+    color: '#fff',
+    cursor: 'pointer'
   }
   return pathname === "/under-construction" ? null : (
     <>
       <FooterContainerWrap>
         <Container>
           <FooterWrapContainer>
-            <img onClick={()=>window.location.href = "/"} src={logo} alt="logo" />
+            <img  src={logo} alt="logo" />
 
             <FooterContentWrap>
-              <h4>Service</h4>
+              <h4>Services</h4>
               <p><Link style={style} to='/web-development'>Web Application</Link></p>
               <p><Link style={style} to='/mobile-developments'>Mobile Developments</Link></p>
               <p><Link style={style} to='/ai'>Predictable Artificial Intelligence</Link></p>
@@ -48,12 +53,13 @@ const Footer = () => {
             </FooterContentWrap>
 
             <FooterContentWrap>
-              <h4>Technology</h4>
-              <p><a style={style} target="_blank" href="https://reactjs.org" >React Js</a></p>
-              <p><a style={style} target="_blank" href="https://nodejs.org">Node Js</a></p>
-              <p><a style={style} target="_blank" href="https://php.net" >PHP</a></p>
-              <p><a style={style} target="_blank" href="https://laravel.com" >Laravel</a></p>
-              <p><a style={style} target="_blank" href="https://dotnet.microsoft.com" >Dot Net</a></p>
+              <h4>Technologies</h4>
+            
+              <p style={style} onClick={()=>goTo("https://reactjs.org")}>React Js</p>
+              <p style={style} onClick={()=>goTo("https://nodejs.org")}> Node Js</p>
+              <p style={style} onClick={()=>goTo("https://php.net")}>PHP</p>
+              <p style={style} onClick={()=>goTo("https://laravel.com")}> Laravel</p>
+              <p style={style} onClick={()=>goTo("https://dotnet.microsoft.com")}> Dot Net</p>
             </FooterContentWrap>
             
 
@@ -80,26 +86,24 @@ const Footer = () => {
 
               <FooterIconContainer>
                 <FooterIconWrap>
-                <a style={style} target="_blank" href="https://facebook.com"><FontAwesomeIcon icon={faFacebookF} size="2x" /></a>
-                  
+                    <FontAwesomeIcon  onClick={()=>goTo("https://facebook.com")} icon={faFacebookF} size="2x" />
                 </FooterIconWrap>
 
                 <FooterIconWrap>
-                <a style={style} target="_blank" href="https://linkedin.com"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
+                  <FontAwesomeIcon onClick={()=>goTo("https://linkedin.com")} icon={faLinkedin} size="2x" />
                  
                 </FooterIconWrap>
 
                 <FooterIconWrap>
-                <a style={style} target="_blank" href="https://instagram.com"><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
-                
+                  <FontAwesomeIcon  onClick={()=>goTo("https://instagram.com")} icon={faInstagram} size="2x" />
                 </FooterIconWrap>
 
                 <FooterIconWrap>
-                <a style={style} target="_blank" href="https://twitter.com"><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
+                <FontAwesomeIcon onClick={()=>goTo("https://twitter.com")} icon={faTwitter} size="2x" />
                   
                 </FooterIconWrap>
                 <FooterIconWrap>
-                <a style={style} target="_blank" href="https://youtube.com"><FontAwesomeIcon icon={faYoutube} size="2x" /></a>
+                  <FontAwesomeIcon onClick={()=>goTo("https://youtube.com")} icon={faYoutube} size="2x" />
 
                 </FooterIconWrap>
 

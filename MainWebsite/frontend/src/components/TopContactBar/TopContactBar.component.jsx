@@ -18,9 +18,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const TopContactBar = () => {
+  const goTo = (link) =>{
+    window.open(link);
+  }
   var style={
     textDecoration: 'none',
-    color: '#fff'
+    color: '#fff',
+    cursor: 'pointer'
   }
   return (
     <>
@@ -34,11 +38,13 @@ const TopContactBar = () => {
             <FontAwesomeIcon icon={faPhoneSquare} /> <span>+31 6 87258021</span>
           </p>
           <div>
-            <a style={style} target="_blank" href="https://facebook.com"><FontAwesomeIcon icon={faFacebook} size="2x" /></a>
-            <a style={style} target="_blank" href="https://linkedin.com"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
-            <a style={style} target="_blank" href="https://instagram.com"><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
-            <a style={style} target="_blank" href="https://twitter.com"><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
-            <a style={style} target="_blank" href="https://youtube.com"><FontAwesomeIcon icon={faYoutube} size="2x" /></a>
+          <FontAwesomeIcon style={style} onClick={()=>goTo("https://facebook.com")} icon={faFacebook} size="2x" />
+          <FontAwesomeIcon style={style} onClick={()=>goTo("https://linkedin.com")} icon={faLinkedin} size="2x" />
+          <FontAwesomeIcon  style={style} onClick={()=>goTo("https://instagram.com")} icon={faInstagram} size="2x" />
+          <FontAwesomeIcon  style={style} onClick={()=>goTo("https://twitter.com")} icon={faTwitter} size="2x" />
+          <FontAwesomeIcon style={style} onClick={()=>goTo("https://youtube.com")} icon={faYoutube} size="2x" />
+                 
+          
           </div>
         </TopContactBarContainer>
       </TopContactBarContainerWrap>

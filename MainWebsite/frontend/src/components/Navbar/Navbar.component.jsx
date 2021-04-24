@@ -28,7 +28,7 @@ const Navbar = (props,{ noBg }) => {
   console.log(noBg);
   const { pathname } = useLocation();
 
-  var pathList = ['/ai', '/ios', '/blockchain', '/android', '/iOS', '/cloud', '/blog', '/mobile-developments', '/windows-application', '/windows']
+  var pathList = ['/home', '/about-us', '/contact-us', '/', '/web-development', ]
 
 
 
@@ -36,77 +36,15 @@ const Navbar = (props,{ noBg }) => {
   const background = () => {
     var check = pathList.includes(pathname);
     if(check){
-      return "rgb(23, 56, 87)";
+      return "";
     }else{
-        return "";
+        return "rgb(23, 56, 87)";
     }
   }
  
 
-
-
-
-
-
-
-
-  const a = [];
-  a.push(document.getElementById('tarek'))
-
-
-
-
- const gf = () => {
-   if(pathname == '/home/'){
-     console.log('matched')
-     var element = props.name;
-    // abs.scrollIntoView();
-    // window.scrollTo(0, 1500);
-    // abs.scrollTo(0, 400)
-    // alert(abs)
-
-
-
-//     var xPosition = 0;
-//     var yPosition = 0;
-
-
-//     while(element) {
-//       xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
-//       yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
-//       element = element.offsetParent;
-//   }
-
-// console.log(xPosition)
-
-    // console.log(abs)
-    //  console.log(abs.getBoundingClientRect().top)
-  
-   }else{
-     console.log('not matched')
-   }
- }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   return(
-    <div onLoad={gf()}>
+    <div >
       <TopContactBar />
       <NavWrap style={{background:background()}} navBar={navBar}>
         <Nav className="active" navBar={navBar}>

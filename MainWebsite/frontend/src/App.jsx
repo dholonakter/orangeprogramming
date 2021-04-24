@@ -9,7 +9,7 @@ import Footer from "./components/Footer/Footer.component";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import UnderConstruction from "./components/UnderConstruction/UnderConstruction.component";
 import WebServices from './pages/WebDevelopmentServices/WebDevelopment.page';
-
+import Error from "./components/Error/Error";
 
 
 function App() {
@@ -54,7 +54,9 @@ function App() {
 
 
             {/* Page Not Found Here */}
-            <Route exact path="*" component={" "} />
+            <Route component={Error} />
+
+
           </Switch>
           <Footer />
         </ScrollToTop>

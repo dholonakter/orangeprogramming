@@ -17,29 +17,29 @@ const SocialMediaSidebar = () => {
       <SocialMediaSidebarContainer>
         <ul class="social">
           <li class="fb">
-            <a href="https://facebook.com">
+       
               <FontAwesomeIcon  icon={faFacebookF} />
-            </a>
+      
           </li>
           <li class="linkedin">
-            <a href="https://linkedin.com">
+         
               <FontAwesomeIcon icon={faLinkedinIn} />
-            </a>
+         
           </li>
           <li class="insta">
-            <a href="https://instagram.com">
+           
               <FontAwesomeIcon  icon={faInstagram} />
-            </a>
+        
           </li>
           <li class="twitter">
-            <a href="https://twitter.com">
+           
             <FontAwesomeIcon  icon={faTwitter} />
-            </a>
+           
           </li>
           <li class="youtube">
-            <a href="https://youtube.com">
+          
               <FontAwesomeIcon  icon={faYoutube} />
-            </a>
+     
           </li>
         </ul>
       </SocialMediaSidebarContainer>

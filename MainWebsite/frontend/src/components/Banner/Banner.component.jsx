@@ -32,7 +32,7 @@ const Banner = () => {
                 animate={{ y: 0 }}
                 transition={{ type: "spring", stiffness: 120 }}
               >
-                YOU SHARE YOU <span> IDEA.</span>WE GET IT <span>DONE.</span>{" "}
+                YOU SHARE YOUR <span> IDEA.</span>WE GET IT <span>DONE.</span>{" "}
               </motion.h1>
               <div className="hr" />
             </div>

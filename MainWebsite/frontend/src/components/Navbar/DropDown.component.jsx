@@ -17,9 +17,6 @@ const DropDown = ({ dropDownState }) => {
         <NavItems to="/mobile-developments" className="dropdown__item">
           <p>Mobile Developments</p>
         </NavItems>
-        {/* <NavItems to="/android" className="dropdown__item">
-          <p>Android</p>
-        </NavItems> */}
         <NavItems to="/ai" className="dropdown__item">
           <p> Predictable Artificial Intelligence  </p>
         </NavItems>

@@ -107,13 +107,13 @@ const ProcessPlan = () => {
               <FontAwesomeIcon icon={faSwatchbook} /> Design
             </p>
             <p onClick={() => handleOnClick(3)}>
-              <FontAwesomeIcon icon={faLaptopCode} /> Developement
+              <FontAwesomeIcon icon={faLaptopCode} /> Development
             </p>
             <p onClick={() => handleOnClick(4)}>
               <FontAwesomeIcon icon={faVials} /> Testing
             </p>
             <p onClick={() => handleOnClick(5)}>
-              <FontAwesomeIcon icon={faCogs} /> Maintence
+              <FontAwesomeIcon icon={faCogs} /> Maintenance
             </p>
           </div>
         </motion.div>
@@ -213,7 +213,7 @@ Within the user testing phase, the team will get into contact with the client an
                 <img src={maintenceImg} alt="" />
 
                 <div>
-                  <h2>Maintence</h2>
+                  <h2>Maintenance</h2>
                   <br />
                   <p>
                   In theory not every handed over project is complete at 100%, although it may seem so, but a client would at times suggest changes to be made, thereby, would ask for some maintenance. Other aspects include if there is a bug found somewhere in the system that must be corrected, the team will provide the best solution towards the client’s feedback and will.  

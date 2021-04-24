@@ -44,10 +44,10 @@ export default function WebDevelopment (){
                 <Container >
                  
                  <Grid className="con" container>
-                    <Grid className='left' item sm='7'>
+                    <Grid className='left' item sm={7}>
                         <p>web development</p>
                     </Grid>
-                    <Grid className='right' item sm='5'>
+                    <Grid className='right' item sm={5}>
                     
                         <img className='image' src={Table}></img>
                     </Grid>

@@ -138,9 +138,9 @@ class WebDevelopmentMethodology extends Component {
                             >
                               
                                 {this.methodData.map(item=>(
-                                    <div>
+                                    <div key={item.id}>
                                         {/* <Grid key={item.id} className='gridItem' item sm={2}> */}
-                                            <IconBox     style={{background:'#fff'}} > 
+                                            <IconBox   style={{background:'#fff'}} > 
                                                 <div className='logoHolder'>
                                                     {item.logo}                   
                                                 </div>
@@ -163,13 +163,13 @@ class WebDevelopmentMethodology extends Component {
           ref={slider => (this.slider1 = slider)}
         >
             {this.methodData.map(item=>(
-                <div>
+                <div key={item.id}>
                     <Grid  container>
-                         <Grid item md='6'>
+                         <Grid item md={6}>
                             <Typography   align="left" variant="h4"> {item.name} </Typography>
                              <Typography  align="justify" variant="body2">  {item.text}  </Typography>
                          </Grid>
-                        <Grid className='right' item md='6'>
+                        <Grid className='right' item md={6}>
                           <MainComputer>
                             <Monitor>
                               <Player>
