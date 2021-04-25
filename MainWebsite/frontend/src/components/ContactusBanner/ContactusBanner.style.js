@@ -9,7 +9,7 @@ export const ContactusBannerContainer = styled.div`
     ),
     url(${bgImg});
   background-size: cover;
-  margin-bottom: 5%;
+  // margin-bottom: 5%;
   background-position: top;
 `;
 

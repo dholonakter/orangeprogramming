@@ -18,7 +18,7 @@ const Aboutus = () => {
       <AboutComponent />
       <OurValues />
       <OurStory />
-      <OurTeam />
+      {/* <OurTeam /> */}
     </div>
   );
 };

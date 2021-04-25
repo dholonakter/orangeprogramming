@@ -53,7 +53,8 @@ const Services = () => {
                   <img src={webIcon} alt="" />
                   <h5>Web Application</h5>
                   <small>
-                    Stay ahead of the game with tailor-made mobile and web apps
+                  We create custom web systems with awesome frontend experience
+                and reliable, scalable backend architecture.
                   </small>
                 </div>
               </Link>
@@ -75,7 +76,8 @@ const Services = () => {
                   <img src={mobAppIcon} alt="" />
                   <h5>Mobile Developments</h5>
                   <small>
-                    Stay ahead of the game with tailor-made mobile and web apps
+                  We bring to life, high performance Mobile Apps which are
+                functionally excellent and carry immersive user experience.
                   </small>
                 </div>
               </Link>
@@ -97,7 +99,9 @@ const Services = () => {
                   <img src={aiIcon} alt="" />
                   <h5> Predictable Artificial Intelligence</h5>
                   <small>
-                    Stay ahead of the game with tailor-made mobile and web apps
+                  Answer your business challenges and enhance your digital
+                products with our Artificial Intelligence solutions. Automate
+                your processes and get data-driven business insights.
                   </small>
                 </div>
               </Link>
@@ -119,7 +123,8 @@ const Services = () => {
                   <img src={cloudStoreIcon} alt="" />
                   <h5>Windows Application</h5>
                   <small>
-                    Stay ahead of the game with tailor-made mobile and web apps
+                  If you’re looking for someone to help you create your personal desktop application, then we are pleasue to help you.
+                
                   </small>
                 </div>
               </Link>

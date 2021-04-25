@@ -1,16 +1,19 @@
 import styled from "styled-components";
 
 export const ContactInfoContainer = styled.div`
+
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding: 65px 0;
   /* align-items: center; */
 
   & > * {
     width: 40%;
-
+    // padding-bottom: 80px;
     @media (max-width: 1000px) {
       width: 45%;
+      // padding-bottom: 65px;
     }
     @media (max-width: 800px) {
       width: 50%;
@@ -43,7 +46,7 @@ export const ContactInfoContainer = styled.div`
 export const SocialMediaContainer = styled.div`
   text-align: center;
   color: #173857;
-  margin-top: 5%;
+  // margin-top: 5%;
   div {
     margin: 5% 0;
     display: flex;

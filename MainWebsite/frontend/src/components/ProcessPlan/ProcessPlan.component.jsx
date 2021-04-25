@@ -140,7 +140,7 @@ const ProcessPlan = () => {
                   First aspect focuses on Domain Understanding, this is where the team will get to know the client, as well as dealing with what specifics the client is seeking. The team will make sure that whatever the client is asking can be formed into reality, as well as making sure the team understood the client’s aspects of the project and needs. In addition, we will guide you how to secure and maintain your domain.  
                   </p>
                   <br />
-                  <PrimaryButton>Learn More...</PrimaryButton>
+                  {/* <PrimaryButton>Learn More...</PrimaryButton> */}
                 </div>
               </ProcessPlanContent>
             </ProcessPlanDetails>
@@ -155,7 +155,7 @@ const ProcessPlan = () => {
                   Within this phase the team will work closely with the client to form a bases of when certain aspects of the project should be completed. To ensure trust, the team will make sure all deadlines are met, and to make sure the client is up to date with how the project is going. Furthermore, the team will discuss with the client the most effective methodology, whether it is working with SCRUM or AGILE. 
                   </p>
                   <br />
-                  <PrimaryButton>Learn More...</PrimaryButton>
+                  {/* <PrimaryButton>Learn More...</PrimaryButton> */}
                 </div>
               </ProcessPlanContent>
             </ProcessPlanDetails>
@@ -170,7 +170,7 @@ const ProcessPlan = () => {
                   The next crucial phase of the project is design, whereby UI (User Interface) and UX (User Experience) designers will collaborate closely with the client to ensure that what the client is asking for is able to get delivered as well as in some form and way the client sees their product, thereby limiting any work that must be redone.  
                   </p>
                   <br />
-                  <PrimaryButton>Learn More...</PrimaryButton>
+                  {/* <PrimaryButton>Learn More...</PrimaryButton> */}
                 </div>
               </ProcessPlanContent>
             </ProcessPlanDetails>
@@ -185,7 +185,7 @@ const ProcessPlan = () => {
                   Within the development phase, the team will focus on the most reliable and effective ways of making sure that the front-end is able to communicate with the back-end. While back-end may not seem important for clients it is the brain house whereby the whole system is able to function. Thereby, the development stage will be done, but withheld from the client, but mainly discussed of certain functions and their attributes that will help with the client’s needs.  
                   </p>
                   <br />
-                  <PrimaryButton>Learn More...</PrimaryButton>
+                  {/* <PrimaryButton>Learn More...</PrimaryButton> */}
                 </div>
               </ProcessPlanContent>
             </ProcessPlanDetails>
@@ -204,7 +204,7 @@ Within the coding phase the team will ensure to deliver the best quality possibl
 Within the user testing phase, the team will get into contact with the client and share the live experience and retrieve feedback wherever necessary, whereby the team is able to make changes so that the user experience can be up to expectations with what the client wants and feels comfortable with.  
                   </p>
                   <br />
-                  <PrimaryButton>Learn More...</PrimaryButton>
+                  {/* <PrimaryButton>Learn More...</PrimaryButton> */}
                 </div>
               </ProcessPlanContent>
             </ProcessPlanDetails>
@@ -219,7 +219,7 @@ Within the user testing phase, the team will get into contact with the client an
                   In theory not every handed over project is complete at 100%, although it may seem so, but a client would at times suggest changes to be made, thereby, would ask for some maintenance. Other aspects include if there is a bug found somewhere in the system that must be corrected, the team will provide the best solution towards the client’s feedback and will.  
                   </p>
                   <br />
-                  <PrimaryButton>Learn More...</PrimaryButton>
+                  {/* <PrimaryButton>Learn More...</PrimaryButton> */}
                 </div>
               </ProcessPlanContent>
             </ProcessPlanDetails>

@@ -58,7 +58,7 @@ const OurValues = () => {
           <OurValuesContent>
             <img src={teamIdea} alt="" />
             <div className="our__values_text">
-              <h3>WE'RE EXCITED TO TAKE ON BIG PROBLEMS</h3>
+              <h3>WE'RE CONFIDENT TO GET YOUR JOB DONE</h3>
               <small>
                 Teams pulling together in the same direction accomplish much
                 more than out-of-sync individuals.

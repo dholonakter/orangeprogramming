@@ -19,7 +19,6 @@ export const OurValuesContainer = styled.div`
 
 export const OurValuesContent = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   justify-content: space-between;
   img {
@@ -30,7 +29,7 @@ export const OurValuesContent = styled.div`
   }
   .our__values_text {
     width: 85%;
-    text-align: justify;
+    // text-align: justify;
     @media (max-width: 1470px) {
       width: 80%;
     }
