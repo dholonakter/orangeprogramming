@@ -8,9 +8,13 @@ import reactIcon from "../../assets/images/icons/react.png";
 import nodeIcon from "../../assets/images/icons/node-js.png";
 import laravelIcon from "../../assets/images/icons/laravel.png";
 import javaIcon from "../../assets/images/icons/Java-Logo.png";
-import djangoIcon from "../../assets/images/icons/django.png";
+import pythonIcon from "../../assets/images/icons/python.png";
 import aspIcon from "../../assets/images/icons/asp.net-logo.png";
-import { TechnologiesContainer, TechnologyWrap } from "./Technologies.styled";
+import {
+  TechnologiesContainer,
+  TechnologiesWrap,
+  TechnologyWrap,
+} from "./Technologies.styled";
 import Slider from "react-slick";
 
 const Technologies = () => {
@@ -49,35 +53,70 @@ const Technologies = () => {
       },
     ],
   };
-  const clickHandle = (target) =>{
-    window.open(target)
-  }
+  const clickHandle = (target) => {
+    window.open(target);
+  };
   return (
     <>
       <TechnologiesContainer>
         <Container>
           <HeaderText>Technologies</HeaderText>
           <SmallBorderBottom />
-          <Slider {...settings}>
-            <TechnologyWrap>
-              <img onClick={()=>clickHandle("https://reactjs.org")} src={reactIcon} alt="" />
-            </TechnologyWrap>
-            <TechnologyWrap>
-              <img onClick={()=>clickHandle("https://nodejs.org")} src={nodeIcon} alt="" />
-            </TechnologyWrap>
-            <TechnologyWrap>
-              <img onClick={()=>clickHandle("https://dotnet.microsoft.com/apps/aspnet")} src={aspIcon} alt="" />
-            </TechnologyWrap>
-            <TechnologyWrap>
-              <img onClick={()=>clickHandle("https://laravel.com")} src={laravelIcon} alt="" />
-            </TechnologyWrap>
-            <TechnologyWrap>
-              <img onClick={()=>clickHandle("https://www.oracle.com/java/")} src={javaIcon} alt="" />
-            </TechnologyWrap>
-            <TechnologyWrap>
-              <img onClick={()=>clickHandle("https://www.djangoproject.com/")} src={djangoIcon} alt="" />
-            </TechnologyWrap>
-          </Slider>
+          <TechnologiesWrap>
+            <Slider {...settings}>
+              <TechnologyWrap>
+                <img
+                  onClick={() => clickHandle("https://reactjs.org")}
+                  src={reactIcon}
+                  alt=""
+                  className="react__icon"
+                />
+              </TechnologyWrap>
+              <TechnologyWrap>
+                <img
+                  onClick={() => clickHandle("https://nodejs.org")}
+                  src={nodeIcon}
+                  alt=""
+                  className="node__icon"
+                />
+              </TechnologyWrap>
+              <TechnologyWrap>
+                <img
+                  onClick={() =>
+                    clickHandle("https://dotnet.microsoft.com/apps/aspnet")
+                  }
+                  src={aspIcon}
+                  alt="dotnet__icon"
+                  className="dotnet__icon"
+                />
+              </TechnologyWrap>
+              <TechnologyWrap>
+                <img
+                  onClick={() => clickHandle("https://laravel.com")}
+                  src={laravelIcon}
+                  alt=""
+                  className="laravel__icon"
+                />
+              </TechnologyWrap>
+              <TechnologyWrap>
+                <img
+                  onClick={() => clickHandle("https://www.oracle.com/java/")}
+                  src={javaIcon}
+                  alt=""
+                  className="java__icon"
+                />
+              </TechnologyWrap>
+
+              <TechnologyWrap>
+                <img
+                  onClick={() => clickHandle("https://www.oracle.com/java/")}
+                  src={pythonIcon}
+                  alt=""
+                  className="python__icon"
+                />
+              </TechnologyWrap>
+            </Slider>
+          </TechnologiesWrap>
         </Container>
       </TechnologiesContainer>
     </>

@@ -20,8 +20,6 @@ const NavItemsContent = ({ navItemsState }) => {
     setOpenDropDown(false);
   });
 
-
-
   return (
     <>
       <NavItemsContainer open={open}>
@@ -59,14 +57,13 @@ const NavItemsContent = ({ navItemsState }) => {
         </NavItemsWrap>
 
         <NavItems
-          to="/home/#tarek"
+          to="/"
           onClick={() => {
             setOpen(false);
-            
           }}
           onMouseOver={() => setOpenDropDown(false)}
         >
-           <p>PROJECTS</p>
+          <p>PROJECTS</p>
         </NavItems>
 
         <NavItems

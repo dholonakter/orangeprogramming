@@ -10,7 +10,7 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import webIcon from "../../assets/images/icons/web-app-icon.png";
 import mobAppIcon from "../../assets/images/icons/android-ios-icon.png";
-import cloudStoreIcon from "../../assets/images/icons/cloud-storage-icon.png";
+import windowsIcon from "../../assets/images/icons/windows-app-icon.png";
 import aiIcon from "../../assets/images/icons/ai-icon.png";
 import { SmallBorderBottom } from "../../utils/constant";
 import { Link } from "react-router-dom";
@@ -18,7 +18,6 @@ import { Link } from "react-router-dom";
 const Services = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
- 
 
   useEffect(() => {
     if (inView) {
@@ -27,12 +26,12 @@ const Services = () => {
   }, [controls, inView]);
 
   var stl = {
-    color: 'black'
-  }
+    color: "black",
+  };
 
   return (
     <>
-      <ServicesContainerWrap >
+      <ServicesContainerWrap>
         <Container>
           <HeaderText>Services that we provide</HeaderText>
           <SmallBorderBottom />
@@ -53,12 +52,11 @@ const Services = () => {
                   <img src={webIcon} alt="" />
                   <h5>Web Application</h5>
                   <small>
-                  We create custom web systems with awesome frontend experience
-                and reliable, scalable backend architecture.
+                    We create custom web systems with awesome frontend
+                    experience and reliable, scalable backend architecture.
                   </small>
                 </div>
               </Link>
-              
             </ServiceCard>
 
             <ServiceCard
@@ -71,17 +69,16 @@ const Services = () => {
             //   hidden: { opacity: 0, scale: 0 },
             // }}
             >
-              <Link style={stl} to='/mobile-developments'>
+              <Link style={stl} to="/mobile-developments">
                 <div>
                   <img src={mobAppIcon} alt="" />
                   <h5>Mobile Developments</h5>
                   <small>
-                  We bring to life, high performance Mobile Apps which are
-                functionally excellent and carry immersive user experience.
+                    We bring to life, high performance Mobile Apps which are
+                    functionally excellent and carry immersive user experience.
                   </small>
                 </div>
               </Link>
-              
             </ServiceCard>
 
             <ServiceCard
@@ -94,18 +91,18 @@ const Services = () => {
             //   hidden: { opacity: 0, scale: 0 },
             // }}
             >
-              <Link style={stl} to='/ai'>
+              <Link style={stl} to="/ai">
                 <div>
                   <img src={aiIcon} alt="" />
                   <h5> Predictable Artificial Intelligence</h5>
                   <small>
-                  Answer your business challenges and enhance your digital
-                products with our Artificial Intelligence solutions. Automate
-                your processes and get data-driven business insights.
+                    Answer your business challenges and enhance your digital
+                    products with our Artificial Intelligence solutions.
+                    {/* Automate your processes and get data-driven business
+                    insights. */}
                   </small>
                 </div>
               </Link>
-              
             </ServiceCard>
 
             <ServiceCard
@@ -118,17 +115,15 @@ const Services = () => {
             //   hidden: { opacity: 0, scale: 0 },
             // }}
             >
-              <Link style={stl} to='/windows-application'>
+              <Link style={stl} to="/windows-application">
                 <div>
-                  <img src={cloudStoreIcon} alt="" />
+                  <img src={windowsIcon} alt="" />
                   <h5>Windows Application</h5>
                   <small>
-                  If you’re looking for someone to help you create your personal desktop application, then we are pleasue to help you.
-                
+                    Stay ahead of the game with tailor-made Windows Application.
                   </small>
                 </div>
               </Link>
-              
             </ServiceCard>
           </ServicesCardConatiner>
         </Container>

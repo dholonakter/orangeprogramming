@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./pages/Home/Home.page";
@@ -8,23 +7,16 @@ import Navbar from "./components/Navbar/Navbar.component";
 import Footer from "./components/Footer/Footer.component";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import UnderConstruction from "./components/UnderConstruction/UnderConstruction.component";
-import WebServices from './pages/WebDevelopmentServices/WebDevelopment.page';
+import WebServices from "./pages/WebDevelopmentServices/WebDevelopment.page";
 import Error from "./components/Error/Error";
 
-
 function App() {
-
-
-
-
   return (
     <div className="App">
       <Router>
-        <ScrollToTop >
-          
-            <Navbar name={document.getElementById("tarek")}/>
-        
-          
+        <ScrollToTop>
+          <Navbar name={document.getElementById("tarek")} />
+
           <Switch>
             <Route exact path="/home" component={Home} />
             <Route exact path="/about-us" component={Aboutus} />
@@ -37,26 +29,28 @@ function App() {
               component={UnderConstruction}
             />
 
-
-
-           {/* under construction page routing */}
+            {/* under construction page routing */}
             <Route exact path="/projects" component={UnderConstruction} />
             <Route exact path="/gallery" component={UnderConstruction} />
             <Route exact path="/android" component={UnderConstruction} />
             <Route exact path="/ai" component={UnderConstruction} />
-            <Route exact path="/mobile-developments" component={UnderConstruction} />
+            <Route
+              exact
+              path="/mobile-developments"
+              component={UnderConstruction}
+            />
             <Route exact path="/blockchain" component={UnderConstruction} />
-            <Route exact path="/windows-application" component={UnderConstruction} />
-
+            <Route
+              exact
+              path="/windows-application"
+              component={UnderConstruction}
+            />
 
             <Route exact strict path="/home/#tarek" component={Home} />
             <Route exact path="/blog" component={UnderConstruction} />
 
-
             {/* Page Not Found Here */}
             <Route component={Error} />
-
-
           </Switch>
           <Footer />
         </ScrollToTop>

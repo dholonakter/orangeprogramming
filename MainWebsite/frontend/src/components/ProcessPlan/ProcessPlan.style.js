@@ -7,47 +7,48 @@ export const ProcessPlanContainerWrap = styled(motion.div)`
   text-align: center;
   color: #fff;
   display: flex;
-
   @media (max-width: 768px) {
     flex-direction: column;
     height: auto;
   }
-
   .left {
     height: inherit;
     background-color: #f0671f;
     width: 60%;
     text-align: left;
     padding: 3% 0 3% 0;
-
     @media (max-width: 768px) {
       width: 100%;
       position: relative;
     }
-
     div {
       border-left: 1px solid #fff;
       margin-left: 17%;
     }
     p {
       font-size: 1vw;
-      font-weight: 200;
+      font-weight: 300;
       padding: 0 0 1.5% 2%;
       cursor: pointer;
-
+      &:hover {
+        font-weight: 500;
+        color: #173857;
+      }
       @media (max-width: 1360px) {
         font-size: 18px;
       }
       @media (max-width: 1130px) {
         font-size: 16px;
       }
-
       @media (max-width: 768px) {
+        padding: 0 0 2% 2.5%;
         font-size: 14px;
+      }
+      @media (max-width: 560px) {
+        padding: 10px;
       }
     }
   }
-
   .right {
     background-color: #173857;
     width: 70%;
@@ -55,7 +56,6 @@ export const ProcessPlanContainerWrap = styled(motion.div)`
     position: absolute;
     right: 0;
     /* padding: 0% 10% 0% 3%; */
-
     @media (max-width: 768px) {
       width: 100%;
       position: relative;
@@ -82,11 +82,9 @@ export const ProcessPlanContent = styled.div`
   padding: 2% 14% 2% 2%;
   align-items: center;
   justify-content: center;
-
   @media (max-width: 1000px) {
     padding: 2% 8% 2% 2%;
   }
-
   @media (max-width: 768px) {
     flex-direction: column;
     height: auto;
@@ -95,7 +93,6 @@ export const ProcessPlanContent = styled.div`
   div {
     padding-left: 2%;
   }
-
   img {
     height: 100%;
     object-fit: cover;
