@@ -57,7 +57,7 @@ const NavItemsContent = ({ navItemsState }) => {
         </NavItemsWrap>
 
         <NavItems
-          to="/"
+          to="/projects"
           onClick={() => {
             setOpen(false);
           }}

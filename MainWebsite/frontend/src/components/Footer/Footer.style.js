@@ -28,8 +28,8 @@ export const FooterWrapContainer = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   img {
-    width: 12%;
-    height: 12%;
+    width: 10%;
+    height: 10%;
 
     @media (max-width: 560px) {
       width: 100%;
