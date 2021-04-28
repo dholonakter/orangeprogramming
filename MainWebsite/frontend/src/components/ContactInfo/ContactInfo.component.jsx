@@ -43,12 +43,16 @@ const ContactInfo = () => {
     <>
       <Container>
         <ContactInfoContainer>
+
+
           <div className="img">
+
+
             <img src={mapImg} alt="" />
 
 
-
           </div>
+
           <div className="info">
             <HeaderText>Contact info</HeaderText>
             <SmallBorderBottom />

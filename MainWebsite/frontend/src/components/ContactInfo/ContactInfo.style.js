@@ -5,8 +5,9 @@ export const ContactInfoContainer = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 65px 0;
-  /* align-items: center; */
+  padding: 100px 0 125px 0;
+
+  // margin: 2vw 0 2vw 0;
 
   & > * {
     width: 40%;
@@ -25,6 +26,7 @@ export const ContactInfoContainer = styled.div`
     }
   }
   .img {
+   
     img {
       width: 70%;
       @media (max-width: 768px) {

@@ -14,10 +14,10 @@ const AboutComponent = () => {
         <Container>
           <AboutContent>
             <div>
-              <h1>
+              {/* <h1>
                 <span>ORANGE</span> <br />
                 PROGRAMMING
-              </h1>
+              </h1> */}
               <br />
               <CheckBoxItems>
                 <img src={checkbox} alt="" />

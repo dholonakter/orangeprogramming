@@ -180,7 +180,7 @@ class WebDevelopmentMethodology extends Component {
                           </MainComputer>
                          </Grid>
 
-                     </Grid>
+                    </Grid>
           </div>
             ))}
           

@@ -50,11 +50,13 @@ background-color: rgb(8, 83, 115);
 h4{
     padding: 10px 7px;
     color: #fff;
+    font-family: Poppins, sans-serif;
 }
 p{
     padding: 10px 7px;
     color: rgb(229, 229, 229);
     font-size: 16px;
+    font-family: Poppins, sans-serif;
 }
 .left{
     width: 100%;
@@ -118,15 +120,14 @@ export const Monitor = styled.div`
     }
 `
 export const Player = styled.div`
-    // height: 20vw;
+  
     height: 325px;
 
-    // width: 35vw;
+ 
     width: 530px;
     background: orange;
     margin: auto auto auto auto;
     overflow: hidden;
-    // border-right: 3px solid red;
     @media(max-width: 1650px){
         height: 19vw;
         width:31vw;
