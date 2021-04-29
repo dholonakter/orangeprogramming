@@ -21,6 +21,7 @@ const Technologies = () => {
   var settings = {
     dots: false,
     infinite: true,
+    pauseOnHover: false,
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,

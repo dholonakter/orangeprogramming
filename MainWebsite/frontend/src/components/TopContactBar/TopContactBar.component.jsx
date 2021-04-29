@@ -12,39 +12,63 @@ import {
   faYoutube,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import {
-  faEnvelope,
-  faPhoneSquare,
-} from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPhoneSquare } from "@fortawesome/free-solid-svg-icons";
 
 const TopContactBar = () => {
-  const goTo = (link) =>{
+  const goTo = (link) => {
     window.open(link);
-  }
-  var style={
-    textDecoration: 'none',
-    color: '#fff',
-    cursor: 'pointer'
-  }
+  };
+  var style = {
+    textDecoration: "none",
+    color: "#fff",
+    cursor: "pointer",
+  };
   return (
     <>
       <TopContactBarContainerWrap>
         <TopContactBarContainer>
           <p>
             <FontAwesomeIcon icon={faEnvelope} />{" "}
-            <span>info@orange-programming.com</span>{" "}
+            <span>orangeprogrammingnl@gmail.com</span>{" "}
           </p>
           <p>
-            <FontAwesomeIcon icon={faPhoneSquare} /> <span>+31 6 87258021</span>
+            <FontAwesomeIcon icon={faPhoneSquare} /> <span>+31634509831</span>
           </p>
           <div>
-          <FontAwesomeIcon style={style} onClick={()=>goTo("https://facebook.com")} icon={faFacebook} size="2x" />
-          <FontAwesomeIcon style={style} onClick={()=>goTo("https://linkedin.com")} icon={faLinkedin} size="2x" />
-          <FontAwesomeIcon  style={style} onClick={()=>goTo("https://instagram.com")} icon={faInstagram} size="2x" />
-          <FontAwesomeIcon  style={style} onClick={()=>goTo("https://twitter.com")} icon={faTwitter} size="2x" />
-          <FontAwesomeIcon style={style} onClick={()=>goTo("https://youtube.com")} icon={faYoutube} size="2x" />
-                 
-          
+            <FontAwesomeIcon
+              style={style}
+              onClick={() => goTo("https://facebook.com/OrangeProgramming")}
+              icon={faFacebook}
+              size="2x"
+            />
+            <FontAwesomeIcon
+              style={style}
+              onClick={() =>
+                goTo("https://www.linkedin.com/company/orangeprogramming")
+              }
+              icon={faLinkedin}
+              size="2x"
+            />
+            <FontAwesomeIcon
+              style={style}
+              onClick={() => goTo("https://instagram.com/orangeprogramming")}
+              icon={faInstagram}
+              size="2x"
+            />
+            <FontAwesomeIcon
+              style={style}
+              onClick={() => goTo("https://twitter.com")}
+              icon={faTwitter}
+              size="2x"
+            />
+            <FontAwesomeIcon
+              style={style}
+              onClick={() =>
+                goTo("https://youtube.com/channel/UCR8NSx0UtM0Yxp1H1sL6kpg")
+              }
+              icon={faYoutube}
+              size="2x"
+            />
           </div>
         </TopContactBarContainer>
       </TopContactBarContainerWrap>

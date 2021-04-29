@@ -19,21 +19,11 @@ import linkedin from "../../assets/images/icons/linkedin.webp";
 import youtube from "../../assets/images/icons/youtube.png";
 import mail from "../../assets/images/icons/mail.png";
 import snapChat from "../../assets/images/icons/snap-chat.png";
-import Iframe from 'react-iframe';
+import Iframe from "react-iframe";
 import { useLocation } from "react-router";
 
-
-
-
-
-
 const ContactInfo = () => {
-
-
-
   const { pathName } = useLocation();
-
-
 
   // const goTo = (l) =>{
   //   window.open(l)
@@ -43,30 +33,24 @@ const ContactInfo = () => {
     <>
       <Container>
         <ContactInfoContainer>
-
-
           <div className="img">
-
-
             <img src={mapImg} alt="" />
-
-
           </div>
 
           <div className="info">
             <HeaderText>Contact info</HeaderText>
             <SmallBorderBottom />
             <p>
-              <FontAwesomeIcon  icon={faMapMarkerAlt} /> &nbsp;&nbsp; Elgarstraat
+              <FontAwesomeIcon icon={faMapMarkerAlt} /> &nbsp;&nbsp; Elgarstraat
               22 5653AH Eindhoven, Netherlands.
             </p>
             <p>
               <FontAwesomeIcon icon={faPhoneSquare} />
-              &nbsp;&nbsp; +31 6 87258021
+              &nbsp;&nbsp; +31634509831
             </p>
             <p>
               <FontAwesomeIcon icon={faEnvelope} />{" "}
-              &nbsp;&nbsp;orangeprogramming123@gmail.com
+              &nbsp;&nbsp;orangeprogrammingnl@gmail.com
             </p>
           </div>
         </ContactInfoContainer>

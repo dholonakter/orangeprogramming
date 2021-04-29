@@ -128,8 +128,12 @@ export const FooterIconWrap = styled.div`
   padding: 8px;
   box-sizing: border-box;
   border-radius: 50%;
-  border: 2px solid #f0671f;
   border: 2px solid #fff;
   font-size: 10px;
   cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    color: #f0671f;
+    border-color: #f0671f;
+  }
 `;

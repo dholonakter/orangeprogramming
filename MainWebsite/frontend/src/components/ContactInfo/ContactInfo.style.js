@@ -1,11 +1,14 @@
 import styled from "styled-components";
 
 export const ContactInfoContainer = styled.div`
-
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 100px 0 125px 0;
+  padding: 100px 0 100px 0;
+
+  @media (max-width: 768px) {
+    padding: 70px 0 70px 0;
+  }
 
   // margin: 2vw 0 2vw 0;
 
@@ -26,11 +29,11 @@ export const ContactInfoContainer = styled.div`
     }
   }
   .img {
-   
     img {
       width: 70%;
       @media (max-width: 768px) {
-        margin: 0 auto;
+        width: 80%;
+        margin: 0 auto 20px auto;
         display: block;
       }
     }
@@ -42,6 +45,10 @@ export const ContactInfoContainer = styled.div`
     justify-content: center;
     @media (max-width: 768px) {
       font-size: 12px;
+    }
+
+    p {
+      padding-bottom: 10px;
     }
   }
 `;
@@ -56,7 +63,7 @@ export const SocialMediaContainer = styled.div`
 
     img {
       width: 50px;
-      :hover{
+      :hover {
         cursor: pointer;
       }
       @media (max-width: 768px) {

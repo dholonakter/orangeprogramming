@@ -61,15 +61,16 @@ const ContactSection = () => {
               </p>
               <hr />
               <p>
-                <FontAwesomeIcon icon={faEnvelope} />{" "}
-                orangeprogramming123@gmail.com
+                <FontAwesomeIcon icon={faEnvelope} />
+                &nbsp; orangeprogrammingnl@gmail.com
               </p>
               <p>
-                <FontAwesomeIcon icon={faPhoneSquare} /> +31 6 87258021
+                <FontAwesomeIcon icon={faPhoneSquare} />
+                &nbsp; +31634509831
               </p>
               <p>
-                <FontAwesomeIcon icon={faMapMarkerAlt} /> Elgarstraat 22 5653AH
-                Eindhoven, Netherlands.
+                <FontAwesomeIcon icon={faMapMarkerAlt} />
+                &nbsp; Elgarstraat 22 5653AH Eindhoven, Netherlands.
               </p>
             </div>
 
@@ -108,7 +109,7 @@ const ContactSection = () => {
                 <br />
 
                 <PrimaryButton type="submit">
-                  <FontAwesomeIcon icon={faPaperPlane} /> SEND
+                  <FontAwesomeIcon icon={faPaperPlane} /> &nbsp; &nbsp;SEND
                 </PrimaryButton>
               </form>{" "}
             </div>

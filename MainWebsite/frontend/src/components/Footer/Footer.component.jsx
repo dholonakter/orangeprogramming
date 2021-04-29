@@ -123,7 +123,9 @@ const Footer = () => {
               <FooterIconContainer>
                 <FooterIconWrap>
                   <FontAwesomeIcon
-                    onClick={() => goTo("https://facebook.com")}
+                    onClick={() =>
+                      goTo("https://facebook.com/OrangeProgramming")
+                    }
                     icon={faFacebookF}
                     size="2x"
                   />
@@ -131,7 +133,11 @@ const Footer = () => {
 
                 <FooterIconWrap>
                   <FontAwesomeIcon
-                    onClick={() => goTo("https://linkedin.com")}
+                    onClick={() =>
+                      goTo(
+                        "https://www.linkedin.com/company/orangeprogramming/"
+                      )
+                    }
                     icon={faLinkedin}
                     size="2x"
                   />
@@ -139,7 +145,9 @@ const Footer = () => {
 
                 <FooterIconWrap>
                   <FontAwesomeIcon
-                    onClick={() => goTo("https://instagram.com")}
+                    onClick={() =>
+                      goTo("https://instagram.com/orangeprogramming")
+                    }
                     icon={faInstagram}
                     size="2x"
                   />
@@ -154,7 +162,11 @@ const Footer = () => {
                 </FooterIconWrap>
                 <FooterIconWrap>
                   <FontAwesomeIcon
-                    onClick={() => goTo("https://youtube.com")}
+                    onClick={() =>
+                      goTo(
+                        "https://youtube.com/channel/UCR8NSx0UtM0Yxp1H1sL6kpg"
+                      )
+                    }
                     icon={faYoutube}
                     size="2x"
                   />

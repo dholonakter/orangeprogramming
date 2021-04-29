@@ -5,14 +5,7 @@ import OurTeam from "../../components/OurTeam/OurTeam.component";
 import OurValues from "../../components/OurValues/OurValues.component";
 import { useLocation } from "react-router";
 
-
-
-
-
 const Aboutus = () => {
-
-
-
   return (
     <div>
       <AboutComponent />

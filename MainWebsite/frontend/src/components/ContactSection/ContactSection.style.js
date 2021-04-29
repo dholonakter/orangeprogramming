@@ -64,6 +64,7 @@ export const ContactSectionContainer = styled.div`
     p {
       font-weight: 300;
       font-size: 14px;
+      padding-bottom: 8px;
       @media (max-width: 950px) {
         font-size: 12px;
       }
@@ -104,6 +105,13 @@ export const ContactSectionContainer = styled.div`
     }
     button {
       width: 100%;
+      background-color: #f0671f;
+      color: #fff;
+
+      &:hover {
+        color: #f0671f;
+        background-color: #fff;
+      }
     }
   }
 `;
