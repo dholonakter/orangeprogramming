@@ -16,8 +16,8 @@ export const Background = styled.div`
         color: #fff;
         font-size: 4vw;
         font-weight: 700;
-        font-family: roboto;
-        // position: absolute;
+        font-family: "Poppins", "sans-serif";
+       
         margin-top: 200px;
         text-transform: capitalize;
         @media (max-width: 991px){

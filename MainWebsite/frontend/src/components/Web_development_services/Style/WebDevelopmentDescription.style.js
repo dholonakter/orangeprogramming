@@ -8,9 +8,17 @@ export const Body = styled.div`
         margin-top: 50px !important;
     };
     p{
-        font-size: 16px;
-        font-family: roboto;
+        font-size: 0.9vw;
+        // font-weight: 200;
+        font-family: Poppins, sans-serif;
         padding: 10px 7px 10px 0;
+        color: black;
+        @media (max-width: 1240px) {
+            font-size: 1.2vw;
+          }
+          @media (max-width: 768px) {
+            font-size: 12px;
+          }
     }
     p::first-letter{
         color: #c69c6d;

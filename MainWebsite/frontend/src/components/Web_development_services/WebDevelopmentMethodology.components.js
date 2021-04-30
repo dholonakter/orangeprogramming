@@ -36,7 +36,7 @@ class WebDevelopmentMethodology extends Component {
                         {
                             name: 'Strategy',
                             logo:  <BuildIcon/>,
-                            text: " wow, i am working good,,,,Defininging site goatlsof Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words et",
+                            text: "Prior to starting any project, we put together a comprehensive proposal that includes a breakdown of requirements, project costing, project milestones, and time scales, etc.",
                             photo: img2,
                             id:'2',
                             isActive: false

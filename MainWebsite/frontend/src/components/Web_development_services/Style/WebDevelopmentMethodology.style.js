@@ -51,12 +51,29 @@ h4{
     padding: 10px 7px;
     color: #fff;
     font-family: Poppins, sans-serif;
+    font-size: 2vw;
+    font-weight: 700;
+    @media (max-width: 1240px) {
+        font-size: 3vw;
+      }
+      @media (max-width: 768px) {
+        font-size: 4vw;
+      }
+      @media (max-width: 500px) {
+        font-size: 5vw;
+      }
 }
 p{
     padding: 10px 7px;
     color: rgb(229, 229, 229);
-    font-size: 16px;
+    font-size: 0.9vw;
     font-family: Poppins, sans-serif;
+    @media (max-width: 1240px) {
+        font-size: 1.2vw;
+      }
+      @media (max-width: 768px) {
+        font-size: 12px;
+      }
 }
 .left{
     width: 100%;
