@@ -2,9 +2,10 @@ import { ChildCare } from '@material-ui/icons'
 import styled from 'styled-components'
 
 export const Root = styled.div`
+
     padding: 50px 7px 60px 7px;
     background-color: rgba(232, 232, 232, 0.5);
-
+    font-family: Poppins, sans-serif;
     .gridItem{
         @media(max-width: 599px){
             margin: 5px 25px
@@ -14,7 +15,7 @@ export const Root = styled.div`
         padding-top: 50px;
     }
     h3{
-        font-family: roboto;
+        font-family: Poppins, sans-serif;
         margin: 0 0 50px;
         text-transform: capitalize;   
     }
@@ -40,6 +41,9 @@ export const IconBox = styled.div`
             margin: auto;
             justify-content: center;
             margin-top: 22px;
+            svg{
+                color: #F0671F;
+            }
         }
 `
 
@@ -47,6 +51,7 @@ export const IconBox = styled.div`
 export const RootO = styled.div`
 padding: 50px 7px 60px 7px;
 background-color: rgb(8, 83, 115);
+font-family: Poppins, sans-serif;
 h4{
     padding: 10px 7px;
     color: #fff;

@@ -26,7 +26,7 @@ class WebDevelopmentMethodology extends Component {
             {
                             name: 'Goals',
                             logo: <BorderAllIcon/>,
-                            text: "Goals is wroking properly Defininging site goatlsof Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words et",
+                            text: "The success of any project relies on the process that moves it forward and a consistent process leads to better results, quality, and business growth.Our development process starts with understanding your needs, business queries, analysis and research and according we develop an appropriate timeline and project plan.",
                             photo: img1,
                             id:'1',
                             isActive: true
@@ -36,7 +36,7 @@ class WebDevelopmentMethodology extends Component {
                         {
                             name: 'Strategy',
                             logo:  <BuildIcon/>,
-                            text: "Prior to starting any project, we put together a comprehensive proposal that includes a breakdown of requirements, project costing, project milestones, and time scales, etc.",
+                            text: "After thorough goals, we cone up with a strategy that keeps in view the business goals along with the stakeholder's expectations. Prior to starting any project, we put together a comprehensive proposal that includes a breakdown of requirements, project costing, project milestones, and time scales, etc.",
                             photo: img2,
                             id:'2',
                             isActive: false
