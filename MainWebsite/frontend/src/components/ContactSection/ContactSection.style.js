@@ -43,7 +43,7 @@ export const ContactSectionContainer = styled.div`
     }
 
     h1 {
-      font-size: 30px;
+      font-size: 2vw;
       @media (max-width: 1100px) {
         font-size: 25px;
       }
@@ -52,7 +52,7 @@ export const ContactSectionContainer = styled.div`
       }
     }
     h4 {
-      font-size: 20px;
+      font-size: 1.2vw;
       @media (max-width: 1100px) {
         font-size: 16px;
       }
@@ -63,8 +63,11 @@ export const ContactSectionContainer = styled.div`
 
     p {
       font-weight: 300;
-      font-size: 14px;
+      font-size: 1vw;
       padding-bottom: 8px;
+      @media(max-width: 1200px){
+        font-size: 13px;
+      }
       @media (max-width: 950px) {
         font-size: 12px;
       }
@@ -89,6 +92,7 @@ export const ContactSectionContainer = styled.div`
         display: block;
         width: 100%;
         border: 0;
+        font-size: 0.9vw;
         padding: 10px 5px;
         background: white no-repeat;
         background-image: linear-gradient(to bottom, #f0671f, #f0671f),
@@ -96,7 +100,9 @@ export const ContactSectionContainer = styled.div`
         background-size: 0 2px, 100% 1px;
         background-position: 50% 100%, 50% 100%;
         transition: background-size 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
-
+        @media(max-width: 1200px){
+          font-size: 13px
+        }
         &:focus {
           background-size: 100% 2px, 100% 1px;
           outline: none;
@@ -107,6 +113,10 @@ export const ContactSectionContainer = styled.div`
       width: 100%;
       background-color: #f0671f;
       color: #fff;
+      font-size: 0.9vw;
+      @media(max-width: 1200px){
+        font-size: 13px
+      }
 
       &:hover {
         color: #f0671f;

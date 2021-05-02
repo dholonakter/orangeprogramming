@@ -89,6 +89,7 @@ export const CheckBoxItems = styled.div`
   p {
     font-weight: 200;
     font-size: 15px;
+    font-size: 1vw;
 
     @media (max-width: 1200px) {
       font-size: 12px;

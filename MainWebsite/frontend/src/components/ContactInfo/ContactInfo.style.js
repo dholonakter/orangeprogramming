@@ -5,7 +5,12 @@ export const ContactInfoContainer = styled.div`
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 100px 0 100px 0;
-
+  p{
+    font-size: 1vw;
+    @media(max-width: 1200px){
+      font-size: 14px;
+    }
+  }
   @media (max-width: 768px) {
     padding: 70px 0 70px 0;
   }

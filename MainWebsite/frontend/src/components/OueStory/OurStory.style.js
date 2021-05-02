@@ -9,6 +9,14 @@ export const OurstoryContainer = styled.div`
     font-weight: 300;
     /* width: 80%; */
     font-size: 1vw;
+    @media (max-width: 1500px) {
+      font-size: 15px;
+      /* width: 70%; */
+    }
+    @media (max-width: 1100px) {
+      font-size: 13px;
+      /* width: 70%; */
+    }
     @media (max-width: 768px) {
       font-size: 8px;
       /* width: 70%; */

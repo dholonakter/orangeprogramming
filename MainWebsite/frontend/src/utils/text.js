@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const HeaderText = styled.div`
-font-size:26px;
+// font-size:26px;
+font-size: 2vw;
 font-weight: 700;
 color: ${({ white }) => white ? "#fff" : "#173857"};
 

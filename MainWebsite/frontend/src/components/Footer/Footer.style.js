@@ -5,6 +5,23 @@ export const FooterContainerWrap = styled.div`
   background: #173857;
   padding: 3% 0;
 
+  h4{
+    font-size: 1.3vw;
+    @media (max-width: 1920px) {
+      font-size: 20px;
+      /* width: 70%; */
+    }
+  }
+  p>a, .tech{
+    font-size: 0.7vw;
+    @media (max-width: 1920px) {
+      font-size: 14px;
+      /* width: 70%; */
+    }
+  }
+
+
+
   hr {
     display: block;
     height: 1px;
@@ -20,6 +37,16 @@ export const FooterContainerWrap = styled.div`
     padding: 2% 0 1% 0;
     color: #fff;
     font-weight: 200;
+    font-size: 0.6vw;
+    @media (max-width: 1920px) {
+      font-size: 13px;
+    }
+    @media (max-width: 1100px) {
+      font-size: 10px;
+    }
+    @media (max-width: 700px) {
+      font-size: 8px;
+    }
   }
 `;
 
@@ -84,8 +111,11 @@ export const Newslatter = styled.div`
 
   p {
     font-weight: 300;
-    font-size: 14px;
+    font-size: 0.7vw;
 
+    @media (max-width: 1920px) {
+      font-size: 14px;
+    }
     @media (max-width: 1200px) {
       font-size: 12px;
     }
@@ -102,6 +132,10 @@ export const Newslatter = styled.div`
       border: none;
       outline: none;
       margin-top: 5%;
+      // font-size: 0.9vw;
+      // @media(max-width: 1200px){
+      //   font-size: 13px
+      // }
     }
     button {
       height: 35px;
@@ -111,6 +145,10 @@ export const Newslatter = styled.div`
       color: #fff;
       width: 30%;
       margin-top: 5%;
+      // font-size: 0.9vw;
+      // @media(max-width: 1200px){
+      //   font-size: 13px
+      // }
     }
   }
 `;
@@ -132,6 +170,9 @@ export const FooterIconWrap = styled.div`
   font-size: 10px;
   cursor: pointer;
   transition: all 0.3s;
+  svg{
+    // width: 50px;
+  }
   &:hover {
     color: #f0671f;
     border-color: #f0671f;

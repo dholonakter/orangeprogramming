@@ -9,17 +9,20 @@ import { SmallBorderBottom } from "../../utils/constant";
 import { Container } from "../../utils/container";
 import { HeaderText } from "../../utils/text";
 import { OurstoryContainer } from "../OueStory/OurStory.style";
-import { OurValuesContainer, OurValuesContent } from "./OurValues.style";
+import { OurValuesContainer, OurValuesContent, SmallText } from "./OurValues.style";
 const OurValues = () => {
   return (
     <>
       <Container>
         <HeaderText>Our Values</HeaderText>
         <SmallBorderBottom />
-        <small>
-          Our values represent what we stand for as a business partner and an
-          employer.
-        </small>
+        <SmallText>
+          <small>
+            Our values represent what we stand for as a business partner and an
+            employer.
+          </small>
+        </SmallText>
+        
         <OurValuesContainer>
           <OurValuesContent>
             <img src={handShake} alt="" />

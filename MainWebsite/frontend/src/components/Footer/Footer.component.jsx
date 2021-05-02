@@ -65,21 +65,21 @@ const Footer = () => {
             <FooterContentWrap>
               <h4>Technologies</h4>
 
-              <p style={style} onClick={() => goTo("https://reactjs.org")}>
+              <p className="tech" style={style} onClick={() => goTo("https://reactjs.org")}>
                 React Js
               </p>
-              <p style={style} onClick={() => goTo("https://nodejs.org")}>
+              <p  className="tech" style={style} onClick={() => goTo("https://nodejs.org")}>
                 {" "}
                 Node Js
               </p>
-              <p style={style} onClick={() => goTo("https://php.net")}>
+              <p className="tech" style={style} onClick={() => goTo("https://php.net")}>
                 PHP
               </p>
-              <p style={style} onClick={() => goTo("https://laravel.com")}>
+              <p className="tech" style={style} onClick={() => goTo("https://laravel.com")}>
                 {" "}
                 Laravel
               </p>
-              <p
+              <p className="tech"
                 style={style}
                 onClick={() => goTo("https://dotnet.microsoft.com")}
               >
@@ -178,7 +178,7 @@ const Footer = () => {
           <br />
           <br />
           <hr />
-          <small>Copyright © Orange-Programming. All Rights Reserved</small>
+          <small>Copyright © Orange-Programming 2021. All Rights Reserved</small>
         </Container>
       </FooterContainerWrap>
     </>

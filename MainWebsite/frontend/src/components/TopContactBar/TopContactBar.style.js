@@ -21,7 +21,7 @@ export const TopContactBarContainer = styled.div`
   }
 
   p {
-    font-size: 16px;
+    font-size: 16pxz;
     font-weight: 500;
     display: flex;
     align-items: center;
