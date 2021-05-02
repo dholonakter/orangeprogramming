@@ -81,16 +81,19 @@ export const CheckBoxItems = styled.div`
   align-items: center;
   margin-bottom: 22px;
   img {
-    width: 32px !important;
-    height: 32px;
+    width: 2vw !important;
+    // height: 32px;
     margin-right: 25px;
     /* height: 40px; */
+    @media (max-width: 1920px) {
+      font-size: 32px;
+    }
   }
   p {
     font-weight: 200;
     font-size: 15px;
     font-size: 1vw;
-
+    text-align: justify;
     @media (max-width: 1200px) {
       font-size: 12px;
     }
