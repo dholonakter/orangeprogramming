@@ -71,7 +71,10 @@ export const OurValuesContent = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   img {
-    width: 60px;
+    width: 1.8vw;
+    @media (max-width: 1920px) {
+      width: 60px;
+    }
     @media (max-width: 768px) {
       width: 45px;
     }

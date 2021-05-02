@@ -17,7 +17,18 @@ export const Root = styled.div`
     h3{
         font-family: Poppins, sans-serif;
         margin: 0 0 50px;
-        text-transform: capitalize;   
+        text-transform: capitalize;  
+        font-size: 1.5vw;
+        @media(max-width: 1920px){
+            font-size: 28px;
+        }
+        @media(max-width: 1100px){
+            font-size: 24px;
+        }
+        @media(max-width: 768px){
+            font-size: 20px;
+        }
+        
     }
 
 
