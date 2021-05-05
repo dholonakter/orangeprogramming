@@ -153,6 +153,9 @@ export const NavItems = styled(NavLink).attrs({ activeClassName })`
   @media (max-width: 900px) {
     font-size: 12px;
   }
+
+  @media (max-width: 768px) {
+  }
 `;
 
 export const NavMenusContainer = styled.div`
@@ -205,5 +208,6 @@ export const NavSubMenusContainer = styled.div`
   @media (max-width: 768px) {
     margin: 18px 0 14px 14px;
     border-bottom: 0;
+    padding: 0 0px 6px 0;
   }
 `;
