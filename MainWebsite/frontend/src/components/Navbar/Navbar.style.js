@@ -1,55 +1,59 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-export const NavWrap = styled.div`
+export const NavbarWrap = styled.div`
+  background: ${({ navbarBackground, navHeightBg }) =>
+    navbarBackground || navHeightBg ? "#173857" : ""};
+  box-shadow: ${({ navbarBackground, navHeightBg }) =>
+    navbarBackground || navHeightBg ? "0 1px 6px 0 rgb(32 33 36 / 28%)" : ""};
+  margin: ${({ navbarBackground, navHeightBg }) =>
+    navbarBackground || navHeightBg ? "0 auto" : "35px auto"};
   position: fixed;
-  z-index: 10;
   top: 0;
   left: 0;
   right: 0;
-  background: ${({ navBar }) => (navBar ? "#173857" : "")};
-  box-shadow: ${({ navBar }) =>
-    navBar ? "0 1px 6px 0 rgb(32 33 36 / 28%)" : ""};
-  transition: all 0.3s;
-
-  margin: ${({ navBar }) => (navBar ? "0 auto" : "35px auto")};
-
-  @media (max-width: 768px) {
-    padding: 2px 0;
-  }
+  z-index: 10;
+  width: 100%;
 `;
 
-export const Nav = styled.div`
-  margin: 0 auto;
-  width: 100%;
-  padding: 0 20px;
+export const NavbarContainer = styled.div`
+  padding: ${({ navbarBackground, navHeightBg }) =>
+    navbarBackground || navHeightBg ? "5px 0" : "15px 0"};
+  transition: all 0.3s;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  width: 80vw;
-  padding: ${({ navBar }) => (navBar ? "5px 0" : "15px 0")};
-  /* background-color: red; */
-  @media (max-width: 1000px) {
-    width: 90vw;
-  }
-
+  overflow: hidden;
   .hamburger__icon {
     display: none;
     @media (max-width: 768px) {
       display: block;
       font-size: 28px;
-      top: ${({ navBar }) => (navBar ? "2%" : "11%")};
       transition: all 0.3s;
       color: #f0671f;
     }
   }
+
+  @media (min-width: 2200px) {
+    padding: ${({ navbarBackground, navHeightBg }) =>
+      navbarBackground || navHeightBg ? "10px 0" : "25px 0"};
+  }
 `;
 
 export const NavLogo = styled.img`
-  width: ${({ navBar }) => (navBar ? "130px" : "160px")};
-  height: ${({ navBar }) => (navBar ? "55px" : "70px")};
+  width: ${({ navbarBackground, navHeightBg }) =>
+    navbarBackground || navHeightBg ? "130px" : "160px"};
+  height: ${({ navbarBackground, navHeightBg }) =>
+    navbarBackground || navHeightBg ? "55px" : "70px"};
   transition: all 0.5s;
+  cursor: pointer;
+
+  @media (min-width: 2200px) {
+    width: ${({ navbarBackground, navHeightBg }) =>
+      navbarBackground || navHeightBg ? "175px" : "205px"};
+    height: ${({ navbarBackground, navHeightBg }) =>
+      navbarBackground || navHeightBg ? "80px" : "95px"};
+  }
 
   @media (max-width: 1200px) {
     width: 140px;
@@ -61,54 +65,31 @@ export const NavLogo = styled.img`
   }
 `;
 
-/////////// Nav Items Styles //////////////
-
-export const NavItemsContainer = styled.div`
+export const NavMenusWrap = styled.div`
   display: flex;
-  align-items: center;
-  flex-flow: row nowrap;
   justify-content: space-between;
-  width: 65%;
+  align-items: center;
+  width: 70%;
 
-  @media (max-width: 1200px) {
-    width: 70%;
-  }
   @media (max-width: 1030px) {
     width: 75%;
   }
 
-  button {
-    background-color: #f0671f;
-    color: #ffff;
-    cursor: pointer;
-
-    &:hover {
-      background: transparent;
-      border: 2px solid #f0671f;
-      color: #f0671f;
-    }
-
-    @media (max-width: 1450px) {
-      font-size: 11px;
-    }
-    @media (max-width: 1180px) {
-      font-size: 10px;
-    }
-  }
-
   @media (max-width: 768px) {
+    transform: ${({ NavbarOpen }) =>
+      NavbarOpen ? "translateX(0)" : "translateX(100%)"};
+    transition: transform 0.3s ease-in-out;
     flex-flow: column nowrap;
-    background-color: #173857;
     justify-content: flex-start;
     align-items: stretch;
+    padding: 30px;
+    width: 300px;
     position: fixed;
-    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
-    transition: transform 0.3s ease-in-out;
     top: 0;
     right: 0;
+    flex-direction: column;
     height: 100vh;
-    width: 300px;
-    padding: 30px;
+    background-color: #173857;
   }
   @media (max-width: 400px) {
     width: 80vw;
@@ -125,121 +106,104 @@ export const NavItemsContainer = styled.div`
       padding-bottom: 20px;
     }
   }
-
-  .disabled__link {
-    @media (max-width: 768px) {
-      pointer-events: none;
-      cursor: pointer !important;
-    }
-  }
-`;
-
-export const NavItemsWrap = styled.div`
-  position: relative;
 `;
 
 const activeClassName = "nav-item-active";
 
 export const NavItems = styled(NavLink).attrs({ activeClassName })`
-  color: #fff;
   text-decoration: inherit;
-
   cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
   font-size: 14px;
-  font-weight: 400;
+  transition: all 0.5s;
 
-  p {
-    @media (max-width: 768px) {
-      margin: 0 0 22px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-      padding-bottom: 5px;
-    }
-
-    @media (min-width: 768px) {
-      &::after {
-        content: "";
-        display: block;
-        margin: 0 auto;
-        width: 0;
-        height: 2px;
-        background: #f0671f;
-        transition: width 0.3s;
-      }
-      &:hover::after {
-        width: 100%;
-      }
-    }
+  @media (min-width: 2200px) {
+    font-size: 18px;
   }
 
-  &.${activeClassName} {
-    color: #f0671f;
-    font-weight: bold;
-    /* &::after {
-      content: "";
-      display: block;
-      margin: 0 auto;
-      width: 0;
-      height: 1.5px;
-      background: #f0671f;
-      transition: width 0.3s;
+  &::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 0;
+    height: 2px;
+    background: #f0671f;
+    transition: width 0.3s;
+
+    @media (max-width: 768px) {
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.25);
+      width: 100%;
     }
+  }
+  &:hover::after {
+    width: 100%;
+  }
+  &.${activeClassName} {
     &::after {
       width: 100%;
-    } */
+      @media (max-width: 768px) {
+        background-color: #f0671f;
+      }
+    }
   }
 
-  @media (max-width: 768px) {
-    color: #fff;
+  @media (max-width: 900px) {
+    font-size: 12px;
   }
+`;
 
-  .d-none {
-    @media (min-width: 768px) {
-      display: none;
+export const NavMenusContainer = styled.div`
+  button {
+    text-transform: uppercase;
+    background-color: #f0671f;
+    color: #ffff;
+    cursor: pointer;
+    &:hover {
+      background: transparent;
+      border: 2px solid #f0671f;
+      color: #f0671f;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
     }
   }
 `;
 
-////////////Dropdown Styles////////////
-
-export const DropDownContainer = styled.div`
+export const NavSubMenusWrap = styled.div`
   position: absolute;
-  top: 190%;
-  left: -10%;
   background-color: #173857;
+  margin-top: 18px;
+  margin-left: -10px;
   width: 200px;
-  /* padding: 8px 15px 0 15px; */
-  height: ${({ openDropDown }) => (openDropDown ? "auto" : 0)};
-  overflow: hidden;
-  transition: all 0.5s;
-  @media (max-width: 768px) {
-    position: static;
-    transition: all 0.5s;
-    width: 100%;
-    padding: 0 0 0 15px;
+  /* padding: 5px; */
+
+  @media (min-width: 1700px) {
+    width: 10vw;
   }
 
-  p {
-    pointer-events: auto;
-    transition: all 0.5s;
-    @media (min-width: 768px) {
-      margin: 10px 15px 10px 10px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-      padding: 0 0px 5px 0;
-      &:hover {
-        border-bottom: 1px solid #f0671f;
-      }
-      /* &::after {
-        content: "";
-        display: block;
-        margin: 0 auto;
-        width: 0;
-        height: 2px;
-        background: #f0671f;
-        transition: width 0.3s;
-      } */
-      &:hover::after {
-        width: 0;
-      }
-    }
+  @media (max-width: 768px) {
+    width: 100%;
+    position: relative;
+    margin-left: 0px;
+  }
+`;
+
+export const NavSubMenusContainer = styled.div`
+  /* padding: 5px 10px; */
+  margin: 10px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.5s;
+
+  a {
+    padding-bottom: 18px;
+  }
+
+  @media (max-width: 768px) {
+    margin: 18px 0 14px 14px;
+    border-bottom: 0;
   }
 `;

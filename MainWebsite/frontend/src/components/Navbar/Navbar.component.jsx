@@ -1,62 +1,92 @@
-import React, { useState } from "react";
-import logo from "../../assets/images/logo.png";
-import logoClr from "../../assets/images/logo-color.png";
-import { Nav, NavLogo, NavWrap } from "./Navbar.style";
-import { useClickOutside } from "../../utils/OutsideClickDetact";
+import React, { useEffect, useState } from "react";
 import TopContactBar from "../TopContactBar/TopContactBar.component";
-import { useLocation } from "react-router";
+import { useHistory, useLocation } from "react-router";
+import { useClickOutside } from "../../utils/OutsideClickDetact";
+import {
+  NavbarContainer,
+  NavbarWrap,
+  NavLogo,
+  NavMenusWrap,
+} from "./Navbar.style";
+import logo from "../../assets/images/logo.png";
+import { navItemsData } from "./navItemsData";
+import NavMenus from "./NavMenus.component";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import NavItemsContent from "./NavItemsContent.component";
-import { Link } from "react-router-dom";
-import { SonData } from "../Dependancy/Dependancies";
+import { Container } from "../../utils/container";
 
 const Navbar = (props, { noBg }) => {
-  const [navBar, setNavBar] = useState(false);
-  const [open, setOpen] = useState(false);
+  const [navbarBackground, setNavbarBackground] = useState(false);
+  const [navHeightBg, setNavHeightBg] = useState(false);
+  const [NavbarOpen, setNavbarOpen] = useState(false);
+
+  const history = useHistory();
 
   const changeBackground = () => {
     if (window.scrollY >= 20) {
-      setNavBar(true);
+      setNavbarBackground(true);
     } else {
-      setNavBar(false);
+      setNavbarBackground(false);
     }
   };
   window.addEventListener("scroll", changeBackground);
   const { pathname } = useLocation();
 
-  var pathList = ["/home", "/about-us", "/contact-us", "/", "/web-development"];
-
-  const background = () => {
-    var check = pathList.includes(pathname);
-    if (check) {
-      return "";
+  useEffect(() => {
+    let pathList = [
+      "/home",
+      "/about-us",
+      "/contact-us",
+      "/",
+      "/web-development",
+    ];
+    let checkPath = pathList.includes(pathname);
+    if (!checkPath) {
+      setNavHeightBg(true);
     } else {
-      return "rgb(23, 56, 87)";
+      setNavHeightBg(false);
     }
-  };
+  }, [pathname]);
+
+  let navbarRef = useClickOutside(() => {
+    setNavbarOpen(false);
+  });
 
   return (
     <div>
       <TopContactBar />
-      <NavWrap style={{ background: background() }} navBar={navBar}>
-        <Nav className="active" navBar={navBar}>
-          <Link to="/">
+      <NavbarWrap navbarBackground={navbarBackground} navHeightBg={navHeightBg}>
+        <Container>
+          <NavbarContainer navbarBackground={navbarBackground}>
             <NavLogo
-              src={!navBar && noBg ? logoClr : logo}
-              alt="orange-programming"
-              navBar={navBar}
+              src={logo}
+              alt="Orange Programming"
+              navbarBackground={navbarBackground}
+              navHeightBg={navHeightBg}
+              onClick={() => history.push("/")}
             />
-          </Link>
-          <span className="hamburger__icon">
-            <FontAwesomeIcon icon={faBars} onClick={() => setOpen(true)} />
-          </span>
 
-          {/* ------------------Nav Items Here------------------ */}
+            <NavMenusWrap NavbarOpen={NavbarOpen} ref={navbarRef}>
+              <span
+                className="cross__icon"
+                onClick={() => setNavbarOpen(false)}
+              >
+                ✕
+              </span>
+              {navItemsData.map((item, idx) => (
+                <NavMenus key={idx} menu={item} setNavbarOpen={setNavbarOpen} />
+              ))}
+            </NavMenusWrap>
 
-          <NavItemsContent navItemsState={[open, setOpen]} />
-        </Nav>
-      </NavWrap>
+            <span className="hamburger__icon">
+              <FontAwesomeIcon
+                icon={faBars}
+                onClick={() => setNavbarOpen(true)}
+              />
+            </span>
+          </NavbarContainer>
+        </Container>
+      </NavbarWrap>
     </div>
   );
 };

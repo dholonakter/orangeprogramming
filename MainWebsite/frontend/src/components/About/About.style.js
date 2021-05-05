@@ -26,8 +26,15 @@ export const AboutContent = styled.div`
   justify-content: space-between;
   /* align-items: center; */
   flex-wrap: wrap;
-  & > * {
-    width: 50%;
+  & > :nth-child(1) {
+    width: 55%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  & > :nth-child(2) {
+    width: 40%;
 
     @media (max-width: 768px) {
       width: 100%;
@@ -51,30 +58,17 @@ export const AboutContent = styled.div`
         font-weight: 900;
       }
     }
-
-    /* p {
-      font-weight: 200;
-      font-size: 1.1vw;
-      text-align: justify;
-      color: #f0671f;
-      background-color: #fff;
-      @media (max-width: 1000px) {
-        font-size: 12px;
-        margin-bottom: 25px;
-      }
-    } */
-
+  }
+  .img__container {
+    text-align: right;
     img {
-      width: 80%;
-      @media (max-width: 768px) {
-        width: 100%;
-      }
+      width: 100%;
     }
   }
-  .img-container {
+  /* .img-container {
     display: grid;
     place-items: center;
-  }
+  } */
 `;
 export const CheckBoxItems = styled.div`
   display: flex;

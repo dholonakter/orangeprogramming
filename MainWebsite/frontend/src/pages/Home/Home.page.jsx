@@ -1,23 +1,19 @@
-import React, {useRef} from "react";
+import React, { useRef } from "react";
 import Banner from "../../components/Banner/Banner.component";
 import ContactSection from "../../components/ContactSection/ContactSection.component";
 import ProcessPlan from "../../components/ProcessPlan/ProcessPlan.component";
 import Projects from "../../components/Projects/Projects.component";
 import Services from "../../components/Services/Services.component";
 import Technologies from "../../components/Technologies/Technologies.component";
-import  Dapps from "../../components/Dependancy/Dependancies";
 import { useLocation } from "react-router";
 
-
-
 const Home = () => {
-
   return (
-    <div >
+    <div>
       <Banner />
       <Services />
       <ProcessPlan />
-      <Projects/>
+      <Projects />
       <Technologies />
       <ContactSection />
     </div>

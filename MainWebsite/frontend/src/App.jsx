@@ -46,7 +46,15 @@ function App() {
               component={UnderConstruction}
             />
 
-            <Route exact strict path="/home/#tarek" component={Home} />
+            {/* Consulancy Routes */}
+
+            <Route
+              exact
+              path="/consultancy/:type"
+              component={UnderConstruction}
+            />
+
+            {/* <Route exact strict path="/home/#tarek" component={Home} /> */}
             <Route exact path="/blog" component={UnderConstruction} />
 
             {/* Page Not Found Here */}
