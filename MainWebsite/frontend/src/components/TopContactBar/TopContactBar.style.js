@@ -20,6 +20,10 @@ export const TopContactBarContainer = styled.div`
     align-items: flex-start;
   }
 
+  @media (min-width: 2200px) {
+    height: 45px;
+  }
+
   p {
     font-size: 16pxz;
     font-weight: 500;
@@ -27,6 +31,10 @@ export const TopContactBarContainer = styled.div`
     align-items: center;
     color: #fff;
     font-size: 14px;
+
+    @media (min-width: 2200px) {
+      font-size: 18px;
+    }
 
     @media (max-width: 768px) {
       font-size: 12px;
@@ -55,6 +63,11 @@ export const TopContactBarContainer = styled.div`
     justify-content: space-between;
     font-size: 10px;
     color: #fff;
+
+    @media (min-width: 2200px) {
+      font-size: 16px;
+      width: 300px;
+    }
 
     /* @media (max-width: 1000px) {
       width: 55%;
