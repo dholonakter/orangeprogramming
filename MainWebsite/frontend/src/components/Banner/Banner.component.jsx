@@ -32,7 +32,7 @@ const Banner = () => {
                 animate={{ y: 0 }}
                 transition={{ type: "spring", stiffness: 120 }}
               >
-                YOU SHARE YOUR <span> IDEA.</span>WE GET IT <span>DONE.</span>{" "}
+                YOU SHARE YOUR <span> IDEA,</span>WE GET IT <span>DONE</span>{" "}
               </motion.h1>
               <div className="hr" />
             </div>
@@ -43,7 +43,7 @@ const Banner = () => {
           <BannerOverlay>
             <div>
               <motion.h1 initial={{ y: -50 }} animate={{ y: 0 }}>
-                GET YOUR <span>BUSINESS</span> <span>ONLINE.</span>{" "}
+                GET YOUR <span>BUSINESS</span> <span>ONLINE</span>{" "}
               </motion.h1>
               <div className="hr" />
             </div>
@@ -54,7 +54,7 @@ const Banner = () => {
           <BannerOverlay>
             <div>
               <motion.h1 initial={{ y: -50 }} animate={{ y: 0 }}>
-                WEB <span> SOLUTION</span> FOR YOUR <span>BUSINESS.</span>
+                ICT <span> SOLUTIONS</span> FOR YOUR <span>BUSINESS</span>
               </motion.h1>
               <div className="hr" />
             </div>
