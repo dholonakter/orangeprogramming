@@ -92,6 +92,7 @@ export const OurValuesContent = styled.div`
       width: 80%;
     }
     h3 {
+      font-size: 1.3vw;
       @media (max-width: 1470px) {
         font-size: 16px;
       }

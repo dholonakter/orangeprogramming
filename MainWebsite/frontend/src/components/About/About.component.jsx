@@ -26,6 +26,7 @@ const AboutComponent = () => {
                   the gap between strategy and execution.
                 </p>
               </CheckBoxItems>
+              <br/>
               <CheckBoxItems>
                 <img src={checkbox} alt="" />
                 <p>
@@ -34,6 +35,7 @@ const AboutComponent = () => {
                   solutions for our clients.
                 </p>
               </CheckBoxItems>
+              <br/>
               <CheckBoxItems>
                 <img src={checkbox} alt="" />
                 <p>
@@ -42,6 +44,7 @@ const AboutComponent = () => {
                   strategy, pricing, scheduling, coding, testing, and delivery.
                 </p>
               </CheckBoxItems>
+              <br/>
               <CheckBoxItems>
                 <img src={checkbox} alt="" />
                 <p>

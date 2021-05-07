@@ -24,17 +24,20 @@ const OurValues = () => {
         </SmallText>
         
         <OurValuesContainer>
-          <OurValuesContent>
-            <img src={handShake} alt="" />
+
+        <OurValuesContent>
+            <img src={thumb} alt="" />
             <div className="our__values_text">
-              <h3>WE MAKE OUR CLIENTS' BUSINESS OUR BUSINESS</h3>
+              <h3>WE DO THE RIGHT THING</h3>
               <small>
-                Nothing is more important to success than truly understanding
-                what motivates our clients and their customers. We always put
-                ourselves in their shoes.
+                If something doesn’t feel right, we pay attention and
+                re-evaluate. When necessary, we talk it through with each other
+                and our clients.
               </small>
             </div>
           </OurValuesContent>
+
+          
 
           <OurValuesContent>
             <img src={puzzle} alt="" />
@@ -70,13 +73,13 @@ const OurValues = () => {
           </OurValuesContent>
 
           <OurValuesContent>
-            <img src={thumb} alt="" />
+            <img src={handShake} alt="" />
             <div className="our__values_text">
-              <h3>WE DO THE RIGHT THING</h3>
+              <h3>WE MAKE OUR CLIENTS' BUSINESS OUR BUSINESS</h3>
               <small>
-                If something doesn’t feel right, we pay attention and
-                re-evaluate. When necessary, we talk it through with each other
-                and our clients.
+                Nothing is more important to success than truly understanding
+                what motivates our clients and their customers. We always put
+                ourselves in their shoes.
               </small>
             </div>
           </OurValuesContent>
