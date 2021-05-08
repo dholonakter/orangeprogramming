@@ -7,7 +7,7 @@ export const NavbarWrap = styled.div`
   box-shadow: ${({ navbarBackground, navHeightBg }) =>
     navbarBackground || navHeightBg ? "0 1px 6px 0 rgb(32 33 36 / 28%)" : ""};
   margin: ${({ navbarBackground, navHeightBg }) =>
-    navbarBackground || navHeightBg ? "0 auto" : "35px auto"};
+    navbarBackground || navHeightBg ? "0 auto" : "40px auto"};
   position: fixed;
   top: 0;
   left: 0;
@@ -46,6 +46,9 @@ export const NavLogo = styled.img`
     navbarBackground || navHeightBg ? "130px" : "160px"};
   height: ${({ navbarBackground, navHeightBg }) =>
     navbarBackground || navHeightBg ? "55px" : "70px"};
+  padding: ${({ navbarBackground, navHeightBg }) =>
+    navbarBackground || navHeightBg ? "4px" : "0px"};
+
   transition: all 0.5s;
   cursor: pointer;
 
@@ -73,8 +76,6 @@ export const NavMenusWrap = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 70%;
-  /* height: ${({ navbarBackground, navHeightBg }) =>
-    navbarBackground || navHeightBg ? "55px" : "70px"}; */
 
   @media (max-width: 1030px) {
     width: 75%;
