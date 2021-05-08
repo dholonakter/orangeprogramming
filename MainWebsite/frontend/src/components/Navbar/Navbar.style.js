@@ -14,11 +14,12 @@ export const NavbarWrap = styled.div`
   right: 0;
   z-index: 10;
   width: 100%;
+  transition: all 0.3s;
 `;
 
 export const NavbarContainer = styled.div`
-  padding: ${({ navbarBackground, navHeightBg }) =>
-    navbarBackground || navHeightBg ? "5px 0" : "15px 0"};
+  /* padding: ${({ navbarBackground, navHeightBg }) =>
+    navbarBackground || navHeightBg ? "5px 0" : "0px 0"}; */
   transition: all 0.3s;
   display: flex;
   justify-content: space-between;
@@ -65,11 +66,15 @@ export const NavLogo = styled.img`
   }
 `;
 
+// sdf; sldkflsdjflsdfjdsl;
+
 export const NavMenusWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 70%;
+  /* height: ${({ navbarBackground, navHeightBg }) =>
+    navbarBackground || navHeightBg ? "55px" : "70px"}; */
 
   @media (max-width: 1030px) {
     width: 75%;
@@ -108,6 +113,45 @@ export const NavMenusWrap = styled.div`
   }
 `;
 
+export const NavMenusContainer = styled.div`
+  @media (min-width: 769px) {
+    height: ${({ navbarBackground, navHeightBg }) =>
+      navbarBackground || navHeightBg ? "55px" : "70px"};
+    display: felx;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  @media (max-width: 768px) {
+    display: block;
+    padding-bottom: 25px;
+  }
+
+  .nav__sub__menus_wrap {
+    display: none;
+  }
+
+  &:hover > .nav__sub__menus_wrap {
+    display: block;
+  }
+  button {
+    text-transform: uppercase;
+    background-color: #f0671f;
+    color: #ffff;
+    cursor: pointer;
+    &:hover {
+      background: transparent;
+      border: 2px solid #f0671f;
+      color: #f0671f;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+`;
+
 const activeClassName = "nav-item-active";
 
 export const NavItems = styled(NavLink).attrs({ activeClassName })`
@@ -116,11 +160,18 @@ export const NavItems = styled(NavLink).attrs({ activeClassName })`
   color: #fff;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 13px;
   transition: all 0.5s;
 
   @media (min-width: 2200px) {
     font-size: 18px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 768px) {
   }
 
   &::after {
@@ -149,40 +200,14 @@ export const NavItems = styled(NavLink).attrs({ activeClassName })`
       }
     }
   }
-
-  @media (max-width: 900px) {
-    font-size: 12px;
-  }
-
-  @media (max-width: 768px) {
-  }
-`;
-
-export const NavMenusContainer = styled.div`
-  button {
-    text-transform: uppercase;
-    background-color: #f0671f;
-    color: #ffff;
-    cursor: pointer;
-    &:hover {
-      background: transparent;
-      border: 2px solid #f0671f;
-      color: #f0671f;
-    }
-
-    @media (max-width: 768px) {
-      width: 100%;
-    }
-  }
 `;
 
 export const NavSubMenusWrap = styled.div`
   position: absolute;
   background-color: #173857;
-  margin-top: 18px;
-  margin-left: -10px;
-  width: 200px;
-  /* padding: 5px; */
+  margin-top: 12px;
+  width: 170px;
+  font-size: 12px;
 
   @media (min-width: 1700px) {
     width: 10vw;
@@ -192,6 +217,7 @@ export const NavSubMenusWrap = styled.div`
     width: 100%;
     position: relative;
     margin-left: 0px;
+    margin-top: 0px;
   }
 `;
 
@@ -202,12 +228,11 @@ export const NavSubMenusContainer = styled.div`
   transition: all 0.5s;
 
   a {
-    padding-bottom: 18px;
+    /* padding-bottom: 18px; */
   }
 
   @media (max-width: 768px) {
-    margin: 18px 0 14px 14px;
     border-bottom: 0;
-    padding: 0 0px 6px 0;
+    margin: 10px 0 0 10px;
   }
 `;

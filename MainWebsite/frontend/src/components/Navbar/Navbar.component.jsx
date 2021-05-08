@@ -74,7 +74,12 @@ const Navbar = (props, { noBg }) => {
                 ✕
               </span>
               {navItemsData.map((item, idx) => (
-                <NavMenus key={idx} menu={item} setNavbarOpen={setNavbarOpen} />
+                <NavMenus
+                  key={idx}
+                  menu={item}
+                  setNavbarOpen={setNavbarOpen}
+                  navbarBackground={navbarBackground}
+                />
               ))}
             </NavMenusWrap>
 

@@ -12,17 +12,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useHistory } from "react-router";
 
-function NavMenus({ menu, setNavbarOpen }) {
-  const [openNavSubMenu, setOpenSubMenu] = useState(false);
+function NavMenus({ menu, setNavbarOpen, navbarBackground }) {
   const history = useHistory();
-
-  let navbarRef = useClickOutside(() => {
-    setOpenSubMenu(false);
-  });
 
   const handleClick = (e) => {
     if (menu.pathDisable) {
-      setOpenSubMenu(!openNavSubMenu);
       e.preventDefault();
     } else {
       setNavbarOpen(false);
@@ -31,36 +25,18 @@ function NavMenus({ menu, setNavbarOpen }) {
 
   return (
     <>
-      <NavMenusContainer>
+      <NavMenusContainer navbarBackground={navbarBackground}>
         {menu.button ? (
           <PrimaryButton onClick={() => history.push(menu.path)}>
             {menu.title} &nbsp; <FontAwesomeIcon icon={faArrowRight} />
           </PrimaryButton>
         ) : (
-          <NavItems
-            to={menu.path}
-            exact
-            onClick={handleClick}
-            onMouseOver={() => setOpenSubMenu(true)}
-          >
-            {menu.title}
-            {menu.subMenu && openNavSubMenu ? (
-              <>
-                &nbsp;&nbsp;&nbsp;
-                <FontAwesomeIcon icon={faAngleUp} />
-              </>
-            ) : (
-              menu.subMenu && (
-                <>
-                  &nbsp;&nbsp;&nbsp;
-                  <FontAwesomeIcon icon={faAngleDown} />
-                </>
-              )
-            )}
+          <NavItems to={menu.path} exact onClick={handleClick}>
+            <span>{menu.title}</span>
           </NavItems>
         )}
-        <NavSubMenusWrap onMouseLeave={() => setOpenSubMenu(false)}>
-          {menu.subMenu && openNavSubMenu
+        <NavSubMenusWrap className="nav__sub__menus_wrap">
+          {menu.subMenu
             ? menu.subMenu.map((subMenu, idx) => (
                 <NavSubMenus
                   key={idx}
