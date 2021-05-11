@@ -9,11 +9,12 @@ import Table from './Images/table.png';
 import { useLocation } from 'react-router';
 
 
+import {Data} from '../../assets/Data/MyData'
 
 
 
 
-export default function WebDevelopment (){
+export default function WebDevelopment (props){
     const ControllingBanner =() =>{
        
         const [size, setSize] = useState([window.innerWidth]);
@@ -36,7 +37,9 @@ export default function WebDevelopment (){
         }
     }
 
-    console.log(useLocation())
+  
+
+
     return(
         
         <div >
@@ -45,7 +48,7 @@ export default function WebDevelopment (){
                  
                  <Grid className="con" container>
                     <Grid className='left' item sm={7}>
-                        <p>web development</p>
+                        <p>{props.header}</p>
                     </Grid>
                     <Grid className='right' item sm={5}>
                     

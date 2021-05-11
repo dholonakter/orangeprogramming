@@ -10,11 +10,11 @@ export const navItemsData = [
     subMenu: [
       {
         title: "Web Application",
-        path: "/web-development",
+        path: "/services?services=web_development",
       },
       {
         title: "Mobile Developments",
-        path: "/mobile-developments",
+        path: "/services?services=mobile_development",
       },
       {
         title: "Predictable Artifical Intellignece",

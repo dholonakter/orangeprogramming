@@ -20,7 +20,7 @@ export const Body = styled.div`
             font-size: 12px;
           }
     }
-    p::first-letter{
+    p:nth-child(1)::first-letter{
         color: #c69c6d;
         float: left;
         font-size: 3em;

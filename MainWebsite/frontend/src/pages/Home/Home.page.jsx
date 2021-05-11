@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Banner from "../../components/Banner/Banner.component";
 import ContactSection from "../../components/ContactSection/ContactSection.component";
 import ProcessPlan from "../../components/ProcessPlan/ProcessPlan.component";
@@ -7,7 +7,17 @@ import Services from "../../components/Services/Services.component";
 import Technologies from "../../components/Technologies/Technologies.component";
 import { useLocation } from "react-router";
 
+
+import {Data} from '../../assets/Data/MyData'
+
+
+
+
 const Home = () => {
+
+
+
+
   return (
     <div>
       <Banner />

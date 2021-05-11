@@ -7,8 +7,18 @@ import Navbar from "./components/Navbar/Navbar.component";
 import Footer from "./components/Footer/Footer.component";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import UnderConstruction from "./components/UnderConstruction/UnderConstruction.component";
-import WebServices from "./pages/WebDevelopmentServices/WebDevelopment.page";
+import Services from './pages/Services/Services.page'
 import Error from "./components/Error/Error";
+
+
+
+
+
+
+
+
+
+
 
 function App() {
   return (
@@ -22,7 +32,7 @@ function App() {
             <Route exact path="/about-us" component={Aboutus} />
             <Route exact path="/contact-us" component={Contactus} />
             <Route exact path="/" component={Home} />
-            <Route exact path="/web-development" component={WebServices} />
+            <Route exact path="/services" component={Services} />
             <Route
               exact
               path="/under-construction"
@@ -56,6 +66,16 @@ function App() {
 
             {/* <Route exact strict path="/home/#tarek" component={Home} /> */}
             <Route exact path="/blog" component={UnderConstruction} />
+
+
+
+
+
+
+
+
+
+
 
             {/* Page Not Found Here */}
             <Route component={Error} />
