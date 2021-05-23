@@ -2,13 +2,13 @@ import Slider from "react-slick";
 import { Box, Grid, makeStyles, Typography } from '@material-ui/core';
 import React, { useEffect, useState, Component } from 'react';
 import {Container} from '../../utils/container';
-import { Root, RootO, IconBox, MainComputer, Monitor, Keyboard, Player } from "./Style/WebDevelopmentMethodology.style";
+import { Root, RootO, IconBox, MainComputer, Monitor, Keyboard, Player } from "./Methodology.style";
 
 import {Data} from '../../assets/Data/MyData'
 
 
 
-class WebDevelopmentMethodology extends Component {
+class Methodology extends Component {
 
     constructor(props) {
         super(props);
@@ -134,4 +134,4 @@ class WebDevelopmentMethodology extends Component {
     }
 }
 
-export default WebDevelopmentMethodology;
+export default Methodology;

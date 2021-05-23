@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+
 export const Body = styled.div`
     margin: 50px 0 0 0;
     overflow: hidden;
@@ -39,6 +40,9 @@ export const Body = styled.div`
         flex-direction: row-reverse;
     }
 `
+
+
+
 export const Img = styled.img`
     width: 100%;
     text-align: center;
@@ -49,4 +53,3 @@ export const Img = styled.img`
         padding: 50px 10px 10px 10px;
     }
 `
-

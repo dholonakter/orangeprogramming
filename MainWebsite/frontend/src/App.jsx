@@ -9,10 +9,10 @@ import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import UnderConstruction from "./components/UnderConstruction/UnderConstruction.component";
 import Services from './pages/Services/Services.page'
 import Error from "./components/Error/Error";
-
-
-
-
+import WebDevelopment from './pages/WebDevelopment/WebDevelopment.page'
+import MobileDevelopment from './pages/MobileDevelopment/MobileDevelopment.page'
+import WindowsApplication from './pages/WindowsApplication/WindowsApplication.page'
+import AI from './pages/AI/AI.pages'
 
 
 
@@ -33,6 +33,10 @@ function App() {
             <Route exact path="/contact-us" component={Contactus} />
             <Route exact path="/" component={Home} />
             <Route exact path="/services" component={Services} />
+            <Route exact path="/web-development" component={WebDevelopment} />
+            <Route exact path="/mobile-development" component={MobileDevelopment}/>
+            <Route exact path="/windows-application" component={WindowsApplication}/>
+            <Route exact path="/ai" component={AI} />
             <Route
               exact
               path="/under-construction"
@@ -43,18 +47,10 @@ function App() {
             <Route exact path="/projects" component={UnderConstruction} />
             <Route exact path="/gallery" component={UnderConstruction} />
             <Route exact path="/android" component={UnderConstruction} />
-            <Route exact path="/ai" component={UnderConstruction} />
-            <Route
-              exact
-              path="/mobile-developments"
-              component={UnderConstruction}
-            />
+            
+            
             <Route exact path="/blockchain" component={UnderConstruction} />
-            <Route
-              exact
-              path="/windows-application"
-              component={UnderConstruction}
-            />
+            
 
             {/* Consulancy Routes */}
 

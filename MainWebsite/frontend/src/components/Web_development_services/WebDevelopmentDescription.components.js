@@ -11,7 +11,34 @@ const WebDevelopmentDescription = (props) => {
     return (
         <Body>
             <Container maxWidth='lg'>
-                <Grid container spacing={3} >
+
+                
+                    {/* // Data[props.index].map(item=>( */}
+
+                        <Grid className='flexbox' container spacing={3} >
+
+                            <Grid   item md={7}>
+                                {Data[props.index][0].content.map(item=>(
+
+                                
+                                        <Typography align="justify" variant="body2">
+                                                {item}
+                                                
+                                        </Typography>
+                                
+                                ))}
+                            
+                            </Grid>
+
+                            <Grid className="imageGrid"  item md={5} >
+                                <Img  src={props.img}></Img>         
+                            </Grid>
+                        </Grid>
+                    {/* // )) */}
+                    
+                
+                {/* <Grid container spacing={3} >
+
                     <Grid   item md={7}>
                         {Data[props.index][0].content.map(item=>(
 
@@ -24,13 +51,18 @@ const WebDevelopmentDescription = (props) => {
                          ))}
                        
                     </Grid>
+
                     <Grid className="imageGrid"  item md={5} >
                         <Img  src={props.img}></Img>         
                     </Grid>
                 </Grid>
+ */}
+
+
             </Container>
         </Body>
     );
 };
 
 export default WebDevelopmentDescription;
+
