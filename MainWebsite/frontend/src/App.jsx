@@ -7,18 +7,12 @@ import Navbar from "./components/Navbar/Navbar.component";
 import Footer from "./components/Footer/Footer.component";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import UnderConstruction from "./components/UnderConstruction/UnderConstruction.component";
-import Services from './pages/Services/Services.page'
+import Services from "./pages/Services/Services.page";
 import Error from "./components/Error/Error";
-import WebDevelopment from './pages/WebDevelopment/WebDevelopment.page'
-import MobileDevelopment from './pages/MobileDevelopment/MobileDevelopment.page'
-import WindowsApplication from './pages/WindowsApplication/WindowsApplication.page'
-import AI from './pages/AI/AI.pages'
-
-
-
-
-
-
+import WebDevelopment from "./pages/WebApplication/WebApplication.page";
+import MobileDevelopment from "./pages/MobileDevelopment/MobileDevelopment.page";
+import WindowsApplication from "./pages/WindowsApplication/WindowsApplication.page";
+import AI from "./pages/AI/AI.pages";
 
 function App() {
   return (
@@ -34,8 +28,16 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route exact path="/services" component={Services} />
             <Route exact path="/web-development" component={WebDevelopment} />
-            <Route exact path="/mobile-development" component={MobileDevelopment}/>
-            <Route exact path="/windows-application" component={WindowsApplication}/>
+            <Route
+              exact
+              path="/mobile-development"
+              component={MobileDevelopment}
+            />
+            <Route
+              exact
+              path="/windows-application"
+              component={WindowsApplication}
+            />
             <Route exact path="/ai" component={AI} />
             <Route
               exact
@@ -47,10 +49,8 @@ function App() {
             <Route exact path="/projects" component={UnderConstruction} />
             <Route exact path="/gallery" component={UnderConstruction} />
             <Route exact path="/android" component={UnderConstruction} />
-            
-            
+
             <Route exact path="/blockchain" component={UnderConstruction} />
-            
 
             {/* Consulancy Routes */}
 
@@ -62,16 +62,6 @@ function App() {
 
             {/* <Route exact strict path="/home/#tarek" component={Home} /> */}
             <Route exact path="/blog" component={UnderConstruction} />
-
-
-
-
-
-
-
-
-
-
 
             {/* Page Not Found Here */}
             <Route component={Error} />

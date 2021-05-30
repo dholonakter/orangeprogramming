@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
-
 export const SmallText = styled.div`
-  small{
+  small {
     font-size: 1vw;
     @media (max-width: 1500px) {
       font-size: 15px;
@@ -19,15 +18,15 @@ export const SmallText = styled.div`
   }
 `;
 
-
 export const OurValuesContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem 5rem;
   /* grid-template-columns: repeat(auto-fit,minmax(12rem,1fr)); */
   padding: 2% 0 8% 0;
-  h3{
+  h3 {
     font-size: 1.4vw;
+    color: #2d3436;
     @media (max-width: 1500px) {
       font-size: 22px;
       /* width: 70%; */
@@ -41,10 +40,10 @@ export const OurValuesContainer = styled.div`
       /* width: 70%; */
     }
   }
-  small{
+  small {
     font-size: 1vw;
     @media (max-width: 1500px) {
-      font-size: 15px;
+      font-size: 13px;
       /* width: 70%; */
     }
     @media (max-width: 1100px) {

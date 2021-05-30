@@ -43,7 +43,7 @@ export const NavbarContainer = styled.div`
 
 export const NavLogo = styled.img`
   width: ${({ navbarBackground, navHeightBg }) =>
-    navbarBackground || navHeightBg ? "130px" : "160px"};
+    navbarBackground || navHeightBg ? "120px" : "160px"};
   height: ${({ navbarBackground, navHeightBg }) =>
     navbarBackground || navHeightBg ? "55px" : "70px"};
   padding: ${({ navbarBackground, navHeightBg }) =>

@@ -9,7 +9,11 @@ import { SmallBorderBottom } from "../../utils/constant";
 import { Container } from "../../utils/container";
 import { HeaderText } from "../../utils/text";
 import { OurstoryContainer } from "../OueStory/OurStory.style";
-import { OurValuesContainer, OurValuesContent, SmallText } from "./OurValues.style";
+import {
+  OurValuesContainer,
+  OurValuesContent,
+  SmallText,
+} from "./OurValues.style";
 const OurValues = () => {
   return (
     <>
@@ -22,13 +26,12 @@ const OurValues = () => {
             employer.
           </small>
         </SmallText>
-        
-        <OurValuesContainer>
 
-        <OurValuesContent>
+        <OurValuesContainer>
+          <OurValuesContent>
             <img src={thumb} alt="" />
             <div className="our__values_text">
-              <h3>WE DO THE RIGHT THING</h3>
+              <h3>We do the right thing</h3>
               <small>
                 If something doesn’t feel right, we pay attention and
                 re-evaluate. When necessary, we talk it through with each other
@@ -36,8 +39,6 @@ const OurValues = () => {
               </small>
             </div>
           </OurValuesContent>
-
-          
 
           <OurValuesContent>
             <img src={puzzle} alt="" />
