@@ -2,7 +2,6 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FadeIn from "react-fade-in";
 import React, { useState } from "react";
-// import FadeIn from "react-fade-in";
 import { Row, Col } from "react-grid-system";
 import { Container } from "../../utils/container";
 import {
@@ -71,7 +70,7 @@ function Methodology() {
         <MethodologyWrapper>
           <HeaderText>How we build your custom web application</HeaderText>
           <SmallBorderBottom />
-          <Row gutterWidth={100}>
+          <Row>
             <Col md={6}>
               {webAppMethodologyData.map((item) => (
                 <MethodologyItems key={item.id}>

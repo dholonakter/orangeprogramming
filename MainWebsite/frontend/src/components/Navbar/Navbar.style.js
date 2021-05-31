@@ -8,6 +8,8 @@ export const NavbarWrap = styled.div`
     navbarBackground || navHeightBg ? "0 1px 6px 0 rgb(32 33 36 / 28%)" : ""};
   margin: ${({ navbarBackground, navHeightBg }) =>
     navbarBackground || navHeightBg ? "0 auto" : "40px auto"};
+  padding: ${({ navbarBackground, navHeightBg }) =>
+    navbarBackground || navHeightBg ? "5px 0" : "3px 0"};
   position: fixed;
   top: 0;
   left: 0;
@@ -43,9 +45,9 @@ export const NavbarContainer = styled.div`
 
 export const NavLogo = styled.img`
   width: ${({ navbarBackground, navHeightBg }) =>
-    navbarBackground || navHeightBg ? "120px" : "160px"};
+    navbarBackground || navHeightBg ? "140px" : "160px"};
   height: ${({ navbarBackground, navHeightBg }) =>
-    navbarBackground || navHeightBg ? "55px" : "70px"};
+    navbarBackground || navHeightBg ? "60px" : "70px"};
   padding: ${({ navbarBackground, navHeightBg }) =>
     navbarBackground || navHeightBg ? "4px" : "0px"};
 

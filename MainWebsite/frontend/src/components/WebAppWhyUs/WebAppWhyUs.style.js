@@ -20,5 +20,15 @@ export const WhyUsWrapper = styled.div`
   p {
     font-size: 18px;
     font-weight: 600;
+
+    @media (min-width: 2200px) {
+      font-size: 1vw;
+    }
+    @media (max-width: 450px) {
+      font-size: 14px;
+    }
+    @media (max-width: 350px) {
+      font-size: 12px;
+    }
   }
 `;
