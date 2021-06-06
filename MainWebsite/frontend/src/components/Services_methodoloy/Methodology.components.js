@@ -2,11 +2,12 @@ import Slider from "react-slick";
 import { Box, Grid, makeStyles, Typography } from '@material-ui/core';
 import React, { useEffect, useState, Component } from 'react';
 import {Container} from '../../utils/container';
-import { Root, RootO, IconBox, MainComputer, Monitor, Keyboard, Player } from "./Methodology.style";
+import { Root, RootO, IconBox, MainComputer, Monitor, Keyboard, Player, BaseImage } from "./Methodology.style";
 
 import {Data} from '../../assets/Data/MyData'
-
-
+import { HeaderText } from "../../utils/text";
+import Hand from './ai01.png'
+import I from './ai01.png'
 
 class Methodology extends Component {
 
@@ -60,8 +61,7 @@ class Methodology extends Component {
             <div >
                 <Root>
                     <Container maxWidth='lg'>
-                        <Typography align="center" display="block" variant="h3"> {this.props.dbName[0].header} methodology </Typography>
-                        
+                        <HeaderText>Predictable Artificial Intelligence methodology </HeaderText>
                             <Slider
                             asNavFor={this.state.nav1}
                             ref={slider => (this.slider2 = slider)}
@@ -77,10 +77,14 @@ class Methodology extends Component {
                               {this.props.dbName[0].methodology.map(item=>(
                                 <div key={item.id}>
                                        
-                                  <IconBox   style={{background:'#fff'}} > 
+                                  <IconBox   style={{background:'#fff'}} >
+                                    <div className="logoSetter">
+                                       
                                       <div className='logoHolder'>
                                           {item.logo}                   
                                       </div>
+                                      </div>
+                                      <div className='idHolder'>{item.id}</div>
                                   </IconBox>
                                   <Typography  align="center" color="textSecondary" variant="body2" style={{padding: '7px 0 0 0'}}> {item.header} </Typography>
                          
@@ -108,14 +112,14 @@ class Methodology extends Component {
                              <Typography  align="justify" variant="body2">  {item.content}  </Typography>
                          </Grid>
                         <Grid className='right' item md={6}>
-                          <MainComputer>
-                            <Monitor>
-                              <Player>
-                              <img className='computerPlayerContent' src={item.img}></img>            
-                              </Player>
-                            </Monitor>
-                            <Keyboard/>
-                          </MainComputer>
+                          <BaseImage>
+                            {/* <div className="contentImage">
+                                <img src={I}/>
+                            </div> */}
+                            {/* <div className="hand"> */}
+                              <img src={Hand}/>
+                            {/* </div> */}
+                          </BaseImage>
                          </Grid>
 
                     </Grid>

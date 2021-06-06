@@ -16,7 +16,7 @@ export default function Description(props) {
                         
                         props.dbName.map(item=>(
                             
-                            <Grid className='flexbox' container spacing={3}>
+                            <Grid style={{flexDirection: props.direction}} className='flexbox' container spacing={3}>
                                 <Grid   item md={7}>
                                         {props.dbName[index].content.map(item=>(
 

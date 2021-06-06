@@ -11,8 +11,8 @@ import MergeTypeIcon from '@material-ui/icons/MergeType';
 
 
 //web development data
-import Table from '../../assets/images/Web Development/table.png'
-import DescriptionImage from '../../assets/images/Web Development/description.jpg'
+import Table from '../../assets/images/windows/banner_img.png'
+import DescriptionImage from '../../assets/images/windows/description.png'
 import img1 from '../../assets/images/Web Development/methodoloty/img1.jpeg'
 import img2 from '../../assets/images/Web Development/methodoloty/img2.jpeg'
 import img3 from '../../assets/images/Web Development/methodoloty/img3.jpeg'
