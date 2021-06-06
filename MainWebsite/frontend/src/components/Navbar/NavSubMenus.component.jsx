@@ -6,6 +6,7 @@ function NavSubMenus({ subMenu, setNavbarOpen }) {
     <>
       <NavSubMenusContainer>
         <NavItems
+          className="nav__sub__menu"
           to={subMenu.path}
           onClick={() => {
             setNavbarOpen(false);

@@ -3,7 +3,7 @@ import { Container } from "../../utils/container";
 import { Row, Col } from "react-grid-system";
 import { HeaderText } from "../../utils/text";
 import { SmallBorderBottom } from "../../utils/constant";
-import { WebAppCol } from "../WebAppContent/WebAppContent.style";
+import { WebAppCol } from "../ServiceContent/ServiceContent.style";
 import img from "../../assets/images/web-app-why-us.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";

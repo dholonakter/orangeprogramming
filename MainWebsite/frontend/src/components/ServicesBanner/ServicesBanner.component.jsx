@@ -6,21 +6,21 @@ import {
   ServiceBannerWrapper,
 } from "./ServicesBanner.style";
 
-function ServicesBanner() {
+function ServicesBanner({ data }) {
+  const { bgImg, title, description } = data;
+
   return (
     <>
       <ServiceBannerWrapper>
-        <img src={img} alt="" />
+        <img src={bgImg} alt="" />
         <ServiceBannerOverlay>
           <Container className="service__banner">
             <h1>
-              <strong>Web Applictaion</strong> Development
+              <strong>{title.bold} </strong>
+              {title.normal}
             </h1>
             <div className="hr" />
-            <p>
-              Expert FullStack Development Services that shield your enterprise
-              from modern technical and business challenges.
-            </p>
+            <p>{description}</p>
           </Container>
         </ServiceBannerOverlay>
       </ServiceBannerWrapper>

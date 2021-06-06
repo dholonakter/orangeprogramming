@@ -16,6 +16,12 @@ export const MethodologyItems = styled.div`
   cursor: pointer;
   margin-right: 30px;
 
+  .methodology__icon {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
   @media (min-width: 2200px) {
     font-size: 1vw;
   }

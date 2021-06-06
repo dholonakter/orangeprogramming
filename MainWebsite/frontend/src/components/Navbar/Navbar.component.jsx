@@ -34,18 +34,18 @@ const Navbar = (props, { noBg }) => {
 
   useEffect(() => {
     let pathList = [
-      "/home",
-      "/about-us",
-      "/contact-us",
-      "/",
-      "/web-development",
+      "/projects",
+      "/consultancy/start-Up",
+      "/consultancy/scale-Up",
     ];
     let checkPath = pathList.includes(pathname);
-    if (!checkPath) {
+    if (checkPath) {
       setNavHeightBg(true);
     } else {
       setNavHeightBg(false);
     }
+
+    return () => {};
   }, [pathname]);
 
   let navbarRef = useClickOutside(() => {

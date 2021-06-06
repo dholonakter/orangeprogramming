@@ -71,8 +71,6 @@ export const NavLogo = styled.img`
   }
 `;
 
-// sdf; sldkflsdjflsdfjdsl;
-
 export const NavMenusWrap = styled.div`
   display: flex;
   justify-content: space-between;
@@ -229,6 +227,17 @@ export const NavSubMenusContainer = styled.div`
   margin: 10px 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   transition: all 0.5s;
+
+  .nav__sub__menu {
+    /* background-color: red; */
+    padding-bottom: 5px;
+
+    &::after {
+      @media (max-width: 768px) {
+        margin-top: 5px;
+      }
+    }
+  }
 
   a {
     /* padding-bottom: 18px; */

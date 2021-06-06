@@ -10,54 +10,34 @@ import pythonIcon from "../../assets/images/icons/python.png";
 import aspIcon from "../../assets/images/icons/asp.net-logo.png";
 import { StackTechIconCol, StackTechWrap } from "./TechnologyStack.style";
 
-function TechnologyStack() {
+function TechnologyStack({ data }) {
+  const { title, description, imgs, numOfTechs } = data;
+  console.log(data);
   return (
     <>
       <Container>
         <StackTechWrap>
           <Row gutterWidth={30}>
             <Col md={7}>
-              <HeaderText>Check out our web technology stack</HeaderText>
+              <HeaderText>{title}</HeaderText>
               <SmallBorderBottom />
-              <p>
-                In delivering scalable, flawlessly working apps, top-notch
-                technology stack is a must. Here are the web development
-                solutions we rely on to deliver high quality applications.
-              </p>
+              <p>{description}</p>
               <br />
 
               <h2>
-                6 + <br /> Technologies
+                {numOfTechs} + <br /> Technologies
               </h2>
               <br />
             </Col>
             <Col md={5}>
               <Row gutterWidth={50}>
-                <StackTechIconCol xs={4}>
-                  <div>
-                    <img src={reactIcon} alt="" />
-                  </div>
-                </StackTechIconCol>
-                <StackTechIconCol xs={4}>
-                  <div>
-                    <img src={nodeIcon} alt="" />
-                  </div>
-                </StackTechIconCol>
-                <StackTechIconCol xs={4}>
-                  <div>
-                    <img src={laravelIcon} alt="" />
-                  </div>
-                </StackTechIconCol>
-                <StackTechIconCol xs={4}>
-                  <div>
-                    <img src={aspIcon} alt="" />
-                  </div>
-                </StackTechIconCol>
-                <StackTechIconCol xs={4}>
-                  <div>
-                    <img src={pythonIcon} alt="" />
-                  </div>
-                </StackTechIconCol>
+                {imgs.map((img, idx) => (
+                  <StackTechIconCol xs={4} key={idx}>
+                    <div>
+                      <img src={img} alt="" />
+                    </div>
+                  </StackTechIconCol>
+                ))}
               </Row>
             </Col>
           </Row>
