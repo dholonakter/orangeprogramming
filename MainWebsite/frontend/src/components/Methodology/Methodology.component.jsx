@@ -12,7 +12,7 @@ import {
 import { HeaderText } from "../../utils/text";
 import { SmallBorderBottom } from "../../utils/constant";
 
-function Methodology({ data }) {
+function Methodology({ data, header}) {
   const [selectedMethodology, setSelectedMethodology] = useState(data[0]);
 
   console.log(selectedMethodology);
@@ -21,7 +21,7 @@ function Methodology({ data }) {
     <>
       <Container>
         <MethodologyWrapper>
-          <HeaderText>How we build your custom web application</HeaderText>
+          <HeaderText>{header}</HeaderText>
           <SmallBorderBottom />
           <Row>
             <Col md={6}>

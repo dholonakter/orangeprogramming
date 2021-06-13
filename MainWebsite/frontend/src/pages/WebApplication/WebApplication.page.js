@@ -90,7 +90,7 @@ export default function WebApplication() {
     <>
       <ServicesBanner data={webApplicationBannerData} />
       <ServiceContent data={webApplicationContent} />
-      <Methodology data={webAppMethodologyData} />
+      <Methodology header='How we build your custom web application' data={webAppMethodologyData} />
       <TechnologyStack data={webAppTechStackData} />
       <WebAppWhyUs />
       {/* <Banner dbName={WebData} />

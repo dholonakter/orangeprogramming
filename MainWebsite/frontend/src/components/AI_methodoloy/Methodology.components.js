@@ -8,6 +8,7 @@ import {Data} from '../../assets/Data/MyData'
 import { HeaderText } from "../../utils/text";
 import Hand from './ai01.png'
 import I from './ai01.png'
+import { Underline } from "../../utils/GlobalComponentsStyle";
 
 class Methodology extends Component {
 
@@ -62,6 +63,7 @@ class Methodology extends Component {
                 <Root>
                     <Container maxWidth='lg'>
                         <HeaderText>Predictable Artificial Intelligence methodology </HeaderText>
+                        <Underline height="5px" width="100px"/>
                             <Slider
                             asNavFor={this.state.nav1}
                             ref={slider => (this.slider2 = slider)}

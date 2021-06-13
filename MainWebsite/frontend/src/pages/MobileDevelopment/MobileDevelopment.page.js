@@ -89,7 +89,7 @@ export default function MobileDevelopment() {
       <ServicesBanner data={mobileDevelopmentData} />
       <ServiceContent data={mobileDevelopmentContent} />
       <MobileDevelopmentSolutions />
-      <Methodology data={mobileDevelopmentMethodologyData} />
+      <Methodology header="How we build your custom mobile application" data={mobileDevelopmentMethodologyData} />
       <TechnologyStack data={webAppTechStackData} />
       <WebAppWhyUs />
       {/* <Banner dbName={MobileData}/>
