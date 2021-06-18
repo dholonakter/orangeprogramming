@@ -2,25 +2,30 @@ import styled from 'styled-components'
 
 export const RingBody = styled.div`
     padding: 25px 0;
-    @keyframes animate {
-        // 0%   {top: 0px;}
-        // 25%  {top: 200px;}
-        // 75%  {top: 50px}
-        // 100% {top: 100px;}
 
-        0% {transform: rotate(0deg);}
-        100% {transform: rotate(360deg);}
-
-
+      .typing-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
-      svg{
-          height: 1000px;;
-          width: 100%;
-          font-size: 50px;
-          margin: auto;
-        //   background: red;
-      }
+        .input-cursor {
+        display: inline-block;
+        width: 2px;
+        height: 42px;
+        background-color: white;
+        margin-left: 8px;
+  }
+  .input-cursor { 
+    animation: blink .6s linear infinite alternate;
+  }
+  @keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+  }
 `;
+
 
 export const OuterRing = styled.div`
 

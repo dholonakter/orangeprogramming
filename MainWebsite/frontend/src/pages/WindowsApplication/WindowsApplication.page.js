@@ -1,7 +1,5 @@
 import React from 'react'
-// import Banner from '../../components/Service_banner/Banner.components'
 import Body from '../../components/Services_DescriptionBody/Description.components'
-// import Methodology from '../../components/Services_methodoloy/Methodologys.components'
 import {WindowsData} from '../../assets/Data/MyData'
 import Section1 from '../../components/Windows_Components/section1/Section1.components'
 import HalfLabel from '../../components/Windows_Components/HalfLabel/HalfLabel.components'
@@ -11,31 +9,25 @@ import WindowBanner from '../../components/ServicesBanner/ServicesBanner.compone
 import DataCard from '../../components/ReuseableComponents/WindowsCard/WindowsCard.components'
 import WindowsDescrioption from '../../components/ReuseableComponents/Services_Descripotion/Description.components'
 import Ring from '../../components/WindowMethodology/Ring.compornents'
-// import Methodology from '../../components/AI_methodoloy/Methodology.components'
 import Services from '../../components/ReuseableComponents/Tools&Servicess/ToolsNServices.components'
 import whyWindows from '../../assets/images/windows/why.jpg'
 import Methodology from '../../components/Methodology/Methodology.component'
-
+import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 
 export default function WindowsApplication() {
     let data = WindowsData[0];
     return (
         <div>
             <WindowBanner data={data.banner}/>
-            
+            <br/><br/>
             <Section1/>
             <br/>
-            {/* <DataCard/> */}
             <DataCard data={data.firstSectionCardData}/>
-            <WindowsDescrioption data={data.content} photo={data.photo}/>
+            <WindowsDescrioption  data={data.content} photo={data.photo}/>
             <HalfLabel/>
-            {/* <DataCard data={data.WindowServices}/> */}
             <Services title={data.servicesTitle} data={data.WindowServices}/>
-            {/* <Ring/> */}
-            <WindowsDescrioption direction="row-reverse" title="Why Choose Windows Application?" data={data.whyWindows} photo={whyWindows}/>
+            <WindowsDescrioption weight='900' slidShow="false" icons={faCheckSquare} direction="row-reverse" title="Why Choose Windows Application?" data={data.whyWindows} photo={whyWindows}/>
             
-            {/* <Label/> */}
-
             <br/><br/>
             <br/>
 

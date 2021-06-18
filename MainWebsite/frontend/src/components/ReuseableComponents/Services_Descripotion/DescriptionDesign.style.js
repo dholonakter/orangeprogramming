@@ -10,7 +10,8 @@ export const Body = styled.div`
     };
     p{
         font-size: 1vw;
-        font-weight: 400;
+        
+        font-weight: ${props => (props.Weight?props.Weight:'400')};
         font-family: Poppins, sans-serif;
         padding: 10px 7px 10px 0;
         color: black;
@@ -19,6 +20,16 @@ export const Body = styled.div`
           }
           @media (max-width: 768px) {
             font-size: 12px;
+          }
+          svg{
+              color: #FF0000;
+              font-size: 2vw;
+              @media (max-width: 1500px) {
+                font-size: 20px;
+              }
+              @media (max-width: 768px) {
+                font-size: 15px;
+              }
           }
     }
     p:nth-child(1)::first-letter{

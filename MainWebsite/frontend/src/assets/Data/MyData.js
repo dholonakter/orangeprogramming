@@ -79,10 +79,12 @@ import Feature from '../images/windows/icons/first/feature.png'
 import Portals from '../images/windows/icons/first/internet.png'
 import App from '../images/windows/icons/first/coding.png'
 import WindowBanner from '../images/windows/bannerWindows.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
 //json database
 
 
-
+const icon = '👋';
 
 export const AIData = [
     {
@@ -92,12 +94,13 @@ export const AIData = [
             bgImg: Why,
             title: {
                 bold:'Predictable Artificial',
-                normal: 'Intelligence'
+                normal: "Intelligence"
             },
             description: ''
         },
         bannerContent: "Artificial Intelligence",
         content: [
+            
             'AI has become more popular today thanks to increased data volumes, advanced algorithms, and improvements in computing power and storage. This early work paved the way for the automation and formal reasoning that we see in computers today, including decision support systems and smart search systems that can be designed to complement and augment human abilities. Predictable AI is a part of AI, which is used to make decision by using previous data',
             'In most cases, AI will not be sold as an individual application. Rather, products we already use will be improved with AI capabilities. Automation, conversational platforms, bots and smart machines can be combined with large amounts of data to improve many technologies at home and in the workplace, from security intelligence to investment analysis.',
             'As a leading software development company, our professional expertise comprises skilled and experienced AI developers flexible in creating AI based software as well as websites according to the demands. We offer custom website development services including WordPress Development, e-Commerce Website Development, Magento Development, Custom Web App Development, Joomla Development, Content Management System, Mobile App Development, Mobile Responsive Website, Internet Marketing & Digital Marketing. Our web specialists are committed to providing the best products and services using voguish technology frameworks or portal solutions to ensure a great business ahead.',
@@ -105,8 +108,12 @@ export const AIData = [
         ] ,
         whyImage: Why,
         Why: [
-            'AI gets the most out of data. When algorithms are self-learning, the data itself can become intellectual property. The answers are in the data; you just have to apply AI to get them out. Since the role of the data is now more important than ever before, it can create a competitive advantage. If you have the best data in a competitive industry, even if everyone is applying similar techniques, the best data will win.',
-            'AI automates repetitive learning and discovery through data. But AI is different from hardware-driven, robotic automation. Instead of automating manual tasks, AI performs frequent, high-volume, computerized tasks reliably and without fatigue. For this type of automation, human inquiry is still essential to set up the system and ask the right questions.',
+            'AI adds intelligence',
+            'AI achieves incredible accuracy ',
+            'AI analyzes more and deeper data ',
+            'AI automates repetitive learning and discovery through data',
+            'AI gets the most out of data',
+            'Faster than human'
             
             
         ] ,
@@ -117,7 +124,7 @@ export const AIData = [
             {
                 logo: VA,
                 header: "Voice Assistant",
-                text: "Our AI developers also build voice assistants using NLP and voice recongnition that enhance brand awareness and boost producitvity through voice search."
+                text: "Implement 'voice assistant' system in your website application, ecommerce application as well as mobile application. We can also help to build up your personal voice assistant"
             },
             {
                 logo: Chatbot,
@@ -239,6 +246,7 @@ export const AIData = [
 ];
 
 
+
 export const WindowsData = [
     {
         header: "Windows Application",
@@ -258,7 +266,11 @@ export const WindowsData = [
             
         ] ,
         whyWindows: [
-        'The business world changes and grows continuously with technology, companies must be aware of these changes and join them so as not to be left behind. The software serves different purposes, depending on the needs of each business, the most recommended always when choosing is custom made. A software solution is a program that will perform all the time-consuming tasks and automate regular task catering you ease. Development of custom software is a process of designing software applications that meet the specific needs of an individual or a company.',            
+         'Easy to Control your business with windows application',
+         'windows will save your time',
+         'To get better system integration',
+         'It will give quicker access',
+         'Provide you higher security'       
         ] ,
         bannerImg: WindowsLogo,
         firstSectionCardData:[
@@ -322,7 +334,7 @@ export const WindowsData = [
                 text: "One of the primary ways contemporary gyms can achieve success and maximize business potential is through the effective use of gym management software. This technology has evolved far beyond merely checking members into the gym and processing membership dues."
             }
         ],
-        photo: DescriptionImage,
+        photo: WindowsLogo,
         methodology:[
             {
                 id : 1,
