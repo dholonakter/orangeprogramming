@@ -6,6 +6,7 @@ import AccordionSummary from "@material-ui/core/AccordionSummary";
 import React, { useState } from "react";
 import { Row, Col } from "react-grid-system";
 import { Container } from "../../utils/container";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Fade from "react-reveal/Fade";
 import {
   MethodologyDescWrap,
@@ -83,6 +84,7 @@ function Methodology({ data, header }) {
                 <AccordionSummary
                   aria-controls="panel1d-content"
                   id="panel1d-header"
+                  expandIcon={<ExpandMoreIcon />}
                 >
                   <Typography variant="h6">{item.title}</Typography>
                 </AccordionSummary>

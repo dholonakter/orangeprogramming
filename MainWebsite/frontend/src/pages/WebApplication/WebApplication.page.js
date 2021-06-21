@@ -43,7 +43,7 @@ const webAppMethodologyData = [
     id: 2,
     title: "Documentation",
     description:
-      "The expectation of all parties involved must line up before the beginning of the development phase. This not only ensures that we can build an intuitive, user-friendly web app but that it meets your commercial goals and expectations, and that together we can create the foundation of a long-term business relationship.The documentation gathered in the workshop helps our business analysts finalise the User Stories documentation. Each story defines a function inside the app and is assigned a different priority which is crucial to shaping each iteration during the app’s development. This documentation also contains a DoD (Definition of Done), which forms the ‘acceptance criteria’ for every feature of the app.By the end of this phase, our product design team will have created all the documentation necessary for other teams to use later throughout the development process, along with any other relevant information. At this point, the design team can use their findings from the workshop and the User Stories documentation to begin building a prototype of your app.",
+      "The expectation of all parties involved must line up before the beginning of the development phase. This not only ensures that we can build an intuitive, user-friendly web app but that it meets your commercial goals and expectations, and that together we can create the foundation of a long-term business relationship.The documentation gathered in the workshop helps our business analysts finalise the User Stories documentation. Each story defines a function inside the app and is assigned a different priority which is crucial to shaping each iteration during the app’s development. ",
   },
   {
     id: 3,
@@ -73,7 +73,7 @@ const webAppMethodologyData = [
     id: 7,
     title: "Support & Maintenance",
     description:
-      "Your web-based software is only as strong as the team that maintains it. To guarantee that your new software functions flawlessly, our experts help find and solve any bugs or problems you or your users may have. This team monitors performance, provides consultancy, and manages the process of making any changes you need once your app is live and running.We will ensure that all documentation is updated accordingly so that you can grow and scale the digital marketing around your web app. This dedicated team of app developers also gathers real data from users of your app as well as their feedback. This information helps shape future updates and ensures that your users get the best problem-solving app, therefore maximizing your business’s returns.",
+      "Your web-based software is only as strong as the team that maintains it. To guarantee that your new software functions flawlessly, our experts help find and solve any bugs or problems you or your users may have. This team monitors performance, provides consultancy, and manages the process of making any changes you need once your app is live and running.We will ensure that all documentation is updated accordingly so that you can grow and scale the digital marketing around your web app. This dedicated team of app developers also gathers real data from users of your app as well as their feedback.",
   },
 ];
 
@@ -82,7 +82,7 @@ const webAppTechStackData = {
   description:
     "In delivering scalable, flawlessly working apps, top-notch technology stack is a must. Here are the web development solutions we rely on to deliver high quality applications.",
   imgs: [reactIcon, nodeIcon, laravelIcon, aspIcon, pythonIcon],
-  numOfTechs: 6,
+  numOfTechs: 5,
 };
 
 export default function WebApplication() {
@@ -90,7 +90,10 @@ export default function WebApplication() {
     <>
       <ServicesBanner data={webApplicationBannerData} />
       <ServiceContent data={webApplicationContent} />
-      <Methodology header='How we build your custom web application' data={webAppMethodologyData} />
+      <Methodology
+        header="How we build your custom web application"
+        data={webAppMethodologyData}
+      />
       <TechnologyStack data={webAppTechStackData} />
       <WebAppWhyUs />
       {/* <Banner dbName={WebData} />

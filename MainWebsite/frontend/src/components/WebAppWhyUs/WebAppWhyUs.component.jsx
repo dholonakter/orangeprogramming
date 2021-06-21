@@ -15,24 +15,24 @@ function WebAppWhyUs() {
       <Container>
         <Row gutterWidth={20}>
           <Col md={7}>
-            <HeaderText>Why us ?</HeaderText>
+            <HeaderText>Why us?</HeaderText>
             <SmallBorderBottom />
             <WhyUsContainer>
               <WhyUsWrapper>
                 <FontAwesomeIcon icon={faCheckSquare} />
-                <p>Carefully curated Agile Teams</p>
+                <p>Carefully Curated Agile Teams.</p>
               </WhyUsWrapper>
               <WhyUsWrapper>
                 <FontAwesomeIcon icon={faCheckSquare} />
-                <p>Remote network of Developers</p>
+                <p>Remote Network of Developers.</p>
               </WhyUsWrapper>
               <WhyUsWrapper>
                 <FontAwesomeIcon icon={faCheckSquare} />
-                <p>Time Zones Aligned with your Team</p>
+                <p>Time Zones Aligned with our Team.</p>
               </WhyUsWrapper>
               <WhyUsWrapper>
                 <FontAwesomeIcon icon={faCheckSquare} />
-                <p>Proven Track Record</p>
+                <p>Proven Track Record.</p>
               </WhyUsWrapper>
             </WhyUsContainer>
           </Col>

@@ -67,6 +67,7 @@ export const MobileSolutionCol = styled.div`
   p {
     font-size: 14px;
     padding: 0 10px;
+    text-align: justify;
     @media (min-width: 2200px) {
       font-size: 0.8vw;
       padding: 0 1.5vw;

@@ -79,6 +79,7 @@ export const MethodologyDescWrap = styled.div`
   h5 {
     font-size: 18px;
     font-weight: 600;
+    text-align: justify;
 
     @media (min-width: 2200px) {
       font-size: 1vw;

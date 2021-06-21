@@ -16,8 +16,9 @@ function ServicesBanner({ data }) {
         <ServiceBannerOverlay>
           <Container className="service__banner">
             <h1>
-              <strong>{title.bold} </strong>
-              {title.normal}
+              <strong>
+                {title.bold} {title.normal}{" "}
+              </strong>
             </h1>
             <div className="hr" />
             <p>{description}</p>
