@@ -56,6 +56,9 @@ export default function Description(props) {
                                     </Slider>
 
                                             {/* this area is for disabled slidshow */}
+
+                                            <Typography style={{display: props.description?"block":"none"}} align="justify" variant="body2">{props.description}</Typography>
+
                                     {props.data.map(item=>(
 
                                         <div style={{display: props.slidShow?'block':'none'}} >

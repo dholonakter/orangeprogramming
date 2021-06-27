@@ -37,6 +37,7 @@ const Navbar = (props, { noBg }) => {
       "/projects",
       "/consultancy/start-Up",
       "/consultancy/scale-Up",
+      "/doctor"
     ];
     let checkPath = pathList.includes(pathname);
     if (checkPath) {

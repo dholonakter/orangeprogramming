@@ -81,6 +81,29 @@ import App from '../images/windows/icons/first/coding.png'
 import WindowBanner from '../images/windows/bannerWindows.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
+
+
+
+
+
+
+
+
+// projects
+
+import CurrentProjects from '../../assets/images/projects-img/current.png'
+import Project1 from '../../assets/images/projects-img/project-1.jpg'
+import Project2 from "../../assets/images/projects-img/project-2.jpg"
+import Project3 from "../../assets/images/projects-img/project-3.jpg"
+import Project4 from "../../assets/images/projects-img/imgeEditor.png"
+import Project from "../../assets/images/projects-img/project.png"
+
+
+
+
+
+
+
 //json database
 
 
@@ -385,6 +408,149 @@ export const WindowsData = [
 
 
 
+
+
+export const Projects = [
+    {
+        newProject:{
+            header: 'We Are Working On',
+            img: CurrentProjects,
+            description: "Lorem ipsum is a name for a common type of placeholder text. Also known as filler or dummy text, this is simply copy that serves to fill a space without actually saying anything meaningful. It's essentially nonsense text, but gives an idea of what real words will look like in the final product.",
+            features:[
+                
+                    "this is a features",
+                    "this is another features",
+                    "this is next features",
+                    "this is important features"
+                
+            ]
+        },
+        doneProjects:[
+            {
+                id: 1,
+                img: Project1,
+                title: "Doctor Portals",
+                shortDescription:"If you are connected but behind a firewall",
+                details: ["If you are connected but behind a firewall, check that Firefox has permission to access the Web.If you are connected but behind a firewall, check that Firefox has permission to access the Web.If you are connected but behind a firewall, check that Firefox has permission to access the Web."],                specification:[
+                    "Project Informations.",
+                    "Project Informations.",
+                    "Project Informations.",
+                    "Project Informations."
+                ],
+                info:{
+                    type: "Web Application",
+                    technologies: "Reactjs, Rest Api(Node js), MySql",
+                    duration: '3 months',
+                    platforms: 'Web',
+                    team: "5 senior and middle developers, QA engineer"
+
+                }
+            },
+            {
+                id: 2,
+                img: Project2,
+                title: "Online Restaurent",
+                shortDescription:"If you are connected but behind a firewall",
+                details: ["If you are connected but behind a firewall, check that Firefox has permission to access the Web.If you are connected but behind a firewall, check that Firefox has permission to access the Web.If you are connected but behind a firewall, check that Firefox has permission to access the Web."],                specification:[
+                    "Project Informations.",
+                    "Project Informations.",
+                    "Project Informations.",
+                    "Project Informations."
+                ],
+                info:{
+                    type: "Web Application",
+                    technologies: "Reactjs, Rest Api(Node js), MySql",
+                    duration: '3 months',
+                    platforms: 'Web',
+                    team: "5 senior and middle developers, QA engineer"
+
+                }
+            },
+            {
+                id: 3,
+                img: Project3,
+                title: "Social Sites",
+                shortDescription:"If you are connected but behind a firewall",
+                details: ["If you are connected but behind a firewall, check that Firefox has permission to access the Web.If you are connected but behind a firewall, check that Firefox has permission to access the Web.If you are connected but behind a firewall, check that Firefox has permission to access the Web."],                specification:[
+                    "Project Informations.",
+                    "Project Informations.",
+                    "Project Informations.",
+                    "Project Informations."
+                ],
+                info:{
+                    type: "Web Application",
+                    technologies: "Reactjs, Rest Api(Node js), MySql",
+                    duration: '3 months',
+                    platforms: 'Web',
+                    team: "5 senior and middle developers, QA engineer"
+
+                }
+            },
+            {
+                id: 4,
+                img: Project4,
+                title: "Image Editor",
+                shortDescription:"Cross Platform image editor. By using this editor use able to edit image easily",
+                details: ["If you are connected but behind a firewall, check that Firefox has permission to access the Web.If you are connected but behind a firewall, check that Firefox has permission to access the Web.If you are connected but behind a firewall, check that Firefox has permission to access the Web."],                specification:[
+                    "Cross Platforms Application.",
+                    "Open Source.",
+                    "Simple User Interface.",
+                    "User Can Edit And Use it."
+                ],
+                info:{
+                    type: "Desktop Application",
+                    technologies: "Image processing, python, ",
+                    duration: '3 months',
+                    platforms: 'Linux, Windows',
+                    team: "5 senior and middle developers, QA engineer"
+
+                }
+            },
+            {
+                id: 5,
+                img: Project,
+                title: "Emotion Detector",
+                shortDescription:"If you are connected but behind a firewall",
+                details: ["If you are connected but behind a firewall, check that Firefox has permission to access the Web.If you are connected but behind a firewall, check that Firefox has permission to access the Web.If you are connected but behind a firewall, check that Firefox has permission to access the Web."],
+                specification:[
+                    "Project Informations.",
+                    "Project Informations.",
+                    "Project Informations.",
+                    "Project Informations."
+                ],
+                info:{
+                    type: "Web Application",
+                    technologies: "Reactjs, Rest Api(Node js), MySql",
+                    duration: '3 months',
+                    platforms: 'Web',
+                    team: "5 senior and middle developers, QA engineer"
+
+                }
+            },
+            {
+                id: 6,
+                img: Project,
+                title: "Food Ordering System",
+                shortDescription:"If you are connected but behind a firewall",
+                details: ["If you are connected but behind a firewall, check that Firefox has permission to access the Web.If you are connected but behind a firewall, check that Firefox has permission to access the Web.If you are connected but behind a firewall, check that Firefox has permission to access the Web."],                
+                specification:[
+                    "Project Informations.",
+                    "Project Informations.",
+                    "Project Informations.",
+                    "Project Informations."
+                ],
+                info:{
+                    type: "Web Application",
+                    technologies: "Reactjs, Rest Api(Node js), MySql",
+                    duration: '3 months',
+                    platforms: 'Web',
+                    team: "5 senior and middle developers, QA engineer"
+
+                }
+            },
+        ]
+    }
+]
 
 
 

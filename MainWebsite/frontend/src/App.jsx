@@ -13,6 +13,8 @@ import WebDevelopment from "./pages/WebApplication/WebApplication.page";
 import MobileDevelopment from "./pages/MobileDevelopment/MobileDevelopment.page";
 import WindowsApplication from "./pages/WindowsApplication/WindowsApplication.page";
 import AI from "./pages/AI/AI.pages";
+import Projects from  './pages/Projects/Projects.page'
+import Doctor from './components/ProjectDetails/ProjectDetails.components'
 
 function App() {
   return (
@@ -28,6 +30,7 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route exact path="/services" component={Services} />
             <Route exact path="/web-development" component={WebDevelopment} />
+            <Route exact path="/doctor" component={Doctor} />
             <Route
               exact
               path="/mobile-development"
@@ -46,7 +49,7 @@ function App() {
             />
 
             {/* under construction page routing */}
-            <Route exact path="/projects" component={UnderConstruction} />
+            <Route exact path="/projects" component={Projects} />
             <Route exact path="/gallery" component={UnderConstruction} />
             <Route exact path="/android" component={UnderConstruction} />
 
