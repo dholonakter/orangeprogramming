@@ -60,10 +60,10 @@ export const Details = styled.div`
               } 
         }
         svg{
-            // color: #F0671F;
+            color: #F0671F;
             // font-size: 20px;
             margin: 0 10px 0 0;
-            color: #FF0000;
+            // color: #FF0000;
           font-size: 2vw;
           @media (max-width: 1500px) {
             font-size: 20px;

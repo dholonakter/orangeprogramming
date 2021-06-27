@@ -22,7 +22,7 @@ export const Body = styled.div`
             font-size: 12px;
           }
           svg{
-              color: #FF0000;
+              color: #F0671F;
               font-size: 2vw;
               @media (max-width: 1500px) {
                 font-size: 20px;
