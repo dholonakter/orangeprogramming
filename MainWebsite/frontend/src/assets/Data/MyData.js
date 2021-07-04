@@ -99,7 +99,9 @@ import Project4 from "../../assets/images/projects-img/imgeEditor.png"
 import Project from "../../assets/images/projects-img/project.png"
 
 
+//startup
 
+import StartUp01 from '../../assets/images/startUp/b2.jpg'
 
 
 
@@ -550,7 +552,103 @@ export const Projects = [
             },
         ]
     }
+];
+
+
+export const ScaleUp = [
+    {
+        header: "Windows Application",
+        shortDescrioption: "\"Make your business one step forward with windows application\"",
+        banner:{
+            bgImg: WindowBanner,
+            title: {
+                bold:'Start Up',
+                normal: 'Consultancy'
+            },
+            description: 'When starting a new business, most entrepreneuus don\'t have the expertise across all areas of the business. Even if that would be the case, it would not be benificial. Necessaary taskta to start a business can be accomplished srccessfully and more efficiently with help.'
+        },
+        content: [
+            'First impressions are  everything – and a strategic, well-designed software is the best way to ensure your business puts its best foot forward. A business software plays a major role in depicting your intentions and goals. Just a man power is worthless and so we help you build an interactive and impressive software to draw the attention of your valuable customers.',
+            'At Orange Programming, we design and deliver software that work hard to put you in the best possible light. Get a visually stunning software that offers the ultimate user experience. Our software designers and developers produce interfaces that are as beautiful as they are functional.',
+            'As a leading software development company, our professional expertise comprises skilled and experienced designers and developers flexible in creating business software according to the demands. We offer custom website development services including WordPress Development, e-Commerce Website Development, Magento Development, Custom Web App Development, Joomla Development, Content Management System, Mobile App Development, Mobile Responsive Website, Internet Marketing & Digital Marketing. Our web specialists are committed to providing the best products and services using voguish technology frameworks or portal solutions to ensure a great business ahead.',
+            
+        ] ,
+        whyWindows: [
+         'Gain Clarity & Objectivity',
+         'Website Design & E-commerce',
+         'Gain Knowledge & Expertise',
+         'Business Branding',
+         'Product Development',
+         'Marketing Campaigns'       
+        ] ,
+        bannerImg: WindowsLogo,
+       
+        servicesTitle:'Why Business Startup Consulting',
+        WindowServices:[
+            {
+                logo: Medical,
+                header: "Market Research",
+                text: "Business startup consultants work with clients to research in more depth the market, industry, competitors, offers, incentives, and other relevant details. Startup consultants help with the early stages of research and due diligence."
+            },
+            {
+                logo: Book,
+                header: "Planning Assistance",
+                text: "Startup consultants help clients with planning. Creating a plan to create the offering such as products, services, or solutions. How to market them, reach potential customers, and grow the business. Planning helps outline what the path looks like."
+            },
+            {
+                logo: Transport,
+                header: "Task Execution",
+                text: "Getting it done means execution of tasks. Startup consulting services help you execute necessary steps and tasks to get started with the business. Services are managed and vendors are provided to provide quality results. Action oriented support helps in the early stages."
+            },
+            {
+                logo: Bank,
+                header: "Business Growth",
+                text: "Consultants help startups with business growth. Creating marketing campaigns that produce results and sales tactics to generate profits. Growing market share and customer base with consulting services."
+            }
+            
+        ],
+        methodology:[
+            {
+                id : 1,
+                title: 'Research',
+                logo: <BorderAllIcon/>,
+                description: 'Research assistance is provided with the business idea, research, industry overview, and offering. Assistance is provided with market due diligence.',
+                img: img1
+            },
+            {
+                id : 2,
+                title: 'Business Formation',
+                logo: <BuildIcon/>,
+                description: 'Startup legal formation assistance, including bank account setup. Formation assistance includes as well mailing address, toll free phone numbers, and certifications.',
+                img: img2
+            },
+            {
+                id : 3,
+                title: 'Business Branding',
+                logo: <CropOriginalIcon/>,
+                description: 'We judge the book by the cover. Branding is important. Startup business consulting services assist with logo design, packaging, image driven branding solutions.',
+                img: img3
+            },
+            {
+                id : 4,
+                title: 'Marketing Services',
+                logo: <CodeIcon/>,
+                description: 'A startup requires marketing services to develop momentum. Managed marketing services ensure quality and results driven marketing campaigns for startup ventures.',
+                
+                img: img4
+            },
+            {
+                id : 5,
+                title: 'Sales Efforts',
+                logo: <LockIcon/>,
+                description: 'Startup companies require strong sales tactics. With proper sales strategies, sales are much easier accomplished. Sales support is provided with startup consulting services to create momentum. ',
+                img: img5
+            }
+            
+        ]
+    }
 ]
+
 
 
 

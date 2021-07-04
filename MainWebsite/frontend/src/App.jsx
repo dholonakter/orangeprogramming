@@ -15,6 +15,7 @@ import WindowsApplication from "./pages/WindowsApplication/WindowsApplication.pa
 import AI from "./pages/AI/AI.pages";
 import Projects from  './pages/Projects/Projects.page'
 import Doctor from './components/ProjectDetails/ProjectDetails.components'
+import StartUp from "./pages/StartUp/StartUp.page";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route exact path="/services" component={Services} />
             <Route exact path="/web-development" component={WebDevelopment} />
             <Route exact path="/doctor" component={Doctor} />
+            <Route exact path="/consultancy/start-Up" component={StartUp} />
             <Route
               exact
               path="/mobile-development"

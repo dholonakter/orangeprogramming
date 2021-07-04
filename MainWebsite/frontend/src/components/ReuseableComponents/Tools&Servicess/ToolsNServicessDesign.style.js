@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const SectionBody = styled.div`
     padding: 50px 0;
     .container{
+        // width: 100% !important;
         .item:nth-child(odd){
             padding-right: ${props => props.Padding};
             @media(max-width: 599px){
@@ -22,12 +23,16 @@ export const SectionBody = styled.div`
 export const ContentHolder = styled.div`
        
     padding: 50px 0 0 0;
+    
+    display: ${props => (props.SingleColumn?'flex': 'block')};
     @media(max-width: 599px){
         padding: 25px 0 0 0;
     }
     .logo{
         // display: inline;
+
         img{
+            padding-top: ${props => props.SingleColumn?'15px': ''};
             color: red; 
             width: 4.8vw;
             @media (max-width: 1200px) {
@@ -41,6 +46,9 @@ export const ContentHolder = styled.div`
         span{
             color: red;
         }
+    }
+    .contentArea{
+        padding-left: ${props => (props.SingleColumn?'15px': '0px')};
     }
     .header{
         padding: 15px 0;

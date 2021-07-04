@@ -15,17 +15,20 @@ export default function ToolsNServices(props) {
                 <Container>
                     <HeaderText> {props.title} </HeaderText>
                     <Underline width='50px' height='5px'/>
-                    <Grid container className="container">
+                    <Grid container  className="container">
 
                         {
                             props.data.map(item=>(
-                                <Grid className="item" item sm={props.item?props.item:6}>
-                                    <ContentHolder contentPadding={props.contentPadding}>
+                                <Grid  className="item" item sm={props.item?props.item:6}>
+                                    <ContentHolder SingleColumn={props.SingleColumn} contentPadding={props.contentPadding}>
                                         <div className='logo'>
                                             <img src={item.logo}/>
                                         </div>
-                                        <p className='header'> {item.header} </p>
-                                        <p className='content'>{item.text}</p>
+                                        <div className="contentArea">
+                                            <p className='header'> {item.header} </p>
+                                            <p className='content'>{item.text}</p>
+                                        </div>
+                                        
                                     </ContentHolder>
                                 </Grid>
                             ))

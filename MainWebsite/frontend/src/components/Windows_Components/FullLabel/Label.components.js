@@ -1,40 +1,42 @@
 import { Grid } from '@material-ui/core'
-import React from 'react'
+import React, { useState } from 'react'
 import { Container } from '../../../utils/container'
 import { LabelBody } from './LabelDesign.style'
 import Demo from './debug.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
+import { faArrowAltCircleRight, faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import Appointment from '../../Appointment/Appointment.components'
 
 
 export default function Label() {
+
+    const [popUpValue, setPopUpValue] = useState(false);
+
     return (
         <div>
+            <Container>
             <LabelBody>
                 
-                <Container>
-                    <Grid container>
-                        <Grid className="flexBody" item sm = {7}>
+                
+                    <Grid  container>
+                        <Grid item sm = {7}>
+                            
                             <div className='flexItem'>
-                                <img src={Demo}/>
-                            </div>
-                            <div className='flexItem'>
-                                <p>
-                                    Let's start design an amazing Windows app, design with us
-                                </p>
+                                <p>Interested In Startup Consulting Services? </p>
                             </div>
                         </Grid>
-                        <Grid className="flexBody" item sm = {5}>
-                        <div className='flexItem'>
-                                <FontAwesomeIcon icon={faArrowAltCircleRight} size="2x"/>
-                            </div>
+                        <Grid  item sm = {5}>
+                        
                             <div className='flexItem'>
-                                <button>Talk Our Expert Now</button>
+                                <button onClick={()=> setPopUpValue(true)} >REQUEST A FREE CONSULTATION <FontAwesomeIcon icon={faArrowRight}/> </button>
                             </div>
                         </Grid>
                     </Grid>
-                </Container>
+
+                    <Appointment trigger={popUpValue} setTrigger={setPopUpValue}/>
+              
             </LabelBody>
+            </Container>
         </div>
     )
 }

@@ -5,6 +5,9 @@ export const Body = styled.div`
     margin: 50px 0 0 0;
     overflow: hidden;
     
+    .flexbox{
+        margin-top: 25px;
+    }
     Container{
         margin-top: 50px !important;
     };
