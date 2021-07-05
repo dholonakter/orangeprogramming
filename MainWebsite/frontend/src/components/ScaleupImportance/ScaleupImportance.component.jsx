@@ -7,6 +7,7 @@ import {
   ListItem,
   Box,
   makeStyles,
+  useMediaQuery,
 } from "@material-ui/core";
 import React from "react";
 import { Container } from "../../utils/container";
@@ -18,11 +19,11 @@ import CheckIcon from "@material-ui/icons/Check";
 
 const importanceData = [
   "Finding problems that holding back you business.",
-  "Connecting dots.",
-  "Best tools and technology.",
-  "Better user experience.",
   "Growing you business effectively.",
   "Improve efficiency.",
+  "Better user experience.",
+  "Best tools and technology.",
+  "Connecting dots.",
   "Get More Money In Your Wallet.",
   "Prevent your business from dealing with a slew of unhappy customers.",
 ];
@@ -50,11 +51,11 @@ const useStyles = makeStyles((theme) => ({
 
 function ScaleupImportance() {
   const classes = useStyles();
-
+  const matches = useMediaQuery("(max-width:600px)");
   return (
     <>
       <Container>
-        <Box paddingY={8}>
+        <Box paddingY={matches ? 4 : 8}>
           <Typography
             className={classes.sectionText}
             variant="h4"
@@ -74,13 +75,12 @@ function ScaleupImportance() {
 
         <Grid container>
           <Grid item sm={12} md={6}>
-            <List component="nav">
+            <List component="nav" gu>
               {importanceData.map((data, idx) => (
-                <ListItem key={idx}>
-                  <ListItemIcon>
-                    <CheckIcon />
-                  </ListItemIcon>
-                  <ListItemText primary={data} />
+                <ListItem key={idx} disableGutters>
+                  <CheckIcon style={{ marginRight: 10, color: "#F0671F" }} />
+
+                  <ListItemText primary={data} gu />
                 </ListItem>
               ))}
             </List>
@@ -91,7 +91,11 @@ function ScaleupImportance() {
         </Grid>
       </Container>
 
-      <Box marginY={10} paddingY={6} className={classes.section}>
+      <Box
+        marginY={matches ? 5 : 10}
+        paddingY={matches ? 3 : 6}
+        className={classes.section}
+      >
         <Container>
           <Typography
             variant="h4"

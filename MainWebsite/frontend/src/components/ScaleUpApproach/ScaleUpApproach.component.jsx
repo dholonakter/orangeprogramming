@@ -20,10 +20,9 @@ const approachData = [
   {
     title: "Evaluation",
     data: [
-      "Current situation.",
+      "Find Current Business Situation.",
       "Business efficiency.",
       "Key processes.",
-      "Performace indicators.",
     ],
   },
 
