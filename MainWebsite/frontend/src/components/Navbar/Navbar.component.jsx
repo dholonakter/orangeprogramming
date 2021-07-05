@@ -33,12 +33,7 @@ const Navbar = (props, { noBg }) => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    let pathList = [
-      "/projects",
-      "/consultancy/start-Up",
-      "/consultancy/scale-Up",
-      "/doctor"
-    ];
+    let pathList = ["/projects", "/doctor"];
     let checkPath = pathList.includes(pathname);
     if (checkPath) {
       setNavHeightBg(true);

@@ -13,9 +13,10 @@ import WebDevelopment from "./pages/WebApplication/WebApplication.page";
 import MobileDevelopment from "./pages/MobileDevelopment/MobileDevelopment.page";
 import WindowsApplication from "./pages/WindowsApplication/WindowsApplication.page";
 import AI from "./pages/AI/AI.pages";
-import Projects from  './pages/Projects/Projects.page'
-import Doctor from './components/ProjectDetails/ProjectDetails.components'
+import Projects from "./pages/Projects/Projects.page";
+import Doctor from "./components/ProjectDetails/ProjectDetails.components";
 import StartUp from "./pages/StartUp/StartUp.page";
+import ScaleUp from "./pages/ScaleUp/ScaleUp.page";
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
             <Route exact path="/services" component={Services} />
             <Route exact path="/web-development" component={WebDevelopment} />
             <Route exact path="/doctor" component={Doctor} />
-            <Route exact path="/consultancy/start-Up" component={StartUp} />
+
             <Route
               exact
               path="/mobile-development"
@@ -58,12 +59,8 @@ function App() {
             <Route exact path="/blockchain" component={UnderConstruction} />
 
             {/* Consulancy Routes */}
-
-            <Route
-              exact
-              path="/consultancy/:type"
-              component={UnderConstruction}
-            />
+            <Route exact path="/consultancy/start-up" component={StartUp} />
+            <Route exact path="/consultancy/scale-up" component={ScaleUp} />
 
             {/* <Route exact strict path="/home/#tarek" component={Home} /> */}
             <Route exact path="/blog" component={UnderConstruction} />
