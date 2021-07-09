@@ -14,17 +14,20 @@ export default function Appointment(props) {
                     <ExitBtn>
                         <button onClick = {()=>props.setTrigger(false)}>X</button>
                     </ExitBtn>
-                    <Container>
+                  
                         
                             <Grid container>
-                                <Grid item sm={6}> <Calender/> </Grid>
-                                <Grid item sm={6}>
+                                <Grid className="item" item sm={6}> 
+                                    <Calender/> 
+                                </Grid>
+                                <Grid className="item" item sm={6}>
                                     <HeaderText className="header">Get An Appointment</HeaderText>
                                     <ContactForm/>
+                                    
                                 </Grid>
                             </Grid>
                     
-                    </Container>
+                  
                 </AppointmentBody>
             </PopUpBody>
             

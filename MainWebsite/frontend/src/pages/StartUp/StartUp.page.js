@@ -10,6 +10,7 @@ import StartUpLabel from "../../components/StartUpLabel/StartUpLabel.components"
 import Label from "../../components/Windows_Components/FullLabel/Label.components";
 import Appointment from "../../components/Appointment/Appointment.components";
 import Des01 from "../../assets/images/startUp/b2.jpg";
+import Calender from "../../components/Calendar/Calender.components";
 
 export default function StartUp() {
   let data = ScaleUp[0];
@@ -48,6 +49,9 @@ export default function StartUp() {
         header="Startup Business Consulting Process"
         data={data.methodology}
       />
+
+      {/* <Calender/> */}
+
     </div>
   );
 }

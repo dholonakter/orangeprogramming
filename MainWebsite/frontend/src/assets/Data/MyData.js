@@ -101,7 +101,7 @@ import Project from "../../assets/images/projects-img/project.png"
 
 //startup
 
-import StartUp01 from '../../assets/images/startUp/b2.jpg'
+//import StartUp01 from '../../assets/images/startUp/b2.jpg'
 
 
 
