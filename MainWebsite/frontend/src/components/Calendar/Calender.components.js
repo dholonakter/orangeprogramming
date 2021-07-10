@@ -20,8 +20,8 @@ export default function Calender() {
                 <LogoHolder>
                     <img src={Logo}/>
                 </LogoHolder>
-            <br/>
-
+            
+<br/>
             <TimeZonePicker>
             <label for="cars">Your Time Zone:</label>
 

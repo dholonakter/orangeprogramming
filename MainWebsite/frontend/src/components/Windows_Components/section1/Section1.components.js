@@ -6,15 +6,15 @@ import { Underline } from '../../../utils/GlobalComponentsStyle'
 
 
 
-export default function Section1() {
+export default function Section1(props) {
     return (
         <div>
             <Container>
                 <Section1Body>
-                    <p className="title">Give Your Business a professional Edge with Windows Application</p>
+                    <p className="title">{props.header}</p>
                     <Underline width="40vw" margin="auto"/>
                     <p className="content">
-                        We develop smart windows apps by eliminating obstacles that are faced by startups and enterprise worldwide. By using new - age functionalities we enable clients to save time and smart windows apps by eliminating obstacles that are faced by startups and enterprise worldwide. By using new - age functionalities we enable clients to const
+                        {props.content}
                     </p>
                 </Section1Body>
             </Container>

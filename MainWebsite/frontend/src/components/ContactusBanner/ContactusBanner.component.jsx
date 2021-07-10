@@ -14,7 +14,7 @@ import { useAlert } from "react-alert";
 
 
 
-export const ContactForm = () =>{
+export const ContactForm = (props) =>{
 
   const alert = useAlert();
   function sendEmail(e) {
@@ -60,7 +60,7 @@ export const ContactForm = () =>{
                   name="email"
                   required
                 />
-                <br />
+                <br/>
 
                 <input
                   placeholder="Subject *"

@@ -16,7 +16,7 @@ export default function WindowsApplication() {
         <div>
             <WindowBanner data={data.banner}/>
             <br/><br/>
-            <Section1/>
+            <Section1 header={data.top.a} content={data.top.b}/>
             <br/>
             <DataCard data={data.firstSectionCardData}/>
             <WindowsDescrioption  data={data.content} photo={data.photo}/>

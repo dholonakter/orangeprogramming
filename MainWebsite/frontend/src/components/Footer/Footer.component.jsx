@@ -88,6 +88,15 @@ const Footer = () => {
               </p>
             </FooterContentWrap>
 
+
+
+
+
+            
+
+
+
+
             <FooterContentWrap>
               <h4>Platforms</h4>
               <p>
@@ -114,7 +123,9 @@ const Footer = () => {
 
             <Newslatter>
               <form action="">
-                <h4>Newsletter</h4>
+                <h4>Newsletter / <Link to="/contact-us" style={style} style={{color: "#F0671F"}}>Contact Us</Link></h4>
+               
+                
                 <p>Subscribe to our newsletter to get instant news.</p>
                 <input type="text" placeholder="email" />
                 <button>Signup</button>

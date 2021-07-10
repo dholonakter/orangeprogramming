@@ -104,6 +104,12 @@ import Project from "../../assets/images/projects-img/project.png"
 //import StartUp01 from '../../assets/images/startUp/b2.jpg'
 
 
+import Planning from '../../assets/images/startUp/planning.png'
+import Execution from '../../assets/images/startUp/administration.png'
+import Growth from '../../assets/images/startUp/bar-graph.png'
+import Research from '../../assets/images/startUp/documents.png'
+
+
 
 
 //json database
@@ -114,7 +120,7 @@ const icon = '👋';
 export const AIData = [
     {
         header: "Predictable Artificial Intelligence",
-        shortDescrioption: "AI which can make your software user experience better not only that it can help your business growing fast",
+        shortDescrioption: "AI which can make your software user experience better not only that it can help your business growing fast.",
         banner:{
             bgImg: Why,
             title: {
@@ -126,19 +132,19 @@ export const AIData = [
         bannerContent: "Artificial Intelligence",
         content: [
             
-            'AI has become more popular today thanks to increased data volumes, advanced algorithms, and improvements in computing power and storage. This early work paved the way for the automation and formal reasoning that we see in computers today, including decision support systems and smart search systems that can be designed to complement and augment human abilities. Predictable AI is a part of AI, which is used to make decision by using previous data',
+            'AI has become more popular today thanks to increased data volumes, advanced algorithms, and improvements in computing power and storage. This early work paved the way for the automation and formal reasoning that we see in computers today, including decision support systems and smart search systems that can be designed to complement and augment human abilities. Predictable AI is a part of AI, which is used to make decision by using previous data.',
             'In most cases, AI will not be sold as an individual application. Rather, products we already use will be improved with AI capabilities. Automation, conversational platforms, bots and smart machines can be combined with large amounts of data to improve many technologies at home and in the workplace, from security intelligence to investment analysis.',
             'As a leading software development company, our professional expertise comprises skilled and experienced AI developers flexible in creating AI based software as well as websites according to the demands. We offer custom website development services including WordPress Development, e-Commerce Website Development, Magento Development, Custom Web App Development, Joomla Development, Content Management System, Mobile App Development, Mobile Responsive Website, Internet Marketing & Digital Marketing. Our web specialists are committed to providing the best products and services using voguish technology frameworks or portal solutions to ensure a great business ahead.',
             
         ] ,
         whyImage: Why,
         Why: [
-            'AI adds intelligence',
-            'AI achieves incredible accuracy ',
-            'AI analyzes more and deeper data ',
-            'AI automates repetitive learning and discovery through data',
-            'AI gets the most out of data',
-            'Faster than human'
+            'AI adds intelligence.',
+            'AI achieves incredible accuracy.',
+            'AI analyzes more and deeper data.',
+            'AI automates repetitive learning and discovery through data.',
+            'AI gets the most out of data.',
+            'Faster than human.'
             
             
         ] ,
@@ -149,7 +155,7 @@ export const AIData = [
             {
                 logo: VA,
                 header: "Voice Assistant",
-                text: "Implement 'voice assistant' system in your website application, ecommerce application as well as mobile application. We can also help to build up your personal voice assistant"
+                text: "Implement 'voice assistant' system in your website application, ecommerce application as well as mobile application. We can also help to build up your personal voice assistant."
             },
             {
                 logo: Chatbot,
@@ -163,17 +169,17 @@ export const AIData = [
             },
             {
                 logo: AntiVirus,
-                header: "anti virus",
+                header: "Anti virus",
                 text: "Antivirus is a kind of software used to prevent, scan, detect and delete viruses from a computer. Once installed, most antivirus software runs automatically in the background to provide real-time protection against virus attacks."
             },
             {
                 logo: Weather,
-                header: "weather program",
+                header: "Weather program",
                 text: "We provide operational support and consulting to the road weather industry, intelligent transportation systems (ITS) initiatives, professional software products, as well as specialized forecasts and forensic/incident meteorology services."
             },
             {
                 logo: Mail,
-                header: "email spaming",
+                header: "Email spaming",
                 text: "Spam is commonly used to conduct email fraud. If you are a business guy, you can be affected with this type fraud. To prevent this problem we are providing AI bots which will help you to keep safe your important mail."
             },
         ],
@@ -275,14 +281,18 @@ export const AIData = [
 export const WindowsData = [
     {
         header: "Windows Application",
-        shortDescrioption: "\"Make your business one step forward with windows application\"",
+        shortDescrioption: "\"Make your business one step forward with windows application.\"",
+        top:{
+            a:"Give Your Business A Professional Edge With Windows Application",
+            b:"We develop smart windows apps by eliminating obstacles that are faced by startups and enterprise worldwide. By using new - age functionalities we enable clients to save time and smart windows apps by eliminating obstacles that are faced by startups and enterprise worldwide. By using new - age functionalities we enable clients to const."
+        },
         banner:{
             bgImg: WindowBanner,
             title: {
                 bold:'Window Application',
                 normal: 'Developmnet'
             },
-            description: '\"Make your business one step forward with windows application\"'
+            description: '\"Make your business one step forward with windows application.\"'
         },
         content: [
             'First impressions are  everything – and a strategic, well-designed software is the best way to ensure your business puts its best foot forward. A business software plays a major role in depicting your intentions and goals. Just a man power is worthless and so we help you build an interactive and impressive software to draw the attention of your valuable customers.',
@@ -291,11 +301,11 @@ export const WindowsData = [
             
         ] ,
         whyWindows: [
-         'Easy to Control your business with windows application',
-         'windows will save your time',
-         'To get better system integration',
-         'It will give quicker access',
-         'Provide you higher security'       
+         'Easy to Control your business with windows application.',
+         'Windows will save your time.',
+         'To get better system integration.',
+         'It will give quicker access.',
+         'Provide you higher security.'       
         ] ,
         bannerImg: WindowsLogo,
         firstSectionCardData:[
@@ -346,7 +356,7 @@ export const WindowsData = [
             {
                 logo: RealStare,
                 header: "Real State",
-                text: "On a grand scale, this points to fierce competition between players in the industry. It also means that marketing teams will be on the lookout for the best tools that will enable them to sell more properties and do it faster. One of such is real estate CRM software"
+                text: "On a grand scale, this points to fierce competition between players in the industry. It also means that marketing teams will be on the lookout for the best tools that will enable them to sell more properties and do it faster. One of such is real estate CRM software."
             },
             {
                 logo: Travel,
@@ -372,7 +382,7 @@ export const WindowsData = [
                 id : 2,
                 title: 'Strategy',
                 logo: <BuildIcon/>,
-                description: 'After thorough goals, we cone up with a strategy that keeps in view the business goals along with the stakeholder\'s expectations. Prior to starting any project, we put together a comprehensive proposal that includes a breakdown of requirements, project costing, project milestones, and time scales, etc.',
+                description: 'After thorough goals, we come up with a strategy that keeps in view the business goals along with the stakeholder\'s expectations. Prior to starting any project, we put together a comprehensive proposal that includes a breakdown of requirements, project costing, project milestones, and time scales, etc.',
                 img: img2
             },
             {
@@ -555,17 +565,19 @@ export const Projects = [
 ];
 
 
-export const ScaleUp = [
+export const StartUP = [
     {
-        header: "Windows Application",
-        shortDescrioption: "\"Make your business one step forward with windows application\"",
         banner:{
             bgImg: WindowBanner,
             title: {
                 bold:'Start Up',
                 normal: 'Consultancy'
             },
-            description: 'When starting a new business, most entrepreneuus don\'t have the expertise across all areas of the business. Even if that would be the case, it would not be benificial. Necessaary taskta to start a business can be accomplished srccessfully and more efficiently with help.'
+            description: ''
+        },
+        top:{
+            a:"Benefits of Business Consulting Services",
+            b:"When starting a new business, most entrepreneuus don\'t have the expertise across all areas of the business. Even if that would be the case, it would not be benificial. Necessaary taskta to start a business can be accomplished srccessfully and more efficiently with help."
         },
         content: [
             'First impressions are  everything – and a strategic, well-designed software is the best way to ensure your business puts its best foot forward. A business software plays a major role in depicting your intentions and goals. Just a man power is worthless and so we help you build an interactive and impressive software to draw the attention of your valuable customers.',
@@ -574,34 +586,34 @@ export const ScaleUp = [
             
         ] ,
         whyWindows: [
-         'Gain Clarity & Objectivity',
-         'Website Design & E-commerce',
-         'Gain Knowledge & Expertise',
-         'Business Branding',
-         'Product Development',
-         'Marketing Campaigns'       
+         'Gain Clarity & Objectivity.',
+         'Website Design & E-commerce.',
+         'Gain Knowledge & Expertise.',
+         'Business Branding.',
+         'Product Development.',
+         'Marketing Campaigns.'       
         ] ,
         bannerImg: WindowsLogo,
        
         servicesTitle:'Why Business Startup Consulting',
         WindowServices:[
             {
-                logo: Medical,
+                logo: Research,
                 header: "Market Research",
                 text: "Business startup consultants work with clients to research in more depth the market, industry, competitors, offers, incentives, and other relevant details. Startup consultants help with the early stages of research and due diligence."
             },
             {
-                logo: Book,
+                logo: Planning,
                 header: "Planning Assistance",
                 text: "Startup consultants help clients with planning. Creating a plan to create the offering such as products, services, or solutions. How to market them, reach potential customers, and grow the business. Planning helps outline what the path looks like."
             },
             {
-                logo: Transport,
+                logo: Execution,
                 header: "Task Execution",
                 text: "Getting it done means execution of tasks. Startup consulting services help you execute necessary steps and tasks to get started with the business. Services are managed and vendors are provided to provide quality results. Action oriented support helps in the early stages."
             },
             {
-                logo: Bank,
+                logo: Growth,
                 header: "Business Growth",
                 text: "Consultants help startups with business growth. Creating marketing campaigns that produce results and sales tactics to generate profits. Growing market share and customer base with consulting services."
             }
