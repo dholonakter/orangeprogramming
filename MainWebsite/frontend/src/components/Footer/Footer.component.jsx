@@ -106,7 +106,12 @@ const Footer = () => {
             <hr />
 
             <Grid item xs={6} sm={3} md={2} component={FooterContentWrap}>
-              <h4 style={{ height: `${matchesMd ? "20px" : "40px"}` }}>
+              <h4
+                style={{
+                  height: `${matchesMd ? "20px" : "40px"}`,
+                  color: "#F0671F",
+                }}
+              >
                 Contacts
               </h4>
 
