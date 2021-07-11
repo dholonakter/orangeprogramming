@@ -2,7 +2,6 @@ import {
   Typography,
   Grid,
   List,
-  ListItemIcon,
   ListItemText,
   ListItem,
   Box,
@@ -37,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
       )`,
   },
   sectionText: {
+    fontSize: "1.7rem",
     "@media(max-width:1100px)": {
       fontSize: "1.5rem",
     },
@@ -55,7 +55,7 @@ function ScaleupImportance() {
   return (
     <>
       <Container>
-        <Box paddingY={matches ? 4 : 8}>
+        <Box paddingY={matches ? 3 : 5}>
           <Typography
             className={classes.sectionText}
             variant="h4"
