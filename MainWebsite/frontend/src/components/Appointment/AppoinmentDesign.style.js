@@ -20,8 +20,8 @@ export const AppointmentBody = styled.div`
     margin-top: 7vw;
     background: #fff;
     padding: 5px 5px;
-    border: 2px solid #f0671f;
-    overflow: scroll;
+    // border: 2px solid #f0671f;
+    // overflow: scroll;
 
     @media(max-width: 599px ){
         width: 75%;
@@ -70,6 +70,10 @@ export const ExitBtn = styled.span`
     // background: red;
     float: right;
     button{
+      &:hover{
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+        transition: 0.5s;
+      }
         color: #f0671f;
         border: 0;
         background: none;

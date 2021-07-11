@@ -137,7 +137,7 @@ justify-content: center;
         @media(max-width: 1200px ){
           width: 125px;
           margin: auto;
-          margin-bottm: 10px;
+          
           
       }
       @media(max-width: 600px ){
@@ -166,9 +166,10 @@ export const TimeZonePicker = styled.div`
     }
     select{
         padding: 5px 10px;
-        background: #f0671f;
+        background: transparent;
+        border: 1px solid #f0671f;
         color: #fff;
-        border: none;
+        // border: none;
         margin: 5px 7px;
         // color: red;
         font-size: 0.9vw;
