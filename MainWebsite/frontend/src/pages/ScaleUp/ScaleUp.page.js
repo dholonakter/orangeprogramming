@@ -12,7 +12,7 @@ const bannerData = {
     normal: "Consultancy",
   },
   description:
-    "Ous expert consultents helps you scaling up your business strategically  to grow your business faster, achieve more and go funther.",
+    "Our experts consultents helps you scaling up your business strategically  to grow your business faster, achieve more and go funther.",
 };
 
 function ScaleUp() {
