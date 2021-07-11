@@ -5,22 +5,21 @@ export const FooterContainerWrap = styled.div`
   background: #173857;
   padding: 3% 0;
 
-  h4{
+  h4 {
     font-size: 1.3vw;
     @media (max-width: 1920px) {
       font-size: 20px;
       /* width: 70%; */
     }
   }
-  p>a, .tech{
+  p > a,
+  .tech {
     font-size: 0.7vw;
     @media (max-width: 1920px) {
       font-size: 14px;
       /* width: 70%; */
     }
   }
-
-
 
   hr {
     display: block;
@@ -54,10 +53,14 @@ export const FooterWrapContainer = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  img {
-    width: 10%;
-    height: 10%;
 
+  img {
+    width: 60%;
+    display: block;
+    @media (max-width: 1200px) {
+      width: 40%;
+      margin: 0 auto;
+    }
     @media (max-width: 560px) {
       width: 100%;
       padding: 5% 25%;
@@ -67,6 +70,12 @@ export const FooterWrapContainer = styled.div`
 
 export const FooterContentWrap = styled.div`
   color: #fff;
+  padding-bottom: 2rem;
+
+  @media (max-width: 860px) {
+    padding: 0rem;
+  }
+
   h4 {
     font-weight: 600;
 
@@ -95,7 +104,6 @@ export const Newslatter = styled.div`
   color: #fff;
   @media (max-width: 680px) {
     width: 100%;
-    margin-top: 10%;
   }
   h4 {
     font-weight: 600;
@@ -156,7 +164,7 @@ export const Newslatter = styled.div`
 export const FooterIconContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  padding-top: 8%;
+  padding-top: 6%;
 `;
 
 export const FooterIconWrap = styled.div`
@@ -170,7 +178,7 @@ export const FooterIconWrap = styled.div`
   font-size: 10px;
   cursor: pointer;
   transition: all 0.3s;
-  svg{
+  svg {
     // width: 50px;
   }
   &:hover {

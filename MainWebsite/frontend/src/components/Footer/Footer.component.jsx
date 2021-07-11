@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import {
   FooterContainerWrap,
   FooterContentWrap,
@@ -19,8 +19,11 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { Container } from "../../utils/container";
 import { useLocation } from "react-router";
+import { Grid, useMediaQuery } from "@material-ui/core";
 
 const Footer = () => {
+  const matchesMd = useMediaQuery("(max-width:960px)");
+  const history = useHistory();
   const goTo = (link) => {
     window.open(link);
   };
@@ -35,102 +38,90 @@ const Footer = () => {
     <>
       <FooterContainerWrap>
         <Container>
-          <FooterWrapContainer>
-            <img src={logo} alt="logo" />
-
-            <FooterContentWrap>
+          {/* <FooterWrapContainer> */}
+          <Grid
+            container
+            spacing={matchesMd ? 3 : 5}
+            component={FooterWrapContainer}
+          >
+            <Grid item xs={12} sm={6} md={2} component={FooterContentWrap}>
+              <img src={logo} alt="logo" />
+            </Grid>
+            <Grid item xs={6} sm={2} md={3} component={FooterContentWrap}>
               <h4>Services</h4>
-              <p>
-                <Link style={style} to="/web-development">
-                  Web Application
-                </Link>
+              <p onClick={() => history.push("/web-development")}>
+                Web Application
               </p>
-              <p>
-                <Link style={style} to="/mobile-developments">
-                  Mobile Developments
-                </Link>
+              <p onClick={() => history.push("/mobile-developments")}>
+                Mobile Developments
               </p>
-              <p>
-                <Link style={style} to="/ai">
-                  Predictable Artificial Intelligence
-                </Link>
+              <p onClick={() => history.push("/ai")}>
+                Predictable Artificial Intelligence
               </p>
-              <p>
-                <Link style={style} to="/windows-application">
-                  Windows Application
-                </Link>
+              <p onClick={() => history.push("/windows-application")}>
+                Windows Application
               </p>
-            </FooterContentWrap>
-
-            <FooterContentWrap>
+            </Grid>
+            <Grid item xs={6} sm={2} md={2} component={FooterContentWrap}>
+              {" "}
               <h4>Technologies</h4>
-
-              <p className="tech" style={style} onClick={() => goTo("https://reactjs.org")}>
-                React Js
-              </p>
-              <p  className="tech" style={style} onClick={() => goTo("https://nodejs.org")}>
+              <p onClick={() => goTo("https://reactjs.org")}>React Js</p>
+              <p style={style} onClick={() => goTo("https://nodejs.org")}>
                 {" "}
                 Node Js
               </p>
-              <p className="tech" style={style} onClick={() => goTo("https://php.net")}>
+              <p style={style} onClick={() => goTo("https://php.net")}>
                 PHP
               </p>
-              <p className="tech" style={style} onClick={() => goTo("https://laravel.com")}>
+              <p style={style} onClick={() => goTo("https://laravel.com")}>
                 {" "}
                 Laravel
               </p>
-              <p className="tech"
+              <p
                 style={style}
                 onClick={() => goTo("https://dotnet.microsoft.com")}
               >
-                {" "}
                 Dot Net
               </p>
-            </FooterContentWrap>
-
-
-
-
-
-            
-
-
-
-
-            <FooterContentWrap>
+            </Grid>
+            <Grid item xs={12} sm={2} md={2} component={FooterContentWrap}>
               <h4>Platforms</h4>
-              <p>
-                <Link style={style} to="/android">
-                  Android
-                </Link>
-              </p>
-              <p>
-                <Link style={style} to="/ios">
-                  iOS
-                </Link>
-              </p>
-              <p>
-                <Link style={style} to="/web-development">
-                  Web
-                </Link>
-              </p>
-              <p>
-                <Link style={style} to="/windows">
-                  Windows
-                </Link>
-              </p>
-            </FooterContentWrap>
+              <p onClick={() => history.push("/android")}>Android</p>
+              <p onClick={() => history.push("/ios")}>iOS</p>
+              <p onClick={() => history.push("/web-development")}>Web</p>
+              <p onClick={() => history.push("/windows")}>Windows</p>
+            </Grid>
+            <Grid item xs={12} sm={6} md={3} component={FooterContentWrap}>
+              <Newslatter>
+                <form action="">
+                  <h4>Newsletter</h4>
 
-            <Newslatter>
-              <form action="">
-                <h4>Newsletter / <Link to="/contact-us" style={style} style={{color: "#F0671F"}}>Contact Us</Link></h4>
-               
-                
-                <p>Subscribe to our newsletter to get instant news.</p>
-                <input type="text" placeholder="email" />
-                <button>Signup</button>
-              </form>
+                  <p>Subscribe to our newsletter to get instant news.</p>
+                  <input type="text" placeholder="email" />
+                  <button>Signup</button>
+                </form>
+              </Newslatter>
+            </Grid>
 
+            <hr />
+
+            <Grid item xs={6} sm={3} md={2} component={FooterContentWrap}>
+              <h4 style={{ height: `${matchesMd ? "20px" : "40px"}` }}>
+                Contacts
+              </h4>
+
+              <p>Elgarstraat 22 5653AH Eindhoven, Netherlands.</p>
+            </Grid>
+            <Grid item xs={6} sm={3} md={6} component={FooterContentWrap}>
+              <h4 style={{ height: `${matchesMd ? "20px" : "40px"}` }}></h4>
+              <p>+31634509831</p>
+              <p style={{ wordWrap: "break-word" }}>
+                orangeprogrammingnl@gmail.com
+              </p>
+            </Grid>
+
+            <Grid item xs={12} sm={6} md={4} component={FooterContentWrap}>
+              <h4>Follow us</h4>
               <FooterIconContainer>
                 <FooterIconWrap>
                   <FontAwesomeIcon
@@ -183,13 +174,13 @@ const Footer = () => {
                   />
                 </FooterIconWrap>
               </FooterIconContainer>
-            </Newslatter>
-          </FooterWrapContainer>
+            </Grid>
+          </Grid>
 
-          <br />
-          <br />
           <hr />
-          <small>Copyright © Orange-Programming 2021. All Rights Reserved</small>
+          <small>
+            Copyright © Orange-Programming 2021. All Rights Reserved
+          </small>
         </Container>
       </FooterContainerWrap>
     </>
